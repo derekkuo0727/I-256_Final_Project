@@ -1,0 +1,2100 @@
+Id,Title,Body,Tags
+1,How to check if an uploaded file is an image without mime type?,"<p>I'd like to check if an uploaded file is an image file (e.g png, jpg, jpeg, gif, bmp) or another file. The problem is that I'm using Uploadify to upload the files, which changes the mime type and gives a 'text/octal' or something as the mime type, no matter which file type you upload.</p>
+
+<p>Is there a way to check if the uploaded file is an image apart from checking the file extension using PHP?</p>
+",php image-processing file-upload upload mime-types
+2,How can I prevent firefox from closing when I press ctrl-w,"<p>In my favorite editor (vim), I regularly use ctrl-w to execute a certain action. Now, it quite often happens to me that firefox is the active window (on windows) while I still look at vim (thinking vim is the active window) and press ctrl-w which closes firefox. This is not what I want. Is there a way to stop ctrl-w from closing firefox?</p>
+
+<p>Rene</p>
+",firefox
+3,R Error Invalid type (list) for variable,"<p>I am import matlab file and construct a data frame, matlab file contains two columns with and each row maintain a cell that has a matrix, I construct a dataframe to run random forest. But I am getting following error. </p>
+
+<pre><code>Error in model.frame.default(formula = expert_data_frame$t_labels ~ .,  : 
+  invalid type (list) for variable 'expert_data_frame$t_labels'
+</code></pre>
+
+<p>Here is the code how I import the matlab file and construct the dataframe:</p>
+
+<pre><code>all_exp_traintest &lt;- readMat(all_exp_filepath);
+len = length(all_exp_traintest$exp.traintest)/2;
+    for (i in 1:len) {
+      expert_train_df &lt;- data.frame(all_exp_traintest$exp.traintest[i]);
+      labels = data.frame(all_exp_traintest$exp.traintest[i+302]);
+      names(labels)[1] &lt;- ""t_labels"";
+      expert_train_df$t_labels &lt;- labels;
+      expert_data_frame &lt;- data.frame(expert_train_df);
+      rf_model = randomForest(expert_data_frame$t_labels ~., data=expert_data_frame, importance=TRUE, do.trace=100);
+    }
+</code></pre>
+
+<p>Structure of the Matlab input file</p>
+
+<pre><code>[56x12 double]    [56x1 double]
+[62x12 double]    [62x1 double]
+[62x12 double]    [62x1 double]
+[62x12 double]    [62x1 double]
+[62x12 double]    [62x1 double]
+[74x12 double]    [74x1 double]
+
+
+&gt; str(all_exp_traintest)
+List of 1
+ $ exp.traintest:List of 604
+  ..$ NA: num [1:56, 1:12] 0 0 0 0 8 1 1 0 0 0 ...
+  ..$ NA: num [1:62, 1:12] 2 10 11 13 5 10 13 8 11 8 ...
+  ..$ NA: num [1:62, 1:12] 0 0 1 0 0 0 0 0 1 1 ...
+  ..$ NA: num [1:62, 1:12] 4 2 1 3 3 20 6 3 2 2 ...
+  ..$ NA: num [1:62, 1:12] 2731 2362 2937 1229 1898 ...
+  ..$ NA: num [1:74, 1:12] 27 33 34 38 33 35 36 35 47 46 ...
+  ..$ NA: num [1:74, 1:12] 106 79 99 94 153 104 146 105 125 146 ...
+  ..$ NA: num [1:74, 1:12] 3 9 3 0 1 26 0 4 0 0 ...
+  ..$ NA: num [1:51, 1:12] 5 7 3 30 0 0 0 0 0 0 ...
+  ..$ NA: num [1:66, 1:12] 0 0 13 0 0 3 2 2 0 2 ...
+  ..$ NA: num [1:73, 1:12] 1 0 1 0 0 0 2 1 2 5 ...
+  ..$ NA: num [1:73, 1:12] 23 14 20 14 24 22 32 61 84 278 ...
+  ..$ NA: num [1:75, 1:12] 1 7 0 1 2 3 3 0 16 10 ...
+  ..$ NA: num [1:90, 1:12] 10 7 8 15 25 12 37 31 18 48 ...
+  ..$ NA: num [1:90, 1:12] 0 6 3 1 5 7 8 6 1 1 ...
+  ..$ NA: num [1:90, 1:12] 0 1 1 2 0 4 9 6 3 4 ...
+  ..$ NA: num [1:90, 1:12] 6 0 5 27 11 50 22 8 10 4 ...
+  ..$ NA: num [1:90, 1:12] 3 9 13 12 4 0 5 0 5 0 ...
+  ..$ NA: num [1:90, 1:12] 1 0 1 0 1 2 1 0 1 2 ...
+  ..$ NA: num [1:90, 1:12] 3395 3400 3360 3770 3533 ...
+  ..$ NA: num [1:84, 1:12] 0 0 0 0 5 0 0 5 4 2 ...
+  ..$ NA: num [1:80, 1:12] 2 3 3 3 4 28 61 26 8 1 ...
+  ..$ NA: num [1:81, 1:12] 4 28 22 9 16 43 80 21 19 18 ...
+  ..$ NA: num [1:76, 1:12] 1 0 0 1 49 64 60 230 222 267 ...
+  ..$ NA: num [1:76, 1:12] 4786 4491 2510 1144 2071 ...
+  ..$ NA: num [1:76, 1:12] 80 128 254 109 114 267 152 139 368 363 ...
+  ..$ NA: num [1:76, 1:12] 1 5 8 2 14 5 3 13 8 2 ...
+  ..$ NA: num [1:76, 1:12] 10 3 8 79 4 4 11 30 2 0 ...
+  ..$ NA: num [1:68, 1:12] 0 0 2 0 0 2 6 0 0 4 ...
+  ..$ NA: num [1:68, 1:12] 1 4 5 2 2 3 3 1 3 0 ...
+  ..$ NA: num [1:68, 1:12] 0 0 1 0 0 0 0 0 0 1 ...
+  ..$ NA: num [1:69, 1:12] 39 45 2 0 1 4 3 0 13 0 ...
+  ..$ NA: num [1:69, 1:12] 0 4 6 0 0 4 1 6 10 1 ...
+  ..$ NA: num [1:69, 1:12] 0 2 5 2 2 2 0 0 3 6 ...
+  ..$ NA: num [1:69, 1:12] 3 0 1 1 1 4 7 5 5 1 ...
+  ..$ NA: num [1:66, 1:12] 5 0 0 0 0 0 0 1 3 5 ...
+  ..$ NA: num [1:66, 1:12] 4 3 3 0 0 4 0 0 0 0 ...
+  ..$ NA: num [1:65, 1:12] 0 0 1 0 0 0 5 8 4 1 ...
+  ..$ NA: num [1:65, 1:12] 0 5 6 0 2 0 0 1 1 2 ...
+  ..$ NA: num [1:69, 1:12] 0 16 5 1 14 0 1 0 0 16 ...
+  ..$ NA: num [1:69, 1:12] 0 0 0 0 0 25 2 3 0 0 ...
+  ..$ NA: num [1:64, 1:12] 2 0 0 0 0 0 0 0 0 0 ...
+  ..$ NA: num [1:42, 1:12] 0 0 0 0 0 0 0 0 0 0 ...
+  ..$ NA: num [1:67, 1:12] 0 2 4 10 15 4 1 43 1 7 ...
+  ..$ NA: num [1:63, 1:12] 32 6 12 5 92 8 29 7 21 20 ...
+  ..$ NA: num [1:63, 1:12] 2 5 12 8 10 13 6 11 10 14 ...
+  ..$ NA: num [1:63, 1:12] 3 5 10 9 0 1 8 13 2 14 ...
+  ..$ NA: num [1:54, 1:12] 0 0 14 0 0 0 0 0 0 1 ...
+  ..$ NA: num [1:82, 1:12] 152 99 63 57 105 44 28 33 43 49 ...
+  ..$ NA: num [1:81, 1:12] 0 1 0 0 0 0 0 0 0 0 ...
+  ..$ NA: num [1:75, 1:12] 0 1 3 0 0 0 0 0 0 0 ...
+  ..$ NA: num [1:75, 1:12] 1 0 0 2 0 1 0 0 0 0 ...
+  ..$ NA: num [1:75, 1:12] 1 6 5 5 3 8 1 3 1 0 ...
+  ..$ NA: num [1:72, 1:12] 0 0 0 0 1 0 1 2 0 0 ...
+  ..$ NA: num [1:62, 1:12] 310 91 4 4 9 0 0 1 0 0 ...
+  ..$ NA: num [1:62, 1:12] 239 374 1060 599 805 808 139 150 490 326 ...
+  ..$ NA: num [1:49, 1:12] 9 18 10 12 19 5 13 10 2 3 ...
+  ..$ NA: num [1:61, 1:12] 2 0 0 0 1 0 0 0 0 0 ...
+  ..$ NA: num [1:61, 1:12] 4 10 16 15 8 14 10 23 11 5 ...
+  ..$ NA: num [1:61, 1:12] 0 1 4 4 5 3 0 1 1 1 ...
+  ..$ NA: num [1:65, 1:12] 165 100 177 65 148 58 188 55 59 62 ...
+  ..$ NA: num [1:65, 1:12] 13 0 0 2 2 3 0 0 0 0 ...
+  ..$ NA: num [1:66, 1:12] 157 58 101 92 15 21 73 80 78 75 ...
+  ..$ NA: num [1:66, 1:12] 8 6 1 0 6 2 2 6 10 9 ...
+  ..$ NA: num [1:87, 1:12] 1 2 5 6 8 3 3 3 2 3 ...
+  ..$ NA: num [1:83, 1:12] 0 0 0 0 0 0 2 13 0 0 ...
+  ..$ NA: num [1:81, 1:12] 0 0 1 0 3 5 3 0 2 7 ...
+  ..$ NA: num [1:81, 1:12] 33 81 94 30 5 36 16 90 121 182 ...
+  ..$ NA: num [1:81, 1:12] 10 11 16 6 0 0 0 1 0 0 ...
+  ..$ NA: num [1:81, 1:12] 7 0 0 2 1 3 1 4 0 0 ...
+  ..$ NA: num [1:81, 1:12] 1 0 5 0 2 3 1 0 1 1 ...
+  ..$ NA: num [1:95, 1:12] 30 160 116 130 444 515 225 135 108 175 ...
+  ..$ NA: num [1:95, 1:12] 12 1 0 10 3 3 0 4 0 0 ...
+  ..$ NA: num [1:95, 1:12] 1 0 0 0 3 3 1 0 0 0 ...
+  ..$ NA: num [1:95, 1:12] 11 42 61 23 41 56 81 6 83 82 ...
+  ..$ NA: num [1:95, 1:12] 1 2 5 3 6 4 2 8 28 1 ...
+  ..$ NA: num [1:95, 1:12] 283 192 377 216 207 261 394 262 262 554 ...
+  ..$ NA: num [1:94, 1:12] 0 0 0 0 0 0 0 0 0 0 ...
+  ..$ NA: num [1:72, 1:12] 0 0 0 0 0 0 0 0 0 0 ...
+  ..$ NA: num [1:72, 1:12] 5 3 0 2 13 27 6 2 12 36 ...
+  ..$ NA: num [1:72, 1:12] 0 2 2 0 1 0 1 4 2 2 ...
+  ..$ NA: num [1:72, 1:12] 0 0 1 0 3 1 0 4 1 0 ...
+  ..$ NA: num [1:67, 1:12] 27 7 18 1 2 0 0 0 0 0 ...
+  ..$ NA: num [1:67, 1:12] 10 2 1 10 7 0 0 1 1 4 ...
+  ..$ NA: num [1:67, 1:12] 14 17 9 20 13 20 18 13 10 7 ...
+  ..$ NA: num [1:64, 1:12] 0 0 0 0 4 0 0 0 3 0 ...
+  ..$ NA: num [1:64, 1:12] 3 0 1 0 2 7 13 14 4 2 ...
+  ..$ NA: num [1:64, 1:12] 0 0 0 0 0 0 0 0 2 0 ...
+  ..$ NA: num [1:72, 1:12] 59 61 55 120 49 202 325 244 377 551 ...
+  ..$ NA: num [1:72, 1:12] 0 0 0 0 0 0 0 0 1 0 ...
+  ..$ NA: num [1:72, 1:12] 0 3 1 0 1 0 0 0 4 0 ...
+  ..$ NA: num [1:72, 1:12] 5 12 6 9 15 10 15 27 15 9 ...
+  ..$ NA: num [1:72, 1:12] 7 0 3 0 0 1 1 1 1 0 ...
+  ..$ NA: num [1:72, 1:12] 0 0 0 0 89 0 19 3 3 2 ...
+  ..$ NA: num [1:61, 1:12] 5 3 5 3 3 29 46 140 49 24 ...
+  ..$ NA: num [1:63, 1:12] 23 0 0 0 0 60 7 73 13 19 ...
+  ..$ NA: num [1:95, 1:12] 7 96 28 2 9 5 8 190 166 1 ...
+  ..$ NA: num [1:95, 1:12] 0 0 1 1 0 0 0 0 0 0 ...
+  ..$ NA: num [1:95, 1:12] 4 0 2 6 6 11 6 5 6 9 ...
+  .. [list output truncated]
+ - attr(*, ""header"")=List of 3
+  ..$ description: chr ""MATLAB 5.0 MAT-file, Platform: MACI64, Created on: Sun Dec  9 17:35:24 2012                                         ""
+  ..$ version    : chr ""5""
+  ..$ endian     : chr ""little""
+</code></pre>
+
+<p>After loading the matlab file into R</p>
+
+<pre><code>all_exp_traintest$exp.traintest[1]
+$&lt;NA&gt;
+      [,1] [,2]  [,3]   [,4]   [,5]    [,6]     [,7]      [,8]       [,9]       [,10]        [,11]        [,12]
+ [1,]    0  0.0  0.00  0.000 0.5000 0.03125 0.015625 0.0000000 0.00000000 0.000000000 0.0000000000 0.0000000000
+ [2,]    0  0.0  0.00  1.000 0.0625 0.03125 0.000000 0.0000000 0.00000000 0.000000000 0.0000000000 0.0000000000
+ [3,]    0  0.0  2.00  0.125 0.0625 0.00000 0.000000 0.0000000 0.00000000 0.000000000 0.0000000000 0.0000000000
+ [4,]    0  4.0  0.25  0.125 0.0000 0.00000 0.000000 0.0000000 0.00000000 0.000000000 0.0000000000 0.0009765625
+ [5,]    8  0.5  0.25  0.000 0.0000 0.00000 0.000000 0.0000000 0.00000000 0.000000000 0.0019531250 0.0000000000
+ [6,]    1  0.5  0.00  0.000 0.0000 0.00000 0.000000 0.0000000 0.00000000 0.003906250 0.0000000000 0.0004882812
+ [7,]    1  0.0  0.00  0.000 0.0000 0.00000 0.000000 0.0000000 0.00781250 0.000000000 0.0009765625 0.0009765625
+ [8,]    0  0.0  0.00  0.000 0.0000 0.00000 0.000000 0.0156250 0.00000000 0.001953125 0.0019531250 0.0000000000
+ [9,]    0  0.0  0.00  0.000 0.0000 0.00000 0.031250 0.0000000 0.00390625 0.003906250 0.0000000000 0.0004882812
+[10,]    0  0.0  0.00  0.000 0.0000 0.06250 0.000000 0.0078125 0.00781250 0.000000000 0.0009765625 0.0000000000
+[11,]    0  0.0  0.00  0.000 0.1250 0.00000 0.015625 0.0156250 0.00000000 0.001953125 0.0000000000 0.0000000000
+[12,]    0  0.0  0.00  0.250 0.0000 0.03125 0.031250 0.0000000 0.00390625 0.000000000 0.0000000000 0.0004882812
+[13,]    0  0.0  0.50  0.000 0.0625 0.06250 0.000000 0.0078125 0.00000000 0.000000000 0.0009765625 0.0000000000
+[14,]    0  1.0  0.00  0.125 0.1250 0.00000 0.015625 0.0000000 0.00000000 0.001953125 0.0000000000 0.0024414062
+[15,]    2  0.0  0.25  0.250 0.0000 0.03125 0.000000 0.0000000 0.00390625 0.000000000 0.0048828125 0.0014648438
+[16,]    0  0.5  0.50  0.000 0.0625 0.00000 0.000000 0.0078125 0.00000000 0.009765625 0.0029296875 0.0039062500
+[17,]    1  1.0  0.00  0.125 0.0000 0.00000 0.015625 0.0000000 0.01953125 0.005859375 0.0078125000 0.0151367188
+[18,]    2  0.0  0.25  0.000 0.0000 0.03125 0.000000 0.0390625 0.01171875 0.015625000 0.0302734375 0.0019531250
+[19,]    0  0.5  0.00  0.000 0.0625 0.00000 0.078125 0.0234375 0.03125000 0.060546875 0.0039062500 0.0029296875
+[20,]    1  0.0  0.00  0.125 0.0000 0.15625 0.046875 0.0625000 0.12109375 0.007812500 0.0058593750 0.0253906250
+[21,]    0  0.0  0.25  0.000 0.3125 0.09375 0.125000 0.2421875 0.01562500 0.011718750 0.0507812500 0.0253906250
+[22,]    0  0.5  0.00  0.625 0.1875 0.25000 0.484375 0.0312500 0.02343750 0.101562500 0.0507812500 0.0063476562
+[23,]    1  0.0  1.25  0.375 0.5000 0.96875 0.062500 0.0468750 0.20312500 0.101562500 0.0126953125 0.0009765625
+[24,]    0  2.5  0.75  1.000 1.9375 0.12500 0.093750 0.4062500 0.20312500 0.025390625 0.0019531250 0.0000000000
+[25,]    5  1.5  2.00  3.875 0.2500 0.18750 0.812500 0.4062500 0.05078125 0.003906250 0.0000000000 0.0019531250
+[26,]    3  4.0  7.75  0.500 0.3750 1.62500 0.812500 0.1015625 0.00781250 0.000000000 0.0039062500 0.0029296875
+[27,]    8 15.5  1.00  0.750 3.2500 1.62500 0.203125 0.0156250 0.00000000 0.007812500 0.0058593750 0.0009765625
+[28,]   31  2.0  1.50  6.500 3.2500 0.40625 0.031250 0.0000000 0.01562500 0.011718750 0.0019531250 0.0000000000
+[29,]    4  3.0 13.00  6.500 0.8125 0.06250 0.000000 0.0312500 0.02343750 0.003906250 0.0000000000 0.0083007812
+[30,]    6 26.0 13.00  1.625 0.1250 0.00000 0.062500 0.0468750 0.00781250 0.000000000 0.0166015625 0.0000000000
+[31,]   52 26.0  3.25  0.250 0.0000 0.12500 0.093750 0.0156250 0.00000000 0.033203125 0.0000000000 0.0048828125
+[32,]   52  6.5  0.50  0.000 0.2500 0.18750 0.031250 0.0000000 0.06640625 0.000000000 0.0097656250 0.0034179688
+[33,]   13  1.0  0.00  0.500 0.3750 0.06250 0.000000 0.1328125 0.00000000 0.019531250 0.0068359375 0.0229492188
+[34,]    2  0.0  1.00  0.750 0.1250 0.00000 0.265625 0.0000000 0.03906250 0.013671875 0.0458984375 0.0297851562
+[35,]    0  2.0  1.50  0.250 0.0000 0.53125 0.000000 0.0781250 0.02734375 0.091796875 0.0595703125 0.0771484375
+[36,]    4  3.0  0.50  0.000 1.0625 0.00000 0.156250 0.0546875 0.18359375 0.119140625 0.1542968750 0.0004882812
+[37,]    6  1.0  0.00  2.125 0.0000 0.31250 0.109375 0.3671875 0.23828125 0.308593750 0.0009765625 0.0000000000
+[38,]    2  0.0  4.25  0.000 0.6250 0.21875 0.734375 0.4765625 0.61718750 0.001953125 0.0000000000 0.0048828125
+[39,]    0  8.5  0.00  1.250 0.4375 1.46875 0.953125 1.2343750 0.00390625 0.000000000 0.0097656250 0.0000000000
+[40,]   17  0.0  2.50  0.875 2.9375 1.90625 2.468750 0.0078125 0.00000000 0.019531250 0.0000000000 0.0000000000
+[41,]    0  5.0  1.75  5.875 3.8125 4.93750 0.015625 0.0000000 0.03906250 0.000000000 0.0000000000 0.0000000000
+[42,]   10  3.5 11.75  7.625 9.8750 0.03125 0.000000 0.0781250 0.00000000 0.000000000 0.0000000000 0.0004882812
+[43,]    7 23.5 15.25 19.750 0.0625 0.00000 0.156250 0.0000000 0.00000000 0.000000000 0.0009765625 0.0078125000
+[44,]   47 30.5 39.50  0.125 0.0000 0.31250 0.000000 0.0000000 0.00000000 0.001953125 0.0156250000 0.0000000000
+[45,]   61 79.0  0.25  0.000 0.6250 0.00000 0.000000 0.0000000 0.00390625 0.031250000 0.0000000000 0.0000000000
+[46,]  158  0.5  0.00  1.250 0.0000 0.00000 0.000000 0.0078125 0.06250000 0.000000000 0.0000000000 0.0004882812
+[47,]    1  0.0  2.50  0.000 0.0000 0.00000 0.015625 0.1250000 0.00000000 0.000000000 0.0009765625 0.0000000000
+[48,]    0  5.0  0.00  0.000 0.0000 0.03125 0.250000 0.0000000 0.00000000 0.001953125 0.0000000000 0.0000000000
+[49,]   10  0.0  0.00  0.000 0.0625 0.50000 0.000000 0.0000000 0.00390625 0.000000000 0.0000000000 0.0000000000
+[50,]    0  0.0  0.00  0.125 1.0000 0.00000 0.000000 0.0078125 0.00000000 0.000000000 0.0000000000 0.0000000000
+[51,]    0  0.0  0.25  2.000 0.0000 0.00000 0.015625 0.0000000 0.00000000 0.000000000 0.0000000000 0.0000000000
+[52,]    0  0.5  4.00  0.000 0.0000 0.03125 0.000000 0.0000000 0.00000000 0.000000000 0.0000000000 0.0000000000
+[53,]    1  8.0  0.00  0.000 0.0625 0.00000 0.000000 0.0000000 0.00000000 0.000000000 0.0000000000 0.0000000000
+[54,]   16  0.0  0.00  0.125 0.0000 0.00000 0.000000 0.0000000 0.00000000 0.000000000 0.0000000000 0.0000000000
+[55,]    0  0.0  0.25  0.000 0.0000 0.00000 0.000000 0.0000000 0.00000000 0.000000000 0.0000000000 0.0000000000
+[56,]    0  0.5  0.00  0.000 0.0000 0.00000 0.000000 0.0000000 0.00000000 0.000000000 0.0000000000 0.0000000000
+</code></pre>
+",r matlab machine-learning
+4,How do I replace special characters in a URL?,"<p>This is probably very simple, but I simply cannot find the answer myself :( </p>
+
+<p>Basicaly, what I want is, given this string:</p>
+
+<p>""http://www.google.com/search?hl=en&amp;q=c# objects""</p>
+
+<p>I want this output:</p>
+
+<p><a href=""http://www.google.com/search?hl=en&amp;q=c%23+objects"">http://www.google.com/search?hl=en&amp;q=c%23+objects</a></p>
+
+<p>I'm sure there's some helper class somewhere buried in the Framework that takes care of that for me, but I'm having trouble finding it.</p>
+
+<p>EDIT: I should add, that this is for a Winforms App.</p>
+",c# url encoding
+5,How to modify whois contact details?,"<pre><code>function modify(.......)
+{
+  $mcontact = file_get_contents( ""https://test.httpapi.com/api/contacts/modify.json?auth-userid=$uid&amp;auth-password=$pass&amp;contact-id=$cid&amp;name=$name &amp;company=$company&amp;email=$email&amp;address-line-1=$street&amp;city=$city&amp;country=$country&amp;zipcode=$pincode&amp;phone-cc=$countryCodeList[$phc]&amp;phone=$phone"" );
+
+  $mdetails = json_decode( $mcontact, true );
+
+  return $mdetails;
+}
+</code></pre>
+
+<p>using this modify function, displays warning mesage
+</p>
+
+<pre class=""lang-none prettyprint-override""><code>Warning: file_get_contents(https://...@hihfg.com&amp;address-line-1=3,dfgdf,fgdf&amp;city=dfgfd&amp;country=India&amp;zipcode=641005&amp;phone-cc=91&amp;phone=756657) 
+  [function.file-get-contents]: failed to open stream: HTTP request failed!
+  HTTP/1.0 400 Bad request in /home/gfdgfd/public_html/new_one/customer/account/class.whois.php
+  on line 49
+</code></pre>
+
+<p>Please help me, modify contact details..</p>
+",php api file-get-contents
+6,setting proxy in active directory environment,"<p>I am using a machine on which active directory is configured. I am developing an application on the same machine. Now I want to do some performance testing of that application using the JMeter. Now when I start the JMeter proxy server, and set it in browser and try to browse the application I get an error ""Internet Explorer cannot display the webpage"". Am I missing anything?</p>
+",proxy active-directory jmeter
+7,How to draw barplot in this way with Coreplot,"<p>My image is cannot post so  the link is my picture </p>
+
+<p><img src=""http://i.stack.imgur.com/bA7Tz.jpg"" alt=""http://m1.img.libdd.com/farm4/2013/0528/10/959DCB60497E3C74E998958C2F4674DB2E9198943E62C_1280_487.jpg""></p>
+
+<p>I want to draw a chart like the image in iOS app </p>
+
+<p>I use the CorePlot to help me to make this </p>
+
+<p>My Question:</p>
+
+<ol>
+<li><p>How to draw 3 barPlot whit  3 kinds color </p></li>
+<li><p>How to draw a barPlot from the CPTXYAxis  0  to   -4000  in the Upside down way </p></li>
+</ol>
+
+<p>Any help would be appreciate</p>
+
+<p>Thanks all</p>
+",core-plot
+8,How to fetch an XML feed using asp.net,"<p>I've decided to convert a Windows Phone 7 app that fetches an XML feed and then parses it to an asp.net web app, using Visual Web Developer Express. I figure since the code already works for WP7, it should be a matter of mostly copying and pasting it for the C# code behind. </p>
+
+<pre><code>HttpWebRequest request = HttpWebRequest.CreateHttp(""http://webservices.nextbus.com/service/publicXMLFeed?command=routeConfig&amp;a=sf-muni&amp;r="" + line1);
+</code></pre>
+
+<p>That's the first line of code from my WP7 app that fetches the XML feed, but I can't even get HttpWebRequest to work in Visual Web Developer like that. Intellisense shows a create and createdefault, but no CreateHttp like there was in Windows Phone 7. I just need to figure out how to fetch the page, I assume the parsing will be the same as on my phone app. Any help?</p>
+
+<p>Thanks,</p>
+
+<p>Amanda</p>
+",c# asp.net windows-phone-7
+9,.NET library for generating javascript?,"<p>Do you know of a .NET library for generating javascript code? </p>
+
+<p>I want to generate javascript code based on information in my .NET application. I would like to be able to create an AST-like datastructure (using C#) and have it turned into valid javascript. I need to be able to create functions, statements, expressions etc., so I need something more than a JSON serializer - but I guess you could think of this as a (<em>very</em>) generalized JSON serializer.</p>
+
+<p>Do such libraries exist and if so, could you recommend any?</p>
+
+<p>Thank you.</p>
+",.net javascript code-generation
+10,"SQL Server : procedure call, inline concatenation impossible?","<p>I'm using SQL Server 2008 R2 and was wondering if there is another way of writing something like</p>
+
+<pre><code>EXEC dbo.myProcedure (SELECT columnName FROM TableName)
+</code></pre>
+
+<p>or</p>
+
+<pre><code>EXEC dbo.myProcedure @myStringVariable + 'other text'
+</code></pre>
+
+<p>so that these procedure calls <strong>actually work</strong>, <strong>without</strong> putting the whole stuff into a variable first.</p>
+",sql variables parameters procedure calls
+11,How do commercial obfuscators achieve to crash .net Reflector and ILDASM?,"<p>Some commercial obfuscators <a href=""http://www.remotesoft.com/salamander/obfuscator.html"" rel=""nofollow"">claim they can crash ILDASM</a> (and other similar tools such as Reflector)</p>
+
+<p><strong>Any idea on how they achieve that?</strong></p>
+
+<p>As stated in numerous threads here, someone with enough motivation/time/skill will always find a way to read your code (aka if it's runnable, it's decompilable), but it seems to me that most casual code readers won't bother decompiling my code if Reflector can't do it for them.</p>
+
+<p>This level of protection of my IP (ie, protected against anybody but the hardcore guys who would probably find a way around every single trick I would throw at them anyway) would definitely be enough for me.</p>
+",.net obfuscation reflector
+12,Crappy Random Number Generator,"<p>This may sound like an odd question, but where can I find a random number generator that works in C or C++ that is not very good?</p>
+
+<p>Context: I'm creating some tree graph plotting software and testing it by using multi-digit random numbers (so each digit becomes a node in the tree). The random number generator I've been using - which is the one that comes with the GNU C++ compiler - gives me a nice spread of values. That's good, but I want to see how the table looks when the numbers clump together and are less homogenous. </p>
+
+<p>Can anyone suggest a random number generator that has been proven to be not-so-random?</p>
+
+<p>(Oh, any anyone who links to xkcd and/or suggests I just return 4 will get sarcasm in response).</p>
+",algorithm language-agnostic random
+13,Migrate from Mdaemon to postfix,"<p>how can I move Inbox/Sent/Draft from Mdaemon to postfix?
+<br/>
+is there any automatic way? </p>
+",postfix migration mdaemon
+14,Where can I find the LaTeX3 manual?,"<p>Few month ago I saw a big pdf-manual of all LaTeX3-packages and the new syntax. I think it was bigger than 300 pages. I can't find it on the web. </p>
+
+<p>Does anyone have a link?</p>
+",documentation latex3 expl3
+15,Can I stop windows 7 from fading windows on alt-tab?,"<p>When you hit alt tab on windows 7 and stop for a second on a window, it hides all other windows.  Is there any way to tell Windows 7 to use the old classic behavior?</p>
+",windows-7
+16,PHP framework URL conventions,"<p>A lot of frameworks use URL conventions like <code>/controller/action/{id}</code> which is great, but if you need any configuration beyond that, it's up to you to write your own routes.</p>
+
+<p>How would you handle URLs like <code>/users/{id}/friends</code> on the backend? (to list all of a user's friends)</p>
+
+<p>I'm thinking that in the controller, something like this would be appropriate:</p>
+
+<pre><code>class User {
+    function index() {
+        echo 'user index';
+    }
+}
+
+class Friend extends User {
+    function index($user_id) {
+        echo 'friend index';
+    }    
+}
+</code></pre>
+
+<p>Then you would have the following map:</p>
+
+<pre><code>/users              -&gt; User::index()
+/users/{id}         -&gt; User::view($id)
+/users/{id}/friends -&gt; Friend::index($user_id)
+</code></pre>
+
+<p>I wanted to put the Friend class inside the User class but apparently you can't do that in PHP so this is the best I could come up with. Thoughts?</p>
+
+<p>What URL would use for editing your list of friends? <code>/users/{id}/friends/edit</code> could work, but it doesn't seem appropriate, since you should never be editing someone else's friend list. Would <code>/account/friends/edit</code> be a better choice? Where would you put the corresponding code for that? In a friend controller, or a user controller, or a specialized account controller?</p>
+
+<p>Bonus question: which do you prefer? <code>/photos/delete/{id}</code> or <code>/photos/{id}/delete</code></p>
+
+<p><hr /></p>
+
+<p><strong>The answers:</strong></p>
+
+<p>So, what I've gathered from the answers is that if the ""thing"" is complicated (like ""friends"") but doesn't have its own controller, you can give it one without a model, or if it's not, you should stuff it in with whatever it's most closely related to. Your URLs should not influence where you put your code. Most people seem to think you should stick to <code>/controller/action/{id}</code> whever possible, because it's what people are familiar with.</p>
+
+<p>No one really commented on the extended class aside from saying it's ""awkward"". Perhaps FriendList would have been a more appropriate class in that case if I really wanted to separate it out.</p>
+
+<p>Thanks for all the answers :)</p>
+",php url-routing conventions
+17,"What creates "".rds"" temporary files in R?","<p>I'm running a server process in R that is restarted often, and which uses many R packages. Right now, each restart creates a temporary directory that contains a couple of files with the ""rds"" extension. I'd really like to know which R package or feature causes these .rds files to be created (so I can disable that). Thanks!</p>
+
+<p>The filenames look like this:</p>
+
+<p>libloc_%2fusr%2flib%2fR%2flibraryVersion,Priority,Depends,Imports,LinkingTo,Suggests,Enhances,OS_type,License,Archs,Built.rds</p>
+
+<p>and the beginning of the content look like this:</p>
+
+<pre><code>      [,1]         [,2]                 [,3]          [,4]          [,5]                                              
+ [1,] ""KernSmooth"" ""/usr/lib/R/library"" ""2.23-6""      ""recommended"" ""R (&gt;= 2.5.0), stats""                             
+ [2,] ""MASS""       ""/usr/lib/R/library"" ""7.3-13""      ""recommended"" ""R (&gt;= 2.13.0), grDevices, graphics, stats, utils""
+ [3,] ""Matrix""     ""/usr/lib/R/library"" ""0.999375-50"" ""recommended"" ""R (&gt;= 2.10.0), stats, methods, utils, lattice""   
+ [4,] ""base""       ""/usr/lib/R/library"" ""2.13.0""      ""base""        NA                                                
+ [5,] ""class""      ""/usr/lib/R/library"" ""7.3-2""       ""recommended"" ""R (&gt;= 2.5.0), stats, utils""                      
+ [6,] ""compiler""   ""/usr/lib/R/library"" ""2.13.0""      ""base""        NA                                                
+ [7,] ""datasets""   ""/usr/lib/R/library"" ""2.13.0""      ""base""        NA                                                
+ [8,] ""grDevices""  ""/usr/lib/R/library"" ""2.13.0""      ""base""        NA                                                
+ [9,] ""graphics""   ""/usr/lib/R/library"" ""2.13.0""      ""base""        NA                                                
+[10,] ""grid""       ""/usr/lib/R/library"" ""2.13.0""      ""base""        NA                                                
+[11,] ""lattice""    ""/usr/lib/R/library"" ""0.19-26""     ""recommended"" ""R (&gt;= 2.11.0)""                                   
+[12,] ""methods""    ""/usr/lib/R/library"" ""2.13.0""      ""base""        NA                                                
+[13,] ""nnet""       ""/usr/lib/R/library"" ""7.3-1""       ""recommended"" ""R (&gt;= 2.5.0), stats, utils""                      
+[14,] ""spatial""    ""/usr/lib/R/library"" ""7.3-2""       ""recommended"" ""R (&gt;= 2.5.0), graphics, stats, utils""            
+[15,] ""splines""    ""/usr/lib/R/library"" ""2.13.0""      ""base""        NA                                                
+[16,] ""stats""      ""/usr/lib/R/library"" ""2.13.0""      ""base""        NA                                                
+[17,] ""stats4""     ""/usr/lib/R/library"" ""2.13.0""      ""base""        ""methods, graphics, stats""                        
+[18,] ""tcltk""      ""/usr/lib/R/library"" ""2.13.0""      ""base""        NA                                                
+[19,] ""tools""      ""/usr/lib/R/library"" ""2.13.0""      ""base""        NA                                                
+[20,] ""utils""      ""/usr/lib/R/library"" ""2.13.0""      ""base""        NA                                                
+</code></pre>
+",r temporary-files
+18,WPF: multiple controls binding to same property,"<p>Hello<br>
+I'm trying to change several controls' property according to some environment variables and i want to avoid creating a property for each control in the datacontext, so i thought using a converter which sets the property according to control name. Goal is to use one property for all controls:   </p>
+
+<pre><code>&lt;Grid.Resources&gt;
+   &lt;local:NameToStringConverter x:Key=""conv"" /&gt;    
+&lt;/Grid.Resources&gt;
+
+&lt;TextBlock Name=""FordPerfect"" 
+     Text=""{Binding ElementName=""FordPerfect"" Path=Name, Converter={StaticResource conv}, Mode=OneWay}""/&gt;
+&lt;TextBlock Name=""Arthur"" 
+     Text=""{Binding ElementName=""Arthur"" Path=Name, Converter={StaticResource conv}, Mode=OneWay}""/&gt;
+&lt;TextBlock Name=""ZaphodBeeblebrox"" 
+     Text=""{Binding ElementName=""ZaphodBeeblebrox"" Path=Name, Converter={StaticResource conv}, Mode=OneWay}""/&gt;
+</code></pre>
+
+<p>and ...</p>
+
+<pre><code>public class NameToStringConverter : IValueConverter
+{
+    public object Convert(
+     object value, Type targetType,
+     object parameter, CultureInfo culture)
+    {            
+        if (MyGlobalEnv.IsFlavor1 &amp;&amp; ((string)value).Equals(""ZaphodBeeblebrox"")) return ""42""
+        if (MyGlobalEnv.IsFlavor2 &amp;&amp; ((string)value).Equals(""ZaphodBeeblebrox"")) return ""43""
+        if (MyGlobalEnv.IsFlavor1 &amp;&amp; ((string)value).Equals(""Arthur"")) return ""44""
+
+        return ""?"";
+    }
+
+    public object ConvertBack(
+     object value, Type targetType,
+     object parameter, CultureInfo culture)
+    {
+        throw new NotSupportedException(""Cannot convert back"");
+    }
+}
+</code></pre>
+
+<p>I'm sure there's a better and more elegant way... Any ideas?</p>
+",wpf binding
+19,Play framework auto javascript and CSS minifier,"<p>Does anyone know a good play plugin that automatically minifies javascript and css to attach to a production play server?</p>
+
+<p>I've found this one, but I guess there are more out there:</p>
+
+<p><a href=""https://github.com/greenlaw110/play-greenscript"" rel=""nofollow"">https://github.com/greenlaw110/play-greenscript</a></p>
+
+<p>The main problem I see here is that the having javascript being generated from the play side, the plugin would have to detect JS code that gets generated on the fly. Mainly because I'm writing values directly into the javascript like:</p>
+
+<pre><code>function foo${handlerID}(someVar){
+var x = ${some_val};
+
+(...)
+}
+
+var t = foo${handlerID}('bar');
+</code></pre>
+",javascript code-generation playframework minify
+20,"Creating a repetitive node from a hash array with simplexml_load_string, a cycle and variables","<p>=) I need your kindly help to accomplish a simple task. I've been searching but I can't find what I need. It shouldn't be difficult, probably it's a matter of syntax =)</p>
+
+<p>I create a string representing an XML inside the function like this:</p>
+
+<pre><code>$sxe = simplexml_load_string('
+&lt;xmlFile&gt;
+ &lt;item param=""'.$variable.'""&gt;
+  &lt;subitem&gt;'.$var2s.'&lt;/subitem&gt;
+ &lt;/item&gt;
+&lt;/xmlFile&gt;
+');
+</code></pre>
+
+<p>The contents of the variables are plain strings like this <code>abc,def,ghi</code> in both variables which I obtain from a hash this way:</p>
+
+<pre><code>isset($variable);
+$variable="""";
+isset($vars2);
+$vars2="""";
+
+foreach ($hashArray as $stringKey =&gt; $stringValue) {
+ // I separate each result with a comma
+ $variable .= $stringKey."","";
+ $vars2 .= $stringValue."","";
+}
+// Then remove the last comma
+$variable = substr($variable, 0, -1);
+$vars2 = substr($vars2, 0, -1);
+</code></pre>
+
+<p>When I save my XML with <code>$sxe-&gt;asXml('xml/myGreatFile.xml');</code> I got something similar to:</p>
+
+<pre><code>&lt;xmlFile&gt;
+ &lt;item param=""abc,def,ghi""&gt;
+  &lt;subitem&gt;JKL,MNO,PQR&lt;/subitem&gt;
+ &lt;/item&gt;
+&lt;/xmlFile&gt;
+</code></pre>
+
+<p>That was fine but now for my new requirement I need a result similar to this:</p>
+
+<pre><code>&lt;xmlFile&gt;
+ &lt;item param=""abc""&gt;
+  &lt;subitem&gt;JKL&lt;/subitem&gt;
+ &lt;/item&gt;
+ &lt;item param=""def""&gt;
+  &lt;subitem&gt;MNO&lt;/subitem&gt;
+ &lt;/item&gt;
+ &lt;item param=""ghi""&gt;
+  &lt;subitem&gt;PQR&lt;/subitem&gt;
+ &lt;/item&gt;
+&lt;/xmlFile&gt;
+</code></pre>
+
+<p>How can I create this repetitive node???
+I tried to concatenate PHP functions inside the <code>simplexml_load_string</code> string as I did with the variables but seems to be it's not possible:</p>
+
+<pre><code>$sxe = simplexml_load_string('
+&lt;xmlFile&gt;'.
+ // Syntax Error u_u
+ foreach ($hashArray as $stringKey =&gt; $stringValue) {
+  $variable .= $stringKey."","";
+  $vars2 .= $stringValue."","";.
+
+ '&lt;item param=""'.$variable.'""&gt;
+  &lt;subitem&gt;'.$var2s.'&lt;/subitem&gt;
+ &lt;/item&gt;'.
+ }
+.'&lt;/xmlFile&gt;
+');
+</code></pre>
+
+<p>Of course my syntax it's wrong, but I want to create this repetitive node somehow, maybe with a cycle and maybe using my hash array directly instead of passing it to string.</p>
+
+<p>Can somebody please help me???
+THANKS A LOT =) =) =)</p>
+",php xml hash multidimensional-array simplexml-load-string
+21,Are cancer recovery rates the same as they were in 1920?,"<p><strong>Related:</strong> <a href=""http://skeptics.stackexchange.com/questions/3131/have-any-cures-been-invented-since-the-1950s-or-so"">Have any ?œcures??been invented since the 1950's or so?</a></p>
+
+<hr>
+
+<p>I ran across the movie <a href=""http://cutpoisonburn.com/"">Cut Poison Burn</a>, who's abstract is as follows:</p>
+
+<blockquote>
+  <p>Cut Poison Burn is a controversial, eye opening, and sometimes heartbreaking documentary that puts the business of cancer treatment under the microscope. Follow the frustrating journeys of critically ill cancer patients as they try to navigate the confusing and dangerous maze of treatment and encounter formidable obstacles in the ?œcancer industrial complex.?? A compelling critique of the influence of medical monopolies, the power of pharmaceutical companies and government agencies, Cut Poison Burn is essential viewing for anyone and everyone touched by cancer.</p>
+</blockquote>
+
+<p>The movie may advocate (haven't watched the whole thing) some kind of new, pennies-per-session treatment a la <a href=""http://skeptics.stackexchange.com/questions/4611/does-burzynski-have-a-miracle-cancer-cure-being-suppressed-by-the-fda"">Burzynski</a>, or at least <a href=""http://articles.mercola.com/sites/articles/archive/2011/09/19/cut-poison-burn.aspx"">Dr. Mercola is using it to do so</a>.</p>
+
+<p>There are a myriad of claims in the movie, I'm sure (I only watched the first 10min), but I'd like to address one in particular that struck me (<a href=""http://vimeo.com/26874089"">occurs starting at the 7min mark</a>). It is made by Charles B. Simone, M.MS, M.D., founder of the <a href=""http://www.drsimone.com/center.htm"">Simone Protective Cancer Center</a> (transcripted by me; may contain small errors):</p>
+
+<blockquote>
+  <p>From 1920 to the present time, we have made little or no progress in the treatment of adult cancers. So a person who gets prostate cancer or breast cancer today will live as long as a person who got it in 1920. No big change. With all the radiation therapy that began in the 10's and 20's, combination chemotherapy in the 60's, immunotherapy that began in the 70's, PET scans, MRI scans, you name it, billions and billions and billions of research dollar that we've thrown into this whole area of cancer research and treatment... little or no significant progress in the treatment of adult cancers.</p>
+</blockquote>
+
+<p>Is this the case? Has no treatment since 1920 done anything to increase the chance of [long-term] survival of adults who have cancer?</p>
+",medical-science cancer healthcare
+22,Get all +ve number count in LINQ,"<p>I am using the following thing:</p>
+
+<pre><code>int[] a = {1, 2, 3, 0, 5, 0};
+int x = a.Select(b =&gt; b != 0).Count(); 
+</code></pre>
+
+<p>I am getting <strong>6</strong> as the value, how can I get <strong>4</strong> instead of <strong>6</strong>.</p>
+
+<p>Can someone please guid me.</p>
+",c# .net linq
+23,TabNavigator contents width not equals with TabNavigator itself,"<p>The content(Here is VBox) is not align with Tab, put it in another way, the content is stretch out one pixel(The red border is wider than the Tab), as show in the following pic:
+<img src=""http://i.stack.imgur.com/HAF4F.png"" alt=""enter image description here""><br>
+<strong><em>So how to solve the issue?</em></strong></p>
+
+<p>code snippet:</p>
+
+<pre><code>&lt;mx:Application
+        xmlns:mx=""http://www.adobe.com/2006/mxml""
+        layout=""vertical""
+        verticalAlign=""middle""
+        backgroundColor=""white""
+        &gt;
+    &lt;mx:TabNavigator id=""tn""
+                 width=""300""
+                 height=""300""
+                tabWidth=""{tn.width/tn.numChildren}""
+                borderStyle=""solid""
+                borderColor=""#ff0000""
+                backgroundColor=""#ffffff""
+                paddingTop=""0""&gt;
+            &lt;mx:VBox id=""vb1"" width=""100%"" label=""Tab 1"" backgroundColor=""#ffffff""&gt;
+                &lt;mx:Label text=""width:{vb1.width}, height:{vb1.height}"" /&gt;
+            &lt;/mx:VBox&gt;
+            &lt;mx:VBox id=""vb2"" width=""100%"" label=""Tab 2"" backgroundColor=""#00ffff""&gt;
+                &lt;mx:Label text=""width:{vb2.width}, height:{vb2.height}"" /&gt;
+            &lt;/mx:VBox&gt;
+        &lt;/mx:TabNavigator&gt;
+    &lt;/mx:Application&gt;
+</code></pre>
+",actionscript-3 flex flex3
+24,IIS File Size Reporting,"<p>How do I configure IIS to report File Size for browser downloads. As it stands now, all downloads off our site report a null file size, and therefor do not show file size progress.</p>
+
+<p>We're using version 6.</p>
+",iis
+25,C# Converting set flags in a variable of type flag enumeration to an array of integers,"<p>I came up with this piece of code that converts the set flags in a variable of type Flag Enumeration and returns the set flags as integers.
+I'd like to know if this is the best approach.</p>
+
+<p>Example enumeration:
+<pre><code>[Flags]
+enum Status {
+  None = 0x0,
+  Active = 0x1,
+  Inactive = 0x2,
+  Canceled = 0x4,
+  Suspended = 0x8
+}
+</pre></code></p>
+
+<p>The extension method that converts the set flags to array of int that I came up with:</p>
+
+<pre><code>public static class Extensions
+{
+    public static int[] ToIntArray(this System.Enum o) 
+    {
+        return o.ToString()
+            .Split(new string[] { "", "" }, StringSplitOptions.None)
+            .Select(i => (int)Enum.Parse(o.GetType(), i))
+            .ToArray();
+    }
+}</code></pre>
+
+<p>This is how I use it:</p>
+
+<pre><code>Status filterStatus = Status.Suspended | Status.Canceled;
+
+int[] filterFlags = filterStatus.toIntArray();
+
+foreach (int flag in filterFlags) {
+   Console.WriteLine(""{0}\n"", flag);
+}
+</code></pre>
+
+<p>It will output:</p>
+
+<pre><code>4
+8</code></pre>
+
+<p>As you can see, to get this done I'm doing the following:</p>
+
+<ol>
+<li>Converting the variable to string. It outputs something like: Suspended, Canceled</li>
+<li>Splitting that string into an array of strings: { ""Suspended"", ""Canceled"" }</li>
+<li>Converting that string to the enumeration value with Enum.Parse.</li>
+<li>Casting the value to an integer.</li>
+<li>Converting the IEnumerable to int[].</li>
+</ol>
+
+<p>It works, but I just don't think it's the best approach. Any suggestions to improve this bit of code?</p>
+",c# linq string enumeration
+26,Can i use printf in IO monad?,"<p>The stopLoss function causes the following error:</p>
+
+<pre><code>Could not deduce (Text.Printf.PrintfType (m a0))
+arising from the ambiguity check for `stopLoss'
+from the context (Monad m,
+                Text.Printf.PrintfType (m b),
+                Text.Printf.PrintfType (m a))
+bound by the inferred type for `stopLoss':
+  (Monad m, Text.Printf.PrintfType (m b), 
+   Text.Printf.PrintfType (m a)) =&gt;
+   Float -&gt; Float -&gt; Float -&gt; m b
+Possible fix:
+   add an instance declaration for (Text.Printf.PrintfType (m a0))
+
+When checking that `stopLoss'
+has the inferred type `forall (m :: * -&gt; *) a b.
+  (Monad m, Text.Printf.PrintfType (m b),
+   Text.Printf.PrintfType (m a)) =&gt;
+   Float -&gt; Float -&gt; Float -&gt; m b'
+Probable cause: the inferred type is ambiguous
+</code></pre>
+
+<p>The funtion:</p>
+
+<pre><code>stopLoss qty pb lossRate = do
+    let t = qty * pb * (1 + sxf)
+    printf ""Stop Loss at: %.2f\n"" ((pb - (t * lossRate) / qty) :: Float)
+    printf ""Lost Money: %.2f\n""  ((t * lossRate) :: Float)
+</code></pre>
+
+<p>Any suggestion is appreciated!</p>
+",haskell
+27,Is my understanding of MAKE correct?,"<p>Taking the GNU make application as an example, when I create a makefile it is likened to a Visual Studio project file in that it contains the list of files and other items needed to compile an application. The makefile contains the path to the compiler as well as the path to all the files that could possibly be used in the compiling operation. The MAKE application reads the makefile and combines the sources into 1 file which the compiler then reads and converts into the relevant assembly/machine code.</p>
+
+<p>The #include directive is a directive that tells the make file to:
+""include the contents of this file into this point of the larger file that you're making to feed to the compiler then resume with the current file"".</p>
+
+<p>The MAKE application also tells the compiler where to ""emit"" the result of the compile operation once the compiling is completed. In this regard a Visual Studio .csproj file is technically a XML based makefile for a Microsoft specific MAKE application.</p>
+
+<p>Is this understanding of makefiles correct?</p>
+",visual-studio makefile gnu
+28,<p> instead of <br />,"<p>I've been wondering if I can use <code>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</code> (just space in paragraph) instead of <code>&lt;br /&gt;</code> ...</p>
+
+<p>Because I love to keep my code semantic and thought if this is right has been bothering me for a while now. I have seen WYSIWSG editors (TinyMCE) use this, but I still rather ask then do it wrong.</p>
+",html semantic line-breaks
+29,GCC STL bound checking,"<p>How to enable bound checking for <code>operator[]</code> and iterators?</p>
+",c++ gcc stl bounds-checker
+30,SharePoint CAML query - query custom field using freetext predicate,"<p>I have a SharePoint document library with a custom column added.  <code>InternalName</code> is ""my_x0020_new_x0020_column"", <code>Title</code>  is ""my new column yes here it is"".  Type is text.</p>
+
+<p>How can I query this specific column using the <a href=""http://msdn.microsoft.com/en-us/library/ms516214.aspx"" rel=""nofollow"">freetext predicate</a>?  I cannot use <code>DefaultProperties</code> because I don't want to search content.</p>
+
+<p>I have tried this:</p>
+
+<pre><code>    freetext(my_x0020_new_x0020_column, 'sasdfdsf')
+</code></pre>
+
+<p>(Microsoft.Office.Server.Search.Query.InvalidPropertyException), this:</p>
+
+<pre><code>    freetext(""my_x0020_new_x0020_column"", 'sasdfdsf')
+</code></pre>
+
+<p>(Microsoft.Office.Server.Search.Query.InvalidPropertyException), this:</p>
+
+<pre><code>    freetext(""my new column yes here it is"", 'sasdfdsf')
+</code></pre>
+
+<p>(Microsoft.Office.Server.Search.Query.InvalidPropertyException), and even this:</p>
+
+<pre><code>    freetext(my new column yes here it is, 'sasdfdsf')
+</code></pre>
+
+<p>(""Your query is malformed. Please rephrase your query"").</p>
+
+<p>When I specify other columns in the predicate (eg <code>Author</code>, <code>Filename</code>) the query works fine.</p>
+
+<p>Here is my full CAML query:</p>
+
+
+
+<pre><code>&lt;QueryPacket xmlns=""urn:Microsoft.Search.Query""&gt;
+    &lt;Query&gt;
+        &lt;SupportedFormats&gt;&lt;Format&gt;urn:Microsoft.Search.Response.Document:Document&lt;/Format&gt;&lt;/SupportedFormats&gt;
+        &lt;Context&gt;
+            &lt;QueryText type=""MSSQLFT"" language=""en-us""&gt;
+                    select filename, path, fileextension, author, lastmodifiedtime, site from scope() 
+    where 
+        freetext(""my new column yes here it is"", 'sasdfdsf')
+    and  
+        Site = 'http://my.sharepoint.server/personal/mysite/blank_site_1/document library 1' 
+            &lt;/QueryText&gt;
+        &lt;/Context&gt;
+        &lt;Range&gt;
+                &lt;StartAt&gt;1&lt;/StartAt&gt;
+                &lt;Count&gt;500&lt;/Count&gt;
+        &lt;/Range&gt;
+        &lt;EnableStemming&gt;true&lt;/EnableStemming&gt;
+        &lt;TrimDuplicates&gt;false&lt;/TrimDuplicates&gt;
+        &lt;IgnoreAllNoiseQuery&gt;true&lt;/IgnoreAllNoiseQuery&gt;
+        &lt;ImplicitAndBehavior&gt;true&lt;/ImplicitAndBehavior&gt;
+        &lt;IncludeRelevanceResults&gt;true&lt;/IncludeRelevanceResults&gt;
+        &lt;IncludeSpecialTermResults&gt;false&lt;/IncludeSpecialTermResults&gt;
+        &lt;IncludeHighConfidenceResults&gt;false&lt;/IncludeHighConfidenceResults&gt;
+    &lt;/Query&gt;
+&lt;/QueryPacket&gt;
+</code></pre>
+",sharepoint caml custom-fields
+31,MVC4 StyleBundle not resolving images,"<p>My question is similar to this:</p>
+
+<blockquote>
+  <p><a href=""http://stackoverflow.com/questions/9780099/asp-net-mvc-4-minification-background-images"">ASP.NET MVC 4 Minification &amp; Background Images</a></p>
+</blockquote>
+
+<p>Except that I want to stick with MVC's own bundling if I can. I'm having a brain crash trying to figure out what the correct pattern is for specifying style bundles such that standalone css and image sets such as jQuery UI work.</p>
+
+<p>I have a typical MVC site structure with <code>/Content/css/</code> which contains my base CSS such as <code>styles.css</code>. Within that css folder I also have subfolders such as <code>/jquery-ui</code> which contains its CSS file plus an <code>/images</code> folder. Image paths in the jQuery UI CSS are relative to that folder and I don't want to mess with them.</p>
+
+<p>As I understand it, when I specify a <code>StyleBundle</code> I need to specify a virtual path which does not also match a real content path, because (assuming I'm ignoring routes to Content) IIS would then try to resolve that path as a physical file. So I'm specifying:</p>
+
+<pre><code>bundles.Add( 
+    new StyleBundle(""~/Content/styles/jquery-ui"")
+        .Include(""~/Content/css/jquery-ui/*.css""));
+</code></pre>
+
+<p>rendered using:</p>
+
+<p><code>@Styles.Render(""~/Content/styles/jquery-ui"")</code></p>
+
+<p>I can see the request going out to:</p>
+
+<p><code>http://localhost/MySite/Content/styles/jquery-ui?v=nL_6HPFtzoqrts9nwrtjq0VQFYnhMjY5EopXsK8cxmg1</code></p>
+
+<p>This is returning the correct minified CSS response. 
+But then the browser sends a request for a relatively linked image as:</p>
+
+<p><code>http://localhost/MySite/Content/styles/images/ui-bg_highlight-soft_100_eeeeee_1x100.png</code></p>
+
+<p>Which is a <code>404</code>.</p>
+
+<p>I understand that the last part of my URL <code>jquery-ui</code> is an extensionless URL, a handler for my bundle, so I can see why the relative request for the image is simply <code>/styles/images/</code>. </p>
+
+<p>So my question is <strong>what is the correct way</strong> of handling this situation? </p>
+",css jquery-ui asp.net-mvc-4 bundle asp.net-optimization
+32,EntityFramework GroupBy Entity Type,"<p>I have a base entity A, and derived entities: AA, AB, AC, AD</p>
+
+<pre><code>context.A.GroupBy(x =&gt; x.GetType()).Select(x =&gt; new { type=x.GetType(), count = x.Count() });
+</code></pre>
+
+<p>Of course I get error:</p>
+
+<blockquote>
+  <p>LINQ to Entities does not recognize the method 'System.Type GetType()'
+  method, and this method cannot be translated into a store expression.</p>
+</blockquote>
+
+<p>How can i group derived entities by type?</p>
+",c# entity-framework-4
+33,Default parameter specifiers are not permitted in c# desktop application,"<pre><code>private string formatSizeBinary(Int64 size, Int32 decimals = 2)
+        {
+            string[] sizes = { ""Bytes"", ""KB"", ""MB"", ""GB"", ""TB"", ""PB"", ""EB"", ""ZB"", ""YB"" };
+            double formattedSize = size;
+            Int32 sizeIndex = 0;
+            while (formattedSize &gt;= 1024 &amp; sizeIndex &lt; sizes.Length)
+            {
+                formattedSize /= 1024;
+                sizeIndex += 1;
+            }
+            return string.Format(""{0} {1}"", Math.Round(formattedSize, decimals).ToString(), sizes[sizeIndex]);
+        }
+</code></pre>
+
+<p>I got this </p>
+
+<blockquote>
+  <p>""Default parameter specifiers are not permitted""</p>
+</blockquote>
+
+<p>error on <code>""Int32 decimals = 2""</code></p>
+",c# visual-studio-2008 .net-2.0
+34,Will MonoDroid give me a apk which can be sent by email?,"<p>I am a software developer in the C# world.
+I have developed a app using Java and Eclips (to look a little beyond the fence).
+Now I am planing to use Monodroid to develop my apps.</p>
+
+<p>On of the major questions to me is : Will monodroid give me a apk which I can forward to friends without going through the web store?</p>
+
+<p>Regards
+Rainer</p>
+",monodroid apk
+35,"how to prevent a user control to get the datacontext, when it's hidden?","<p>I have a wpf-mvvm application.</p>
+
+<p>I have a base class - baseViewModel...</p>
+
+<p>and two other classes, which inherit this base class</p>
+
+<pre><code> class aVM : baseViewModel
+    {
+       public string a {get;set;}
+    }
+
+    class bVM : baseViewModel
+    {
+      public string b {get;set;}
+    }
+</code></pre>
+
+<p>And another class- as main viewmodel - which bind to main view.</p>
+
+<pre><code>   Class MainVM
+   {
+     public baseViewModel CurrentViewSource  {get;set;}
+   }
+</code></pre>
+
+<p>Also In XAML file (view) - I have two user controls. But the data context of both of these are same public property - CurrentViewSource - this is of type - baseViewModel.</p>
+
+<pre><code>&lt;---MainView start DataContext=""MainVM"" -----&gt;
+
+&lt;---user control 1 satrt-----&gt;
+  &lt;--DataContext = ""CurrentViewSource "" --&gt;
+  // Here CurrentViewSource  is of type aVM
+&lt;---user control 1 end -----&gt;
+
+&lt;---user control 2 start-----&gt;
+  &lt;-- DataContext = ""CurrentViewSource "" --&gt;
+  // Here CurrentViewSource  is of type bVM   
+&lt;---user control 2 end-----&gt;
+
+&lt;---MainView end-----&gt;
+</code></pre>
+
+<p>I need to display one user control  at a time..and other to hide.</p>
+
+<p>As both user controls (UC) uses same data context variable ""CurrentViewSource"",</p>
+
+<p>If UC1 is visible (UC2 hidden) - CurrentViewSource will be of type aVM...and UC2 (even though hidden)..uses this as datacontext ..and is not able to see string b .</p>
+
+<p>...Visual Studio shows some binding issues. please help me</p>
+",wpf mvvm
+36,Find the length of a curve,"<p>Find the length of the following curve:</p>
+
+<p>$r(t) = e^{-t} \sin(t)+e^{-t}\sin(t) i$ for $0 \leq t\leq 1$.</p>
+
+<p>Any ideas?</p>
+",homework calculus polar-coordinates
+37,How to download a URL from internet by netcat?,"<p>I can use <code>netcat</code> to transfer files between two computers. </p>
+
+<pre><code># Server
+nc -l -p 8080 &lt; file
+
+# client
+nc 192.168.1.101 8080 &gt; file
+</code></pre>
+
+<hr>
+
+<p>Can I use <code>netcat</code> to download a URL from Internet like <code>wget</code>?</p>
+",netcat
+38,MMORPG server maintenance,"<p>It seems that most mmorpg games have some regular server maintenance, some every day, some once a week. What is it that they actually have to do, and why is it necessary ? </p>
+
+<p>If you start with such a project what can you do to avoid this ?</p>
+",maintenance
+39,Why does an image path no longer work once I compile my java files into a jar file?,"<p>I have a relatively basic java program which uses a system tray icon. The path I was using while writing the code is as follows <code>""../images/logo.png""</code>. However, when I compile it into a  jar file, the image does not show up in the system tray. Instead, if I change the path to <code>""./images/logo.png""</code>, then the image shows up in the system tray when it's in the jar file form, but not while I'm testing.</p>
+
+<p>It's not a major issue. However, I am curious to know why this inconsistency occurs.</p>
+",java path system
+40,"Creating in c#,c++ and java a strong typed version of a python weak typed structure","<p>In python I have the following:</p>
+
+<pre><code>graph = {}
+
+graph[1] = {}
+graph[2] = {}
+graph[3] = {}
+
+graph[1][3] = graph[3]
+
+graph[2][1] = graph[1]
+graph[2][3] = graph[3]
+
+graph[3][2] = graph[2]
+</code></pre>
+
+<p>this is a structure to represent a graph and that I find nice because its structure is the same as the one of one of it's nodes so I can use it directly to initiate a search (as in depth-first). The printed version of it is:</p>
+
+<pre><code>{1: {3: {2: {1: {...}, 3: {...}}}}, 2: {1: {3: {2: {...}}}, 3: {2: {...}}}, 3: {
+2: {1: {3: {...}}, 3: {...}}}}
+</code></pre>
+
+<p>And it can be used like:</p>
+
+<pre><code>graph[1][3][2][3][2][1][3][2][1][3][2].keys()
+</code></pre>
+
+<p>Now, I'm curious to know how would one implement it in C++, C# and Java without resorting to ""Object"" tricks that would fill the code with ugly casts. For C++ I was thinking in templatemeta programming but that would generate ""finite data types"" when what is needed is something like</p>
+
+<pre><code>map&lt;int,map&lt;int,...&gt;&gt; or map&lt;int,...&gt;
+</code></pre>
+",c# java c++ python strong-typing
+41,implementing Static library in New iphone App,"<p>I have created a static library libTest.a.</p>
+
+<ol>
+<li>i am added that library into my new project.</li>
+<li>After that i added the header search path and Library search path.</li>
+<li><p>And i added -ObjC -all_load in OtherlinkerFlag.</p>
+
+<p>In Simulator everything works fine... In device i am facing a error  ""_OBJC_CLASS_$_Test"", referenced from:
+How to fix this issue ? Pls help me.. </p></li>
+</ol>
+",iphone xcode
+42,Safari only displays PHP code - Firefox asks which app to display same,"<p>Aloha everyone,</p>
+
+<p>I have a class assignment in which I am tasked to build a MySql database, then use PHP to retrieve the contents of the table in the database.  When I attempt to open this in Safari, it only outputs the HTML/PHP code.  Firefox, on the other hand, pops up a window asking me to select an application to work with the code.  Here is the code itself.  Can anyone see where my error lies and/or point me in the right direction to get this actually interpreted and display correctly?  Any and all assistance will be greatly appreciated.</p>
+
+<pre><code>&lt;html&gt;
+ &lt;head&gt;
+  &lt;title&gt;iBud's Sizzling Tracks!&lt;/title&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+ &lt;?php
+  $con = mysql_connct(""localhost"",""*****"",""**************"");
+  if (!$con) {
+    die('Could not connect: ' . mysql_error());
+    }
+
+  mysql_select_db(""music"", $con);
+
+  $result = mysql_query(""SELECT * FROM songs"");
+
+  echo ""&lt;table border='1'&gt;
+  &lt;tr&gt;
+  &lt;th&gt;Song Number&lt;/th&gt;
+  &lt;th&gt;Song Title&lt;/th&gt;
+  &lt;th&gt;Artist&lt;/th&gt;
+  &lt;th&gt;Rating&lt;/th&gt;
+  &lt;/tr&gt;"";
+
+  while ($row = mysql_fetch_array($result)) {
+    echo ""&lt;tr&gt;"";
+    echo ""&lt;td&gt;"" . $row['songNumber'] . ""&lt;/td&gt;"";
+    echo ""&lt;td&gt;"" . $row['songTitle'] . ""&lt;/td&gt;"";
+    echo ""&lt;td&gt;"" . $row['artistName'] . ""&lt;/td&gt;"";
+    echo ""&lt;td&gt;"" . $row['rating'] . ""&lt;/td&gt;"";
+    echo ""&lt;/tr&gt;"";
+    }
+  echo ""&lt;/table&gt;"";
+
+  mysql_close($con);
+  ?&gt;
+ &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+",php firefox safari
+43,High load on X3220 Quad Core Linux Apache server,"<p>I'm seriously in need of help.  My sites are now nearly impossible to use because of massive loads on my server.  I'm already a month late on my mortgage and this really isn't helping my situation.  I've been working on fixing this intermittent load problem for months (never this bad). </p>
+
+<p>I'm suspecting some kind of attack since I'm under DDOS attack a lot!  I've been trying to figure out what is causing the load but I'm afraid I just don't have the experience or knowledge to understand all the data I've been looking at.  I don't even know where to begin or how to test for the large array of attacks out there.</p>
+
+<p>Here's some data you might find useful...</p>
+
+<p>Server:  Xeon X3220 Quad Core 2.4 GHz - Linux, FreeBSD 500 GB HD and 8 Gig of Ram.  Runs Centos release 5.7
+Server Version: Apache/2.2.21 (Unix) mod_ssl/2.2.21 OpenSSL/0.9.8e-fips-rhel5 mod_auth_passthrough/2.1 mod_bwlimited/1.4 FrontPage/5.0.2.2635 mod_qos/9.74</p>
+
+<p>Warning:  All sites are softcore adult sites - mostly fantasy art like elves and amazons.</p>
+
+<p>1)  Sites may run fine for weeks or just days at less than 10 load then start jumping to 40-80 load - no idea why.  Same sites, same mods, same amount of traffic - just WHAM!</p>
+
+<p>2) I get an email almost every day that says:  ""Large Number of Failed Login Attempts from IP (different each time)"".  My webhost (who almost never helps me) told me it was a udp flood or something.</p>
+
+<p>3) I've changed the port for MySQL from the default.  If I ever put it back to the default - I get Loads of over 100 from what must be a constant mysql port flood.</p>
+
+<p>4)  I've reconfigured MYSQL.  Link:  <a href=""http://www.deadlyamazons.com/logs/mycnf.txt"" rel=""nofollow"">http://www.deadlyamazons.com/logs/mycnf.txt</a></p>
+
+<p>5) I have 3 Joomla Jomsocial networks.  I've spent a couple weeks turning all the mods/plugins off, waiting a day and then turning them back on the next day or later if there isn't any change (there hasn't been).  For example, on Thursday I'll turn off videos, on Friday I'll turn off chat.. etc and nothing changes the load appreciably.   </p>
+
+<p>6) Joomla info:  All SEF turned off - sh404sef completely disabled and removed.  Components: Joomla 1.5.22, Jomsocial 2.0.5, Kunena 1/31/2011, HWDMediashare 11/22/2010  and JBolo Chat 2.7.3, Comet Chat or Envolve Chat.   Page Compression is on, Cache is on 15 mins.  </p>
+
+<p>Please click on this forum to see links to all my reports:  <a href=""http://forum.joomla.org/viewtopic.php?f=433&amp;t=706035&amp;p=2777500#p2777500"" rel=""nofollow"">http://forum.joomla.org/viewtopic.php?f=433&amp;t=706035&amp;p=2777500#p2777500</a></p>
+
+<p>4/9/12 - Added this part:      </p>
+
+<p>Hi guys
+I'm back with some more info about my poor server.  The server is currently limping along with a load of between 20 and 60 averaging about 30.</p>
+
+<p>I'll add an incentive to solving my problem: $100 via Paypal for an answer that solves the 'load' problem without the suggestion of buying 1 or more extra servers.  Again, these sites worked fine with even higher traffic on a lower powered server.</p>
+
+<p>I just recompiled apache 2.22 adding eaccelerator and zend-optimizer - no change.  The other mod I included was QOS which keeps the # of connections at a lower level.  I've had QOS working for awhile.</p>
+
+<p>Suggestions and Requests:</p>
+
+<p>Yes I did turn off the port to MySQL I should've mentioned that.</p>
+
+<p>Traffic stats:</p>
+
+<p>March bandwidth:  579.19G</p>
+
+<p>KBytes Mar 2012: 3,194,134,948 | Dec 2011:  3,504,864,832</p>
+
+<p>Visits Mar 2012: 920,619 | Dec 2011:  727,843</p>
+
+<p>Pages Mar 2012: 10,231,430 | Dec 2011:  10,830,700</p>
+
+<p>Files Mar 2012: 89,218,232 | Dec 2011: 102,862,958</p>
+
+<p>Hits Mar 2012: 106,515,577 | Dec 2011: 120,884,007</p>
+
+<p>Videos of Top -C during high load:
+Here are AVIs of 2 'Top -c's that I took when the server was running between 30 and 40 load.</p>
+
+<p>Download 1.5 minute / 30M clip: <a href=""http://www.mediafire.com/?yk3b5xota7l7s30"" rel=""nofollow"">http://www.mediafire.com/?yk3b5xota7l7s30</a></p>
+
+<p>Download 30 second / 10M clip: <a href=""http://www.mediafire.com/?4c2t37i8gmd189w"" rel=""nofollow"">http://www.mediafire.com/?4c2t37i8gmd189w</a></p>
+
+<p>Videos of MySQL Processlist during high load
+Here are AVIs of 2 'Show Processlist' inside CPanel when the server was running between 60-30 load.</p>
+
+<p>Download 2 minute / 40M clip: <a href=""http://www.mediafire.com/?ymmfe8599bx11ho"" rel=""nofollow"">http://www.mediafire.com/?ymmfe8599bx11ho</a></p>
+
+<p>Download 30 second / 10M clip: <a href=""http://www.mediafire.com/?e675p3p1f0l65jt"" rel=""nofollow"">http://www.mediafire.com/?e675p3p1f0l65jt</a></p>
+
+<p>DStat stats:
+4 Sceeencaps taken in a row...
+Links:</p>
+
+<p><a href=""http://www.deadlyamazons.com/logs/dstat01.jpg"" rel=""nofollow"">http://www.deadlyamazons.com/logs/dstat01.jpg</a></p>
+
+<p><a href=""http://www.deadlyamazons.com/logs/dstat02.jpg"" rel=""nofollow"">http://www.deadlyamazons.com/logs/dstat02.jpg</a></p>
+
+<p><a href=""http://www.deadlyamazons.com/logs/dstat03.jpg"" rel=""nofollow"">http://www.deadlyamazons.com/logs/dstat03.jpg</a></p>
+
+<p><a href=""http://www.deadlyamazons.com/logs/dstat04.jpg"" rel=""nofollow"">http://www.deadlyamazons.com/logs/dstat04.jpg</a></p>
+
+<p>Stats placed on Joomla Board that couldn't be seen earlier:</p>
+
+<p>netstat -alntp | grep :80 | wc -l   (1586)</p>
+
+<p>netstat -n | grep :80 | grep SYN |wc -l  (30)</p>
+
+<p>netstat -anp |grep .tcp\|udp. | awk '{print $5}' | cut -d: -f1 | sort | uniq -c | sort -n  (nothing)</p>
+
+<p>netstat -alntp | awk '{print $5}' | cut -d: -f1 | sort | uniq -c | sort -n  - Report: <a href=""http://www.deadlyamazons.com/logs/netstat_alntp_awk_print_5_2.txt"" rel=""nofollow"">http://www.deadlyamazons.com/logs/netstat_alntp_awk_print_5_2.txt</a></p>
+
+<p>netstat -alntp | grep :80  - <a href=""http://www.deadlyamazons.com/logs/netstat_alntp_grep_80_2.txt"" rel=""nofollow"">http://www.deadlyamazons.com/logs/netstat_alntp_grep_80_2.txt</a></p>
+
+<p>Top (command line) <a href=""http://www.deadlyamazons.com/logs/top01_cli.jpg"" rel=""nofollow"">http://www.deadlyamazons.com/logs/top01_cli.jpg</a>
+Top 2 (command line) <a href=""http://www.deadlyamazons.com/logs/top02_cli.jpg"" rel=""nofollow"">http://www.deadlyamazons.com/logs/top02_cli.jpg</a>
+Top (WHM) <a href=""http://www.deadlyamazons.com/logs/top01_whm.jpg"" rel=""nofollow"">http://www.deadlyamazons.com/logs/top01_whm.jpg</a>
+Top 2 (WHM) <a href=""http://www.deadlyamazons.com/logs/top02_whm.jpg"" rel=""nofollow"">http://www.deadlyamazons.com/logs/top02_whm.jpg</a>
+IOStat (command line) <a href=""http://www.deadlyamazons.com/logs/iostat.jpg"" rel=""nofollow"">http://www.deadlyamazons.com/logs/iostat.jpg</a>
+Daily Process Log (WHM) <a href=""http://www.deadlyamazons.com/logs/daily_process_log.jpg"" rel=""nofollow"">http://www.deadlyamazons.com/logs/daily_process_log.jpg</a>
+Process Trace MYSQL (txt) (HUGE!) <a href=""http://www.deadlyamazons.com/logs/trace_mysql.txt"" rel=""nofollow"">http://www.deadlyamazons.com/logs/trace_mysql.txt</a>
+Process Trace MYSQL (rtf) <a href=""http://www.deadlyamazons.com/logs/trace_mysql.rtf"" rel=""nofollow"">http://www.deadlyamazons.com/logs/trace_mysql.rtf</a>
+Process Trace sxyamzn (txt) <a href=""http://www.deadlyamazons.com/logs/sexyamazonscom_indexphp.txt"" rel=""nofollow"">http://www.deadlyamazons.com/logs/sexyamazonscom_indexphp.txt</a>
+Process Trace sxyamzn (rtf) <a href=""http://www.deadlyamazons.com/logs/sexyamazonscom_indexphp.rtf"" rel=""nofollow"">http://www.deadlyamazons.com/logs/sexyamazonscom_indexphp.rtf</a>
+Process Trace sleepps (txt) <a href=""http://www.deadlyamazons.com/logs/sleeppeepscom_indexphp.txt"" rel=""nofollow"">http://www.deadlyamazons.com/logs/sleeppeepscom_indexphp.txt</a>
+Process Trace sleepps (rtf) <a href=""http://www.deadlyamazons.com/logs/sleeppeepscom_indexphp.rtf"" rel=""nofollow"">http://www.deadlyamazons.com/logs/sleeppeepscom_indexphp.rtf</a></p>
+
+<p>Any help would be appreciated.</p>
+",linux apache2 joomla
+44,Jquery add title attribute with data from JSON call,"<p>I'm trying to dynamically add titles to a number of images using values obtained from a JSON call.</p>
+
+<p>This is what I have so far </p>
+
+<pre><code>$("".watch_view img"").each(function() {
+$.ajax({
+    url: 'http://gdata.youtube.com/feeds/api/videos/T2aMBeeM4yw?v=2&amp;alt=jsonc',
+    dataType: 'json',
+    success: function(json) {   
+    song_title = json.data.title;// song title is retrieved without issue                           
+    }   
+    });
+
+   alert(song_title); //this to be removed
+   //the title attr below is only added when the above alert is in place    
+   $(this).attr('title', song_title);
+   $(this).attr('alt', ""This works everytime""); 
+   });
+</code></pre>
+
+<p>
+</p>
+
+<p>Now the above works but only when I ""stop"" the process by adding in the unwanted alert - I can only guess that the code is executing before it has retrieved the data from the JSON call (?) and the alert enables it to catch up.</p>
+
+<p>I imagine I need another function that executes after the JSON call or for the code to go into the 'success' function but I'm not sure how to keep hold of the 'this' element if that is the case.</p>
+
+<p>Help and advice greatly appreciated.</p>
+
+<p>Thanks</p>
+
+<p>Chris</p>
+",jquery json attributes each
+45,"How and which technology (.NET-WinForms,C++-MIDI MFC based) is the best to use for reading and writing COM Port data?","<p>I need to solve a problem for reading and writing COM Port data from MIDI application.</p>
+
+<p>1)The software must be able to handle multiple MIDI In and MIDI Out ports simultaneously sending and receiving MIDI data without choking off performance for the application (this will include audio as well).</p>
+
+<p>I am using a modified version of the old Mabry MIDIIO already, MFC COM server in a shared .dll, written in c++.  It is currently be compiled down into an .ocx and requires COM registration.  It is working in the Visual Studio 2008 environment</p>
+
+<p>But A total rewrite or different solution is a viable option but of course with the fastest, most inexpensive and easiest to maintain solution.</p>
+
+<p>Here are the questions:</p>
+
+<p>1)What direction would you recommend COM control or .net control, .dll, multi-thread, something else and why?  If anybody having idea about MABRY Control, Do you think the Mabry control could be reworked into my new solution or would it be better to just take a totally different direction?</p>
+
+<p>2)What is the recommendation?  an unmanaged or managed solution?</p>
+
+<p>Regards
+Usman</p>
+",.net mfc midi comm
+46,Data-URI's and caching,"<p>I read <a href=""http://en.wikipedia.org/wiki/Data_URI_scheme"" rel=""nofollow"">this</a> on Wikipedia:</p>
+
+<blockquote>
+  <p>Data URIs are not separately cached from their containing documents (e.g. CSS or HTML files) so data is downloaded every time the containing documents are redownloaded.</p>
+</blockquote>
+
+<p>Does this mean that my code is downloaded every single time a page is refreshed or whenever the user clicks on a navigation link? What can I do to cache the data-uri's?</p>
+
+<p>ps - i'm just talking about 20 or so small png files (mostly silk icons but 2 * 16KB files as well)</p>
+",css data-uri
+47,is ssl secure on both ways?,"<p>I know that certificates that are sent by the server cant be faked (still there is MD5 collisions but costy) but what about faking the client ..
+in man in the middle attack:
+cant we tell the server that we are the legitimate client and take data from that server manipulate it then encrypt it again with legitimate client public key ? how does the client be sure that the data came really from the server ?</p>
+
+<p>in theory .. can we inject any data into the response sent by the server to the client ?..</p>
+",ssl https
+48,Loadable Kernel Module & Notification Manager,"<p>I've successfully created and installed a loadable kernel module for my development phone.</p>
+
+<p>Does anyone know how to make a status bar notification to the user (i.e. Notification / NotificationManager) from the kernel? </p>
+
+<p>I understand how to create a service and use Notification / NotificationManager to generate a status bar notification. But how do you make a notification when the event is in the kernel? I'm having a problem bridging the gap. </p>
+
+<p>A similar functionality I'm trying to achieve is like connecting to the phone via USB. When the phone detects a USB connection, a status bar notification is produced (and if debugging is enabled, it will tell you that too). How is this done? At some point the kernel sends a signal, but how is the notification generated?</p>
+
+<p>The approach I'm going to try and implement is using the NDK. Create a library that listens/waits for a signal from my LKM, then use then create an app that's just a background service that notifies when the signal is received. </p>
+
+<p>Is there a more elegant solution for this? And I'd like to not have to recompile the AOSP. </p>
+
+<p>Thanks!</p>
+",android android-ndk android-source
+49,Upgrade iPhone 3GS from iOS 4.2.1 to 4.3.x,"<p>Hi folks I have a iPhone 3GS at 4.2.1 and want to upgrade it to 4.3.x for testing. I have read some articles about it but it seems that those are too old and cannot work. </p>
+
+<p>Does anyone have some experience in doing this or does apple provide tutorials for developers in this?</p>
+
+<p>A lot of thanks.</p>
+",iphone ios upgrade ios4.3 iphone-3gs
+50,How to control error keys using ModelStateWrapper=,"<p>I?™m using the a service layer with a ModelStateWrapper as shown <a href=""http://www.asp.net/mvc/tutorials/validating-with-a-service-layer-cs"" rel=""nofollow"">here</a>.</p>
+
+<p>What?™s he proper way to control the error keys to use when validating in the service layer so they correspond to the input names in my views?</p>
+
+<p>e.g. I have the following ViewModel for a customer:</p>
+
+<pre><code>public class CustomerViewModel
+{
+    public string Name { get; set; }
+    /*??/
+}
+</code></pre>
+
+<p>And the following ViewModel for some use case?™s View (the user can create two customers on the fly in this use case by entering their names):</p>
+
+<pre><code>public class SomeOtherUseCaseViewModel
+{
+    public CustomerViewModel BuyingCustomer { get; set; }
+    public CustomerViewModel SellingCustomer { get; set; }
+    /*??*/
+}
+</code></pre>
+
+<p>Which I use in the View like this:</p>
+
+<pre><code>&lt;!-- ??--&gt;
+&lt;%: Html.EditorFor(model =&gt; model.BuyingCustomer.Name) %&gt;
+&lt;%: Html.ValidationMessageFor(model =&gt; model.BuyingCustomer.Name) %&gt;
+&lt;!-- ??--&gt;
+&lt;%: Html.EditorFor(model =&gt; model.SellingCustomer.Name) %&gt;
+&lt;%: Html.ValidationMessageFor(model =&gt; model.SellingCustomer.Name) %&gt;
+</code></pre>
+
+<p>In my customer service I?™ve the following validation method which gets called when creating the customer (note that this is a different Customer class, this is a domain class):</p>
+
+<pre><code>public bool ValidateCustomer(Customer customer)
+{
+    /* Check if there is another customer with the same name */
+    if (/*??/)
+    {
+        _validationDictionary.addError(?œName?? ?œThere is another customer with the same name??; //the _validationDictionary holds the ModelStateWrapper
+        return false;
+    }
+}
+</code></pre>
+
+<p>Do you see my problem?</p>
+
+<p>Depending on the View, the error should be added with the key <code>?œBuyingCustomer.Name??/code> or <code>?œSellingCustomer.Name??/code> (or eventually there will be two errors, one with each key) instead of just ?œName?? otherwise the framework won?™t properly highlight the fields and show the errors.</p>
+
+<p><strong>What is the proper way to solve this situation neatly?</strong> I don't want to pass the ""error key prefix"" to the service layer, because that's a UI concern and not a service layer concern, (right?).</p>
+",asp.net-mvc design modelstate service-layer
+51,Avoid page break in theorem,"<p>I have a theorem which is half of it on another page, as I do for you automatically (without <code>\newpage</code>) get full theorem on the next page?</p>
+
+<pre><code>\documentclass[a4paper]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+\usepackage{theorem}
+\newtheorem{teo}{Teorema}[chapter]
+
+\begin{document}
+\lipsum[1-5]
+
+\begin{teo}
+\lipsum[1]
+\end{teo}
+
+\end{document}
+</code></pre>
+
+<p><img src=""http://i.stack.imgur.com/Hy6nz.png"" alt=""here""></p>
+
+<p>I have the left and I need right automatically (without <code>\newpage</code>).</p>
+",page-breaking theorems
+52,Why unit tests should not use database?,"<p>Reading an article <a href=""http://www.javaranch.com/unit-testing.jsp"" rel=""nofollow"">Evil Unit testing</a>, I am not exactly sure WHY the unit tests should never use DB, network or file systems. What if it an network app?</p>
+",unit-testing testing theory
+53,How to show that $\lim_{n\to \infty} f_n(x) = 0$.,"<p>I hate to admit it, but I don't know how to begin solving this problem: </p>
+
+<p>Let $f\in L^1(\mathbb R)$. Let $\displaystyle f_n(x) = \frac{f(nx)}{n},~n\geqslant 1$. Then $\displaystyle \lim_{n\to \infty} f_n(x) = 0$ for almost every $x\in \mathbb{R}$. </p>
+
+<p>Please this is not a home problem, so hints and full solutions will be very much appreciated.</p>
+",real-analysis analysis measure-theory
+54,How to tell emacs to open .h file in C++ mode?,"<p>What lines should I add to my _emacs (on Windows) file to have it open .h files in C++ mode?  The default is C mode.</p>
+
+<p>Thanks,</p>
+
+<p>kris</p>
+",emacs
+55,How can I modify keyboard shortcuts for Firefox?,"<p>I recently started using Firefox as my primary web browser, and I would like to change some of the default keyboard shortcuts, especially the ones used to switch between tabs. Can this be done?</p>
+
+<p>I took a peek through the Firefox directory in ""Application Support"", as well as the application bundle itself, but nothing jumped out. Google searches have also proved fruitless.</p>
+
+<p>Any help is appreciated!</p>
+
+<p><em><strong>Update:</em></strong> I'm running Firefox version 3.6 for Mac OS 10.6.2</p>
+",mac firefox keyboard-shortcuts customization
+56,Create 8.3 name for an existing directory,"<p>I have a machine that initially had <a href=""http://support.microsoft.com/kb/121007/"">8.3 filename creation disabled</a>.  However, this was causing issues with some legacy software, so it was re-enabled.  I'm wondering if it's possible to go back and ""add"" 8.3 filenames to certain existing directories.  </p>
+
+<p>For example, say I have a directory named ""C:\name with spaces"" and I get the following output when I run ""dir /x"":</p>
+
+<pre><code>C:\&gt;dir /x
+ Volume in drive C has no label.
+ Volume Serial Number is 6873-65B8
+
+ Directory of C:\
+
+04/09/2010  01:57 PM    &lt;DIR&gt;                       name with spaces
+...
+</code></pre>
+
+<p>I'd like to somehow add an 8.3 name for the directory without recreating it, and then get the following:</p>
+
+<pre><code>C:\&gt;dir /x
+ Volume in drive C has no label.
+ Volume Serial Number is 6873-65B8
+
+ Directory of C:\
+
+04/09/2010  01:57 PM    &lt;DIR&gt;          NAMEWI~1     name with spaces
+...
+</code></pre>
+
+<p>I tried the 'rename' command but it didn't do the trick.</p>
+",ntfs filenames
+57,"<textarea/> tag ""swallows"" html","<p>This is a very strange problem I've been struggling with for a few days. At first I thought it was related to something in our application, but I've stripped it down to the simplest html page and it's still happening. Basically anytime I add a  tag to a page the html after it gets rendered as it's value.  fixes the issue, but I don't understand why. I'm at a loss here, it has to be something really simple that I just don't know.</p>
+
+<p>In the following example the paragraph tags show up as the value of the textarea. </p>
+
+<p>I'm using IE8.</p>
+
+<pre><code>&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;About&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;textarea/&gt;
+        &lt;p align=""center""&gt;
+            test
+        &lt;/p&gt;
+        &lt;p align=""left""&gt;
+           test
+        &lt;/p&gt;
+
+
+&lt;/body&gt;
+</code></pre>
+
+<p></p>
+",html
+58,SSRS limit length of text but keep full words,"<p>In my table I have essentially 2 columns (many more but there is an obvious left side and right side). One of the fields, FIELD1, on the left side comes from a LookupSet() and each ID can have two items from FIELD1. Using a join(lookupset(), vbcrlf) I am able to get both values for the ID and put it into one cell in the table. This works but with the vbcrlf, the row height is increased. This causes a problem because there is data on the right side which cannot have additional space between it.</p>
+
+<p>I did a split(join(lookupset())).getValue(0) for the first row and then the row below it for value 1. With some iif statements to check errors etc, this works.</p>
+
+<p>One problem I solved is that the values for FIELD1 can be longer than the width of the cell, but will not take up more than two. I was able to do some substring magic in oracle like:</p>
+
+<pre><code>SELECT ID, SUBSTR(FIELD1, 1, 70) FROM....
+UNION
+SELECT ID, SUBSTR(FIELD1, 70) FROM ...
+</code></pre>
+
+<p>using sorting, I am able to get up to 4 rows of data per ID which I will be able to split the lookupset and get each value into the table.</p>
+
+<p>My last problem, and hopefully someone can help with is that when I ge the substring, It can cut off words and the next row will start with the rest of the word.
+Is there a way, possibly using a regex to make sure to keep words in tact, but also to ensure that the total length returned is &lt; some number of characters? I am happy to abandon any part of the approach i am currently taking if I am off track.</p>
+",oracle reporting-services plsql
+59,Play RTSP through VLC in VS2010 on 64bit machine,"<p>I am trying to play an RTSP stream on a Win form application on a 64 bit windows machine. I have added the VLC player as a COM component. But when i even try to play a stored video file it does not play. </p>
+
+<pre><code>axVLCPlugin1.addTarget(""C:\\wildlife.wmv"",
+                       null,
+                       AXVLC.VLCPlaylistMode.VLCPlayListReplaceAndGo,
+                       0);
+axVLCPlugin1.play();
+</code></pre>
+
+<p>Am I missing anything?</p>
+",c# visual-studio-2010 plugins rtsp vlc
+60,How to get Annotation from TFS using PowerShell?,"<p>This document describes how to get the Annotation of a file from TFS: <a href=""http://msdn.microsoft.com/en-us/library/bb385979.aspx"" rel=""nofollow"">http://msdn.microsoft.com/en-us/library/bb385979.aspx</a></p>
+
+<p>I am interested in obtaining the Annotation of a file using PowerShell. Any ideas if this is possible and if so, how one would go about doing it?</p>
+",powershell tfs annotations
+61,How can I can read and modify data from XML file?,"<p>Please give me the simplest way to read or modify the XML file data?</p>
+
+<p>Currently I tried this but it throws an exception. My current code is:</p>
+
+<pre><code> XmlDocument xml = new XmlDocument();
+ xml.Load(""server.xml"");
+
+ XmlNodeList serverlist = xml.SelectNodes(""//server"");
+ foreach (XmlNode servernodes in serverlist)
+ {
+      string server_address = servernodes.SelectSingleNode(""addresh"").InnerText;
+      string server_uname = servernodes.SelectSingleNode(""username"").InnerText;
+      string server_psw = servernodes.SelectSingleNode(""password"").InnerText;
+ }
+</code></pre>
+
+<p>my XML is below:</p>
+
+<pre><code>&lt;?xml version=""1.0"" ?&gt;
+&lt;server&gt;
+&lt;addresh&gt;localhost&lt;/addresh&gt;
+&lt;username&gt;myuser&lt;/username&gt;
+&lt;password&gt;mypassword&lt;/password&gt;
+&lt;/server&gt;   
+</code></pre>
+
+<p>and Exception is:</p>
+
+<blockquote>
+  <p>NullReference Exception: ""Object reference not set to an instance of an object."" </p>
+</blockquote>
+
+<p>What should i do?</p>
+",c# .net xml exception-handling
+62,align the tab control to the right,"<p>is there any way that i can align the tab control to the right?
+by default, the tabs are to the left. can i change it to the right or centre.??</p>
+",.net winforms
+63,How to get the twitter picture of a user?,"<p>I am making a website in which people put in a twitter username. Now I want to load the twitterimage of the name that is put in. I have searched on the internet already but can't find a good easy way to implement this. Do i need to use some fancy twitter api or something? Any simple API's? (it is only for a simple site) or URL's with name as variable in it?</p>
+",twitter twitter-api
+64,Assistance with a backup solution.,"<p>I am currently needing to create a backup of something on my server. I zip the entire folder and it's about 1.5gb big...it has to be backed up every hour....</p>
+
+<p>Alright so the size of the backup is getting bigger and bigger every day. So I need a way to backup better.</p>
+
+<p>I'd like some suggestions on how to do this.</p>
+
+<p>But what I was thinking was that every 3 days the third day backups are deleted. But one is kept. </p>
+
+<p>This would mean that my backup total is 73.5gb after 3 days of backups. Then I want to keep that third day backup for 1 week. So on the 10th day it is deleted. So about 85gb of total data is backed up.</p>
+
+<p>Ever hour for 2 days and then 1 hour from every day after that 8 times.</p>
+
+<p>I was thinking the easiest way to do it would be move that 1 hour backup from the third day to a new folder and have a separate script for it that is run daily. However I am not sure how I would go about picking out one of them out from the others and how to delete the ones older than 2 days. </p>
+
+<p>I would likely run these scripts as cronjobs and set them to daily.</p>
+
+<p>I use centOS 64bit 5.7, any tips would be great....incremental backups are NOT an option.</p>
+
+<p>Also, is there an easy way to sync my home PC to a website to download the newest file on there at a particular time? I want this for the backups. I've seen some nice php webpages where it makes a simple filemanager to download files from...perhaps something like this?  </p>
+",centos backup shell cron
+65,Custom provider exception: No member with username 'xxxxxxx' exists,"<p>I'm trying to create a new member on my website using the System.Web.Profile class. I keep getting the exception No member with username 'xxxxxxx' exists. How can I structure the code SO I don't receive this exception?</p>
+
+<p>Thanks in advance.</p>
+
+<pre><code>public static MemberProfile GetUserProfile()
+        {
+            return Create(Membership.GetUser().UserName) as MemberProfile;
+        }
+
+
+//snippet from the OnCreatingUser event
+myproject.Members.MemberProfile mp = myproject.Members.MemberProfile.GetUserProfile(strUserName);
+                        if (mp != null)
+                        {
+                            mp.AuthGuid = newUserGuid;
+                            mp.secretQuestion = ((DropDownList)cuw.CreateUserStep.ContentTemplateContainer.FindControl(""Question"")).Text;
+                            mp.secretAnswer = ((TextBox)cuw.CreateUserStep.ContentTemplateContainer.FindControl(""Answer"")).Text;
+                            mp.isLocked = true;
+                            mp.isApproved = false;
+                            mp.Save();
+
+                        Roles.AddUserToRole(strUserName, ""Retail"");
+</code></pre>
+",asp.net asp.net-profiles
+66,What do the parentheses mean when you're declaring/calling a property?,"<p><strong>Example 1</strong>:</p>
+
+<pre><code>function a(){
+  return ""ok"";
+}
+
+function b(){
+  this.c = a;
+}
+
+var d = new b();
+alert(d.c()); // Result ""ok"".
+</code></pre>
+
+<p><strong>Example 2</strong>:</p>
+
+<pre><code>function b(){
+    this.c = a();
+}
+
+var d = new b();
+alert(d.c); // Result ""ok"".
+</code></pre>
+
+<p>What do the parentheses mean in this case?</p>
+",javascript
+67,Remove left padding for a WPF ListBoxItem with GroupStyle defined for its ListBox,"<p>I have a WPF ListBox with several headings. I acheived this by having a GroupStyle in which I define how each header will look:</p>
+
+<pre><code>&lt;ListBox DataContext=""{StaticResource MyGroups}"" ItemsSource=""{Binding}""&gt;
+    &lt;ListBox.GroupStyle&gt;
+        &lt;GroupStyle&gt;
+            &lt;GroupStyle.HeaderTemplate&gt;
+                &lt;DataTemplate&gt;
+                    &lt;!-- my header stuff --&gt;
+                &lt;/DataTemplate&gt;
+            &lt;/GroupStyle.HeaderTemplate&gt;
+        &lt;/GroupStyle&gt;
+    &lt;/ListBox.GroupStyle&gt;
+
+    &lt;!-- ListBox.ItemTemplate.. not shown --&gt;
+&lt;/ListBox&gt;
+</code></pre>
+
+<p>Somehow, this causes the individual ListBoxItems to be slightly ""indented"" under their respective headers (Removing the GroupStyle removes the indentation, along with all the headers though).</p>
+
+<p>I sort of see why they would want them indented by default, but is there anyway to remove that small left padding? I have tried to define a style for ListBoxItem to set the Padding = 0, but the outcome is the same.</p>
+",c# .net wpf listbox
+68,How to force the caller of the class to catch exception?,"<p>Inside my class I have a private variable that my methods use which has an exception that has to be caught.</p>
+
+<p>How can I force the callee to handle the exception and not have me do it in my code?</p>
+
+<pre><code>public class SomeLibImpl extends SomeLib {
+
+   private Mongo _mongo = new Mongo();
+
+}
+</code></pre>
+
+<p>Where Mongo throws a <code>UnknownHostException</code> that I have to handle.</p>
+
+<p>If this is something I shouldn't be doing and there is a better way please tell me, but I also want to know how to force the callee of the class to handle the exception.</p>
+
+<p>I thought I would do this:</p>
+
+<pre><code>public class SomeLibImpl extends SomeLib throws UnknownHostException {
+  // ..
+}
+</code></pre>
+
+<p>But that doesn't compile.</p>
+",java exception-handling
+69,Entity Framework model-first design not won't let you edit the table mappings?,"<p>If we've been using an Entity Framework 4 model for some time, and we eventually want to switch the underlying database to a different vendor's product (say, from SQL Server to MySQL), is it simple to adjust the table and column mappings in the entity model without needing to update any of the entity class code?</p>
+
+<p>We're trying to design code that is as database agnostic as possible, so I'd like to know in advance how much trouble we're in for if we ever switch our databases around.  Ideally, we'd like to not have to touch our applications that use our entity classes.  I can't seem to find any way in the entity designer or XML editor to adjust the underlying database column names without it giving me an error.</p>
+
+<p>(I can, however, edit the entity's property names in the designer while leaving the database column names alone, but that's the opposite of what I need.)</p>
+
+<p>Thanks!</p>
+",entity-framework
+70,"How to change the order of options in ""run as"" menu in eclipse?","<p>I mainly develop for Android in Eclipse. I used to run my app in with shortcut ""CTRL+F11"" which was the same as clicking ""run as android application"" in menu.
+Then i installed some eclipse plugins for webservices and now when i press ""CTRL+F11"", it calls ""run on server"" because this is the first option in ""run as"" menu. </p>
+
+<p>How can i change this so the default option for run as would be ""run as android application""?</p>
+",eclipse keyboard-shortcuts run
+71,MVC 3 Wizard via JavaScript unsafe?,"<p>I stepped over the following tutorial:
+<a href=""http://afana.me/post/create-wizard-in-aspnet-mvc-3.aspx"" rel=""nofollow"">http://afana.me/post/create-wizard-in-aspnet-mvc-3.aspx</a></p>
+
+<p>Since it looks pretty nice, I'm asking myself if making the complete wizard in JavaScript just like that is a good/safe idea?</p>
+",javascript asp.net-mvc-3 security mvc
+72,Silverlight Isolated Storage Best Practices?,"<p>I'm just starting to really get into Silverlight development and I have a certain use case where I need to store a couple collections of objects or strings for a specific user's ""sessions"".
+I want this to be user specific and accessible throughout the Silverlight application.</p>
+
+<p>My first thought was to add static properties on the App.xaml.</p>
+
+<p>On user login, I'm retrieving lists of objects that this user has access to from an API call, then storing those in the static properties of the App.xaml.</p>
+
+<p>Then I can access those properties throughout the xaml pages.</p>
+
+<p>My question is, is this truly user specific?
+Is this best practice?
+Should I use isolated storage in this case instead?
+What are the limitations of isolated storage?
+Isolated storage is, by nature, user specific, correct?</p>
+
+<p>Thanks</p>
+",c# silverlight session isolatedstorage
+73,jQuery Mobile Clickhander won't work for an instance of a custom object,"<p>I am setting a click handler for an anchor tag in jQuery mobile with via reference to the handler function inside the anchor tag (I need to do it this way for reasons that are cumbersome to get into). This approach works fine if I use a string or an integer as the function parameter but if I try to input an instance of an object (as illustrated below) it doesn't work. Any advice on what I may be doing wrong would be greatly appreciated.</p>
+
+<p>
+</p>
+
+<pre><code>&lt;head&gt;
+    &lt;meta name=""viewport"" content=""width=device-width, initial-scale=1""&gt;
+    &lt;meta http-equiv=""Content-Type"" content=""text/html; charset=UTF-8"" /&gt;
+    &lt;script type=""text/javascript"" src=""http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js""&gt;&lt;/script&gt;
+    &lt;link rel=""stylesheet"" href=""http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.css""
+    /&gt;
+    &lt;script src=""http://code.jquery.com/jquery-1.7.1.min.js""&gt;&lt;/script&gt;
+    &lt;script src=""http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.js""&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;script&gt;
+        $(document).ready(function () {
+
+            function testObject() {
+                this.param1;
+            }
+
+            function maketestObject(param1) {
+                var result = new testObject();
+                result.param1 = param1;
+                return result;
+            }
+
+            var i = 0;
+            var html;
+            for (i = 0; i &lt;= 5; i = i + 1) {
+                var testInstance = maketestObject(""test param"");
+                html += '&lt;li&gt;&lt;a href=""#"" data-theme=""a"" onclick=""clickHandler(' + testInstance + '); return false;"" rel=""external"" data-role=""button""&gt;click test1&lt;/a&gt;&lt;/li&gt;';
+            }
+
+            $(""#testList"").append(html);
+            $(""#testList"").listview(""refresh"");
+
+        });
+
+        function clickHandler(e) {
+            alert(e);
+        }
+    &lt;/script&gt;
+    &lt;div data-role=""page"" class=""type-interior""&gt;
+        &lt;div id=""main"" data-role=""content""&gt;
+            &lt;ul id=""testList"" data-role=""listview""&gt;&lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+</code></pre>
+
+<p></p>
+",jquery-mobile event-handling click anchor
+74,comparing temporal sequences,"<p>I'm trying to wrap my head around this task and wondering if there is a standard way of doing this or some libraries that would be useful.</p>
+
+<p>Certain events are tracked and timed at several data sources S1 ... SN. The recorded information is the event type and timestamp. There may be several events of the same type sequentially or they may be intermittent. There could be ""missing"" events - i.e. when one of the sources misses it, and, vice versa, when a source introduces a ""false positive"". There is typically a time difference between observations of the same event at different sources. This time difference has a constant component due to physical location of the sources but may also have a varying component introduced by network latency and other factors.</p>
+
+<p>I need to find an algorithm that would find the optimal maximum time interval that should be used to group the observations at all sources in a single ""observed event"" and allow detection of the missing events and false positives.</p>
+
+<p>I am wondering if the solution is really somewhere in the statistics field rather than algoritghms. Any input would be much appreciated.</p>
+",temporal-database temporal temporal-difference
+75,session object returning null,"<p>i have created a login page for my project ""student information system"" which contain text fields username,userid and password.i tried to store the value of username and userid in session object and use it in another page but it is returning null value.</p>
+",java jsp session-state
+76,Reference a valid Facebook user profile,"<p>The site is set to WordPress 3.4.1, annexed widget Facebook for WordPress</p>
+
+<p>Later I changed the name to the Facebook user profile, and now get an error that I need to reference a valid Facebook user profile.</p>
+
+<p>What changes do I have to make so that data-href will be the correct (new) Facebook user profile? Can you guide me? </p>
+",facebook wordpress
+77,Why can't I observe meta+i/meta+b in Safari?,"<p>Please refer to this: <a href=""http://jsfiddle.net/r3ukS/1/"" rel=""nofollow"">jsfiddle</a></p>
+
+<p>As far as I can tell, this only applies to Safari on a Mac, so if you're using something other than that feel free to try it, but you probably won't notice any issue.</p>
+
+<p>In an application I'm creating I need to observe command/meta+b &amp; command/meta+i so I can make text either bold or italic. It works fine in chrome, but I can't observe those key combinations in Safari. </p>
+
+<p>Is this a bug with safari? Am I overlooking something? Any help would be appreciated. Thanks!</p>
+
+<p><strong>EDIT:</strong></p>
+
+<p>If the JSfiddle link doesn't give you the results I'm describing, then copy and paste the code below into a fresh jsfiddle and try the same experiment. Doing it this way ensures for me that the observe will not work. Regardless of the way it's applied in my application it refuses to observe the keystrokes.</p>
+
+<pre><code>document.observe('keydown', function(e) {     
+     if(e.metaKey) alert('hi');
+});??</code></pre>
+",javascript javascript-events prototypejs
+78,Creating variables with index (using counters),"<p>Is there a way to add an index to a command? For example:</p>
+
+<pre><code>\newcounter{count}
+\loop&lt;condition&gt;
+  \def\var\Roman{count}{some data}
+\repeat
+</code></pre>
+
+<p>The <code>\var\Roman{count}</code> should become the variable <code>\varI</code>, <code>\varII</code>, <code>\varIII</code> and so on.</p>
+
+<p>Background: I need to get some data from external files and store it into variables (which I will later use to create a document). Normally every <code>\varI</code> should be the same as every <code>\varII</code>, but I need to check whether it really is the case or not. If not I should return a warning or error.</p>
+
+<hr>
+
+<p>Solution for the first problem is in the comments, but I have a second problem.</p>
+
+<p>Suppose I wrote this:</p>
+
+<pre><code>\newcommand\addindex[3]{  % #1 as name of var, #2 as index and #3 as content
+  \expandafter\def\csname #1\Roman{#2}\endcsname{#3}  % thanks to egreg
+}
+
+\newcounter{count}
+\loop\unless\ifnum\value{count}=5
+  \stepcounter{count}
+  \addindex{var}{count}{\arabic{count}}
+\repeat
+</code></pre>
+
+<p>All <code>\var&lt;index&gt;</code> have now as value 5, because they are defined as <code>\arabic{count}</code>, and not their value at the moment. Adding <code>\expandafter</code> before <code>\arabic{count}</code> does not seem to work for some reason...</p>
+",counters loops
+79,Mercurial hooks: how to find the current directory on commit,"<p>I am trying to create a hook to Mercurial SCM (hg) using C# .NET, to launch a custom C# application on commit or pre-commit.</p>
+
+<p>As a proof-of-concept prototype, I added a location of my custom .exe to the Mercurial.ini file's [hooks] section for pre-commit, and another .exe for commit.
+Those .exe apps open on pre-commit and commit, as expected.</p>
+
+<p>However, those executables are only stubs so far.
+To make them do what I need, they have to ""know"" the current directory where the commit is about to occur (or has occurred).
+Mercurial.ini is located in my user profile directory on Windows.
+For example, when I do a commit from an Hg repository located in C:\MyProjects\TestProject, the executables need to know that the work is being done in C:\MyProjects\TestProject.</p>
+
+<p>How can I find out programmatically at runtime from a ""hooked"" executable where the Mercurial command is being executed on the local machine?</p>
+",version-control mercurial
+80,What's a good two-way encryption library implemented in Python?,"<p>The authentication system for an application we're using right now uses a two-way hash that's basically little more than a glorified caesar cypher.  Without going into too much detail about what's going on with it, I'd like to replace it with a more secure encryption algorithm (and it needs to be done server-side).  Unfortunately, it needs to be two-way and the algorithms in hashlib are all one-way.</p>
+
+<p>What are some good encryption libraries that will include algorithms for this kind of thing?</p>
+",python encryption
+81,Is there a way to create a CMakelist.txt from a visual studio (c++) solution?,"<p>I know that is possible to create a visual studio solution from a cmake project. But I wonder if there is a program that will do it the other way around (aka create a CMakelist.txt from a visual studio solution).</p>
+",visual-studio cmake
+82,Securing an Ubuntu Lucid web server,"<p>I have an Ubuntu Lucid server that is public facing. I haven't really configured much on it except installing SSH (sshd) and Apache (httpd); I don't have a firewall or anything. Are there some common rules that I should follow to secure my system? I've been following <a href=""http://www.thegeekstuff.com/2011/03/apache-hardening/"" rel=""nofollow"">this article</a> on securing my Apache.</p>
+",linux ubuntu security ubuntu-10.04 internet-security
+83,tomcat 7.0.27 not starting,"<p>I just got tomcat 7.0.27. I have kept the time to start tomcat 45sec. Also it was running fine with older version on tomcat. 
+but running it I get the following error :</p>
+
+<pre><code>SEVERE: A child container failed during start
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/VotingApp]]
+    at java.util.concurrent.FutureTask$Sync.innerGet(FutureTask.java:222)
+    at java.util.concurrent.FutureTask.get(FutureTask.java:83)
+    at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1128)
+    at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:782)
+    at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+    at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1566)
+    at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1556)
+    at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+    at java.lang.Thread.run(Thread.java:680)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/VotingApp]]
+    at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+    ... 7 more
+Caused by: java.lang.NoClassDefFoundError: HttpServletRequest
+    at java.lang.Class.getDeclaredMethods0(Native Method)
+    at java.lang.Class.privateGetDeclaredMethods(Class.java:2427)
+    at java.lang.Class.getDeclaredMethods(Class.java:1791)
+    at org.apache.catalina.startup.WebAnnotationSet.getDeclaredMethods(WebAnnotationSet.java:470)
+    at org.apache.catalina.startup.WebAnnotationSet.loadMethodsAnnotation(WebAnnotationSet.java:275)
+    at org.apache.catalina.startup.WebAnnotationSet.loadApplicationServletAnnotations(WebAnnotationSet.java:137)
+    at org.apache.catalina.startup.WebAnnotationSet.loadApplicationAnnotations(WebAnnotationSet.java:66)
+    at org.apache.catalina.startup.ContextConfig.applicationAnnotationsConfig(ContextConfig.java:381)
+    at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:858)
+    at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:345)
+    at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+    at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+    at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5161)
+    at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+    ... 7 more
+Caused by: java.lang.ClassNotFoundException: HttpServletRequest
+    at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1711)
+    at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1556)
+    ... 21 more
+May 11, 2012 10:09:21 AM org.apache.catalina.core.ContainerBase startInternal
+SEVERE: A child container failed during start
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost]]
+    at java.util.concurrent.FutureTask$Sync.innerGet(FutureTask.java:222)
+    at java.util.concurrent.FutureTask.get(FutureTask.java:83)
+    at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1128)
+    at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:302)
+    at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+    at org.apache.catalina.core.StandardService.startInternal(StandardService.java:443)
+    at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+    at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:732)
+    at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+    at org.apache.catalina.startup.Catalina.start(Catalina.java:675)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+    at java.lang.reflect.Method.invoke(Method.java:597)
+    at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:322)
+    at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:450)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost]]
+    at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+    at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1566)
+    at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1556)
+    at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+    at java.lang.Thread.run(Thread.java:680)
+Caused by: org.apache.catalina.LifecycleException: A child container failed during start
+    at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1136)
+    at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:782)
+    at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+    ... 7 more
+May 11, 2012 10:09:21 AM org.apache.catalina.startup.Catalina start
+SEVERE: Catalina.start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardServer[8005]]
+    at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+    at org.apache.catalina.startup.Catalina.start(Catalina.java:675)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+    at java.lang.reflect.Method.invoke(Method.java:597)
+    at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:322)
+    at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:450)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardService[Catalina]]
+    at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+    at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:732)
+    at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+    ... 7 more
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina]]
+    at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+    at org.apache.catalina.core.StandardService.startInternal(StandardService.java:443)
+    at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+    ... 9 more
+Caused by: org.apache.catalina.LifecycleException: A child container failed during start
+    at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1136)
+    at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:302)
+    at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+    ... 11 more
+May 11, 2012 10:09:21 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 561 ms
+</code></pre>
+
+<p>How do I resolve the error. I have looked into some similar posts but did not find it useful.</p>
+",servlets tomcat7
+84,Ruby Savon compared to Java Axis,"<p>I'm trying to use the Yodlee soap APIs. They give examples with Apache Axis
+Any perspectives on using Ruby and Savon versus Java and Axis? </p>
+
+<p>With Ruby/Savon, it seems that the best thing to do is to skip using the WSDL files and generate the requests based on examples from the Java/Axis program. I tried using the WSDL feature of Savon, but I could not get it to work with the many embedded types and namespaces in the very complex WSDLs.</p>
+
+<p>Looking at the Java/Axis code, there's a huge amount of generated code that isolates the Java developer from knowing about the XML. Has anybody ever tried to replicate Axis in the Ruby world?</p>
+
+<p>Thanks. </p>
+",java ruby wsdl axis2 savon
+85,Linux Bash: Setting iptables rules to allow both active and passive FTP,"<p>I have a PC on which I have a FTP server installed. I want to set the iptables rules to allow both active and passive FTP. I've tried the following code that people report is working, but it seems to block all traffic for me (pages won't load anymore etc)</p>
+
+<pre><code>#!/bin/bash
+
+IPT=/sbin/iptables
+$IPT -F
+$IPT -X
+$IPT -t nat -F
+$IPT -t nat -X
+$IPT -t mangle -F
+$IPT -t mangle -X
+/sbin/modprobe ip_conntrack
+/sbin/modprobe ip_conntrack_ftp
+
+# Setting default filter policy
+$IPT -P INPUT DROP
+$IPT -P OUTPUT ACCEPT
+
+# Allow FTP connections @ port 21
+$IPT -A INPUT  -p tcp --sport 21 -m state --state ESTABLISHED -j ACCEPT
+$IPT -A OUTPUT -p tcp --dport 21 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+# Allow Active FTP Connections
+$IPT -A INPUT -p tcp --sport 20 -m state --state ESTABLISHED,RELATED -j ACCEPT
+$IPT -A OUTPUT -p tcp --dport 20 -m state --state ESTABLISHED -j ACCEPT
+
+# Allow Passive FTP Connections
+$IPT -A INPUT -p tcp --sport 1024: --dport 1024: -m state --state ESTABLISHED,RELATED -j ACCEPT
+$IPT -A OUTPUT -p tcp --sport 1024: --dport 1024:  -m state --state ESTABLISHED,RELATED -j ACCEPT
+</code></pre>
+",linux bash ftp iptables
+86,Enumerate All Installed Applications on OS X,"<h1>Basic problem</h1>
+
+<p>I'm looking for a solution to enumerate all applications installed on a (Mac) OS X system, i.e. all application bundles registered with <a href=""https://developer.apple.com/library/mac/#documentation/Carbon/Reference/LaunchServicesReference/Reference/reference.html"" rel=""nofollow"">LaunchServices</a>.</p>
+
+<h1>Simple approach that did not work</h1>
+
+<p>(Please note: <code>lsregister</code> can be found under <code>/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister</code>).</p>
+
+<p>Currently I am using the output of <code>lsregister -dump | grep -E '^.*[ \\t]*path:[ \\t]+(\/.*)$' | grep -Eo '\/.*'</code>, which has a few problems:</p>
+
+<ul>
+<li><code>.app</code> bundles with newlines (<code>\n</code>, which is valid on UNIX) are not handled correctly (This issue would be fixable by writing a proper parser)</li>
+<li><p><code>lsregister</code> doesn't handle correctly weird filename (e.g. containing the <a href=""http://en.wikipedia.org/wiki/Right-to-left_mark"" rel=""nofollow"">RTL mark</a>). <code>lsregister</code> just seems to ignore files with the RTL mark in their name. 
+If you want to, you can create a file with RTL in its name by running the following command.</p>
+
+<pre><code>python -c 'import shutil; shutil.copytree(u""/Applications/TextEdit.app"", u""/Applications/ThisIsAWeird\u202EApp.app"")'
+</code></pre>
+
+<p>After doing this, <code>lsregister -dump | grep ThisIsAWeird</code> will <em>not</em> reveal it. But when you right click on a text file and go to ""Open With"" you'll that LaunchServices and Finder still support that file.
+<img src=""http://i.stack.imgur.com/c40Jq.png"" alt=""see yourself""></p></li>
+</ul>
+
+<p>Simply enumerating all files in <code>/Applications</code> and other directories does not work because LaunchServices is aware of application bundles in arbitrary folders and I also need these apps.</p>
+
+<h1>Other approch that I didn't get to work</h1>
+
+<p>Apparently, there's a private API function called <code>_LSFindApplications</code> which does exactly what I need to do but I can't get it to work and didn't find any inofficial documentation on the internet. (proof it exists: <code>nm /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/LaunchServices  | grep __LSFindApplications$</code>)</p>
+",osx application osx-mountain-lion launch-services
+87,"""Scrambled"" webkit scrollbar (trying to reproduce Google+'s scrollbar)","<p>I'm trying to reproduce google+'s scrollbar on my site. For reasons I can't figure out sometimes this scrollbar has a scrambled appearance. By scrambled, I mean the scrollbar is multi-colored, has a black line spanning it, and the <code>scrollbar-thumb</code> is not visible. Here's a screenshot to show you what i mean:  </p>
+
+<p><img src=""http://i.stack.imgur.com/ooHag.png"" alt=""enter image description here""></p>
+
+<p>Here's a <a href=""http://jsfiddle.net/trpeters1/XkGuu/31/"" rel=""nofollow"">jsfiddle</a> where unfortunately, the scrollbar looks normal so I haven't been able to reproduce my problem. </p>
+
+<p>I'm using <a href=""http://twitter.github.com/bootstrap/"" rel=""nofollow"">Twitter Bootstrap</a> if that is helpful for thinking about how my existing CSS could be screwing this up.</p>
+",css css3 webkit scrollbar pseudo-class
+88,How to create a block transition in jQuery,"<p>What is the best way to create a block transition in jQuery? Are there any plugins, who provide this transition (only the transition, I don't want a image gallery, which has such a transition!)?</p>
+
+<p>I am looking for something like <a href=""http://mitya.co.uk/scripts/Blockster-transition-effect-122"" rel=""nofollow"">http://mitya.co.uk/scripts/Blockster-transition-effect-122</a> or the diagonal expand block transition at <a href=""http://codecanyon.net/item/jquery-banner-rotator-slideshow/full_screen_preview/109046"" rel=""nofollow"">http://codecanyon.net/item/jquery-banner-rotator-slideshow/full_screen_preview/109046</a></p>
+
+<p>Problem with the first link is, that it is very slow, when using a bit more blocks. I can't figure out how the transition has been created on the second link.</p>
+",javascript jquery transition effect
+89,"ssh client returning error ""Couldn't apply options""","<p>I am getting ""Couldn't apply options"" while connecting to a SSH server.</p>
+
+<p>When I checked the source code of the library I found the following code in the client.c
+which is returning the error.</p>
+
+<pre><code>ret = ssh_options_apply(session);
+
+if (ret &lt; 0) {
+    ssh_set_error(session, SSH_FATAL, ""Couldn't apply options"");
+    leave_function();
+    return SSH_ERROR;
+}
+</code></pre>
+
+<p>Can anyone please tell me what are the possibilities that could result into this error ?</p>
+",libssh
+90,How can I unit test my controller to make sure Windsor can resolve dependencies when using PerWebRequestLifestyle,"<p>I have the following unit test in my application:</p>
+
+<pre><code>    [TestMethod]
+    public void Windsor_Can_Resolve_HomeController_Dependencies()
+    {
+        // Setup
+        WindsorContainer container = new WindsorContainer();
+        container.Install(FromAssembly.Containing&lt;HomeController&gt;());
+
+        // Act
+        container.Kernel.Resolve(typeof(HomeController));
+    }
+</code></pre>
+
+<p>The point of this is to make sure I don't have any windsor configuration issues that I won't realize until I access an action on that controller.  The problem is that all my object registrations are registered as <code>PerWebRequestLifestyle</code> so I don't get issues with my Entity Framwork Data Context being shared across web requests (which causes errors when multiple actions are run).</p>
+
+<p>However, whenever I run this unit test I get the following exception:</p>
+
+<p>System.InvalidOperationException: HttpContext.Current is null. PerWebRequestLifestyle can only be used in ASP.Net</p>
+
+<p>How can I go about testing this scenario without changing the lifestyle of my object registration commands?</p>
+",c# unit-testing castle-windsor
+91,F# working with while loop,"<p>I have a datareader and i want to return collection of rows from it, after reading books for like a day i am not able to find out best way to do it in f#. I can do it normal C# way in F# but that is not why i am using f#</p>
+
+<p>Here is what i am trying to achieve</p>
+
+<pre><code>let values =
+    while reader.Read() do
+        yield reader.GetString(0), reader.GetInt64(1)
+</code></pre>
+
+<p>Above is how i am trying to do</p>
+
+<ul>
+<li>all values get collected into values, which could be dictinary or tuples or any collection</li>
+<li>yield can't be used in while loop but that is what i am trying to do</li>
+</ul>
+
+<p>What could be the best way to achieve this</p>
+",f#
+92,showing newly added rows after submit if error comes,"<p>I am using this Javascript to add rows in table <code>preq</code> which already contains 4 rows. The problem is that when I add rows using this Javascript  rows are added properly on form, but if some error comes on form, and if form is reloaded than this newly added rows are not visible and I also want entered text within rows to be visible
+<img src=""http://i.stack.imgur.com/9gXjt.png"" alt=""enter image description here""></p>
+
+<p><code>javascript</code></p>
+
+<pre><code>&lt;script type=""text/javascript""&gt;
+            var counter = 5;
+            function addrow()
+            {
+                if (counter &gt; 10)
+                {
+                    alert(""Only 10 Kind of Works are allowed"");
+                return false;
+                }
+            $('#preq &gt; tbody:last').append('&lt;tr&gt;&lt;td&gt;&lt;input title=""Enter Kind Of work"" readonly=""readonly"" onclick=""if(this.value!=\'\'){this.value=\'\';opendrop();}else{opendrop();}"" id=""other_work' + counter + '"" name=""other_work' + counter + '"" type=""text"" size=""30"" onclick=""opendrop()"" &lt;?php if (isset($errors)) { echo 'value=""'.htmlentities(@$_POST['other_work' + counter + '']).'""'; } ?&gt;&gt;&lt;/td&gt;&lt;td&gt;&lt;input name=""client_name' + counter + '"" type=""text"" id=""client_name' + counter + '"" size=""40""/&gt;&lt;/td&gt;&lt;td&gt;&lt;input name=""firm_name' + counter + '"" type=""text"" id=""firm_name' + counter + '"" size=""40""/&gt;&lt;/td&gt;&lt;/tr&gt;');
+                counter++;
+            }
+            &lt;/script&gt;
+</code></pre>
+
+<p>html code           </p>
+
+<pre><code>&lt;table align=""left"" id=""preq"" style=""display: none;""&gt;
+                &lt;tr&gt;
+                                &lt;/tr&gt;
+                                    &lt;tr&gt;
+                                    &lt;th align=""left""&gt;&lt;label id=""Label1""&gt; Kind of Work &lt;/label&gt;&lt;/th&gt;
+                                    &lt;th align=""left""&gt;&lt;label id=""Label1""&gt; Name Of The Client &lt;/label&gt;&lt;/th&gt;
+                                    &lt;th align=""left""&gt;&lt;label id=""Label1""&gt;Name of Firm / Organisation &lt;/label&gt;&lt;/th&gt;
+                                    &lt;/tr&gt;
+            &lt;tbody&gt;
+
+            &lt;!--4 rows alredy present here--&gt;
+            &lt;/tbody&gt;
+    &lt;tr&gt;&lt;td colspan=""3""&gt;&lt;input type=""button"" class=""button"" value=""Add Kind of Work"" onclick=""addrow()""/&gt;&lt;/td&gt;&lt;/tr&gt;
+
+            &lt;/table&gt;
+</code></pre>
+",php javascript html
+93,jQuery Masonry access internal method var,"<p>Any advice how to access an internal method var of jQuery Masony?
+I'm looking to console.log the <code>containerSize</code> property inside the <code>layout</code> method:</p>
+
+<p>line 177 > <a href=""https://github.com/desandro/masonry/blob/master/jquery.masonry.js"" rel=""nofollow"">query.masonry.js</a></p>
+
+<p>I need to retrieve the <code>containerSize</code> after masonry init:</p>
+
+<pre><code>$('#container').masonry({
+  itemSelector: '.box'
+});
+
+console.log(""here i need to retrieve the containerSize"");
+</code></pre>
+",jquery
+94,Java 2Dimensional Boolean Array Values,"<p>I'm having a problem with my 2 dimensional boolean array. (or it may be with the logic of printing out the values). I set all of the values in the array to false in the beginning, and then later i print out the values to the screen. When i print them out, they all come up as true. </p>
+
+<pre><code>x=20;
+y=10;
+boolArray = new boolean[x][y];
+
+for(int c=0;c&lt;x;c++)
+{
+  for(int i=0;i&lt;y;i++)
+  {
+    boolArray[c][i] = false;
+  }
+}
+
+System.out.println(""2D Boolean Array:"");
+
+for(int a = 0; a &lt; boolArray.length; a++)
+{
+  for(int b = 0; b &lt; boolArray[a].length; b++)
+  {
+    if(boolArray[a][b] = true)
+    {
+      System.out.print(""T"");
+    }
+    else if(boolArray[a][b] = false)
+    {
+      System.out.print(""F"");
+    }
+  }
+}
+</code></pre>
+",java multidimensional-array boolean
+95,failed to open stream : Is a directory in,"<p>I am getting the following warnings on trying on move an uploaded file from the temp folder to the desired one using php</p>
+
+<p>Warning: move_uploaded_file(test/) [function.move-uploaded-file]: failed to open stream: Is a directory in /home/..../filename.php on line 69</p>
+
+<p>Warning: move_uploaded_file() [function.move-uploaded-file]: Unable to move '/tmp/phpKrCpQw' to 'test/' in /home/..../filename.php on line 69</p>
+
+<p>following are line nos 67 and 69 that are giving the error :</p>
+
+<pre><code>$destination = ""test/"". $name;
+
+$answer = move_uploaded_file($_FILES['user_file']['tmp_name'],$destination);
+</code></pre>
+",php file-upload warnings
+96,why *foo ++= *++foo may be undefined?,"<p>it should set the current character to next character. For example: </p>
+
+<pre><code>while( *foo ) { 
+ if(baa(*foo)) *foo++ = *++foo;
+  foo++;
+}
+</code></pre>
+
+<p>But I get the following errors:</p>
+
+<pre><code>error: operation on ?˜foo??may be undefined [-Werror=sequence-point]
+cc1: all warnings being treated as errors
+</code></pre>
+
+<p>Can anyone explain why that? that isn't valid C syntax?</p>
+",c pointers gcc
+97,Performance when using document() repeatedly in xslt,"<p>Is it acceptable to call the same document throughout an xslt-file like this : </p>
+
+<pre><code>&lt;xsl:value-of select=""document('doc.xml')/root/bar/foo1"" /&gt;
+&lt;xsl:value-of select=""document('doc.xml')/root/bar/foo2"" /&gt;
+&lt;xsl:value-of select=""document('doc.xml')/root/bar/foo3"" /&gt;
+</code></pre>
+
+<p>...? </p>
+
+<p>I can imagine that caching avoids producing overhead for reading the file time after time. </p>
+
+<p>Or should I store the doc.xm in a variable and  use that variable to query?  </p>
+
+<p>In this case I will have to use some sort of library like xsle since I am using xslt1.  </p>
+
+<p>Or is there any other solution?  </p>
+
+<p>Note : Some parts of the XPath should be dynamic like : </p>
+
+<pre><code>&lt;xsl:value-of select=""document('doc.xml')/root/*[name()=$lang]/foo3"" /&gt;
+</code></pre>
+",xslt
+98,How can I find out if my GNU C library is thread-safe?,"<p>I'm currently <a href=""http://www.mathworks.com/matlabcentral/answers/35754-segmentation-faults-when-running-mex-files-in-parallel"" rel=""nofollow"">receiving weird segmentation violations when runnning a MATLAB MEX file in paralle</a>l. </p>
+
+<p>After a lot of debugging, I'm 99% sure that the segmentation violation has nothing to do with the MEX file itself but with the fact that I'm running it in parallel.</p>
+
+<p>One possible reason for the segmentation violations that was suggested is that the C library functions ""malloc"" and ""free"" may not be thread-safe. Is this really a possibility? And is there any way that I can make sure? </p>
+
+<p>I compiled the MEX file using the ""GNU C 2.14.90 development"" C Library - so I guess I'm looking for a website where this is distributed / these types of questions are answered. </p>
+",c matlab thread-safety mex
+99,JSP link submitting data to struts form bean,"<p>I am making a JSP page that links to a page where it will pull a list of data from the database depending on the user who is logged in. I am using a DataSourceRealm type authentication so I pull the username with a <code>request.geRemoteUser()</code> and want to submit that to my form when I click the link but I cannot figure out how to do that, my link code is:</p>
+
+<pre><code>&lt;li&gt;&lt;html:link forward=""showEnrolled""&gt;View Enrolled Classes&lt;/html:link&gt;&lt;/li&gt;
+</code></pre>
+
+<p>And my form just needs the username to run. Is there anyway I can get it to send the username along with the forward?</p>
+",jsp struts-1
+100,Limit of a function satisfying an inequality,"<p>If $f(x)+f(y)\leq f(x+y)$ and $f:\mathbb{R}\to\mathbb{R}$, then can we find $\lim_{x\to 0} \frac {f(x)}{x}$?</p>
+
+<p>I am not sure whether the question is correct.Thank you.(I tried this idea: $f(x)=f(x+y-y)\ge f(x+y)+f(-y)\ge f(x)+f(y)+f(-y)\implies f(y)\leq -f(-y)$ but after that I seem to be hitting a roadblock.</p>
+
+<p>Thank you in advance.</p>
+",calculus inequality limit functional-equations
