@@ -9,6 +9,7 @@
 
 # <codecell>
 
+
 def get_line_num_by_key(key):
     line_num = []
     for i in range(len(keyword_list)):
@@ -25,6 +26,7 @@ def get_line_num_by_key(key):
 # <codecell>
 
 import re
+
 
 def data_cleaner(raw_text):
     text = re.sub("<p>|</p>|<pre>|<code>|</pre>|</code>", '', raw_text)
@@ -44,7 +46,7 @@ def data_cleaner(raw_text):
 
 # *** Tool function: code_extractor(raw_text) ***
 # Input: a raw text directly extracted from question_lists or title_lists
-# Output: a list of code sections 
+# Output: a list of code sections
 
 # <codecell>
 
@@ -60,9 +62,9 @@ def code_extractor(raw_text):
 
 import csv
 
-input_file = open("train.csv",'r')
-output_file = open("small_train.csv","w")
-reader = csv.reader( input_file )
+input_file = open("train.csv", 'r')
+output_file = open("small_train.csv", "w")
+reader = csv.reader(input_file)
 
 i = 0
 
@@ -95,8 +97,8 @@ import nltk
 
 skip_first_line = True
 
-input_file = open("small_train.csv",'r')
-reader = csv.reader( input_file )
+input_file = open("small_train.csv", 'r')
+reader = csv.reader(input_file)
 if skip_first_line:
     reader.next()
 
@@ -108,25 +110,21 @@ keyword_list = []
 i = 0
 
 for line in reader:
-#    id_list.append(line[0])
+    id_list.append(line[0])
     title_list.append(line[1])
     question_list.append(line[2])
     keyword_list.append(line[3])
-    i+=1
+    i += 1
     if i == TRAINING_LINE_NUMBER:
         break
 # Now you can just call the function:
 
 
-
-
 # <rawcell>
-
 # *** 2. Build-up freqency table to find the most frequent keywords ***
-
 # <codecell>
-
-fq = nltk.FreqDist([keyword for keywords in keyword_list for keyword in keywords.split(" ")])
+fq = nltk.FreqDist(
+    [keyword for keywords in keyword_list for keyword in keywords.split(" ")])
 
 # <rawcell>
 
@@ -143,21 +141,22 @@ for i in range(TOP_KEYWORDS):
 # *** 3. Build the freq_word[keyword] dictionary (unigram version) ***
 # Variable: top __ keyword
 # Variable: top __ words in a keyword
-# 
-# keyword: one of the top x keywords 
+#
+# keyword: one of the top x keywords
 # freq_word[keyword]: return a dictionary of {word: [tf, idf]}
 # ex. freq_word['java'] ==> {"data": [123,234],"class": [23,32],...}
-#     which means 'data' has appeared 123 times inside keyword and 234 times outside keyword
+# which means 'data' has appeared 123 times inside keyword and 234 times
+# outside keyword
 
 # <codecell>
 
-#unigram
+# unigram
 import re
 
 import pickle
 tagger = pickle.load(open("treebank_brill_aubt.pickle"))
 
-from nltk.corpus import stopwords 
+from nltk.corpus import stopwords
 
 freq_word = {}
 
@@ -168,16 +167,16 @@ for keyword in fq.keys()[:TOP_KEYWORDS]:
     for num in line_num:
         text = data_cleaner(question_list[num])
         text = tagger.tag(text)
-        for (word,tag) in text:
-            if (not word in stopwords.words('english'))and tag in ["JJ","NN", "NNP", "NNS","-None-"] and word not in ["","=","{","}","(",")","+","=="]:
+        for (word, tag) in text:
+            if (not word in stopwords.words('english'))and tag in ["JJ", "NN", "NNP", "NNS", "-None-"] and word not in ["", "=", "{", "}", "(", ")", "+", "=="]:
                     target_words.append(word.lower())
-    fdist = nltk.FreqDist(target_words)    
+    fdist = nltk.FreqDist(target_words)
     key_value = {}
     for key in fdist.keys()[:TOP_WORDS]:
-        key_value[key] = [fdist[key],0]
+        key_value[key] = [fdist[key], 0]
     freq_word[keyword] = key_value
 
-# build idf    
+# build idf
 for i in range(TRAINING_LINE_NUMBER):
     keywords = keyword_list[i].split(" ")
     text = data_cleaner(question_list[i])
@@ -200,7 +199,7 @@ freq_word["c#"]
 
 # <codecell>
 
-#bigrams
+# bigrams
 """
 import re
 import pickle
@@ -218,7 +217,7 @@ for keyword in fq.keys()[:10]:
         text = text.split(" ")
         text = tagger.tag(text)
         text = bigrams(text)
-        
+
         for (word1,tag1),(word2,tag2) in text:
             if (tag1 in ["JJ","NN", "NNP", "NNS","-None-"] or tag2 in ["JJ","NN", "NNP", "NNS","-None-"]) and (word1 != "") and (word2 != ""):
                 fdist.inc(word1.lower()+ " " + word2.lower())
@@ -231,19 +230,21 @@ for keyword in fq.keys()[:10]:
 # <rawcell>
 
 # *** 5. Ouput the TFIDF table to file ***
-# Each line contains [keyword, word, tf/idf, tf, appear times in other keyword, idf, total frequency of keywords]
+# Each line contains [keyword, word, tf/idf, tf, appear times in other
+# keyword, idf, total frequency of keywords]
 
 # <codecell>
 
 import numpy
 from __future__ import division
-f = open("tfidf","w")
+f = open("tfidf", "w")
 
 for keyword in fq.keys()[:TOP_KEYWORDS]:
     for word in freq_word[keyword].keys():
         tf = freq_word[keyword][word][0]
         idf = freq_word[keyword][word][1]
-        f.write(str(keyword) + "\t" + str(word) + "\t" + str(tf/(idf+1)) + "\t" + str(tf) + "\t" + str(idf) + "\t" +str(fq[keyword])+ "\n")
+        f.write(str(keyword) + "\t" + str(word) + "\t" + str(tf / (idf + 1))
+                + "\t" + str(tf) + "\t" + str(idf) + "\t" + str(fq[keyword]) + "\n")
 f.close()
 
 # <rawcell>
@@ -254,30 +255,31 @@ f.close()
 
 TFIDF_Threshold = 10
 NUMBER_OF_MATCHES = 2
-TESTING_LINES = 100,200
+TESTING_LINES = 100, 200
 
 # <rawcell>
 
 # *** 6. Evaluation: Load the tfidf table to build up score table ***
 # variable: load only the entries that td/idf score over __ score
 # variable: specify which tfidf table want to load
-# 
+#
 # score_table is a word based dictionary that give a word as key return a list of keywords that has tfidf over __ score with the word
-# 
+#
 # ex. score_table["class"] ==> ["java","c#","c++",...]
-# 
-# means the word "class" has strong relationship (tfidf > __) with following keywords: java, c#, c++
+#
+# means the word "class" has strong relationship (tfidf > __) with
+# following keywords: java, c#, c++
 
 # <codecell>
 
-score_file = open("tfidf","r")
+score_file = open("tfidf", "r")
 
 score_table = {}
 
 for line in score_file:
     line = line.strip("\n")
     line = line.split("\t")
-    if float(line[2]) > TFIDF_Threshold: 
+    if float(line[2]) > TFIDF_Threshold:
         if line[1] not in score_table:
             score_table[line[1]] = [line[0]]
         else:
@@ -323,6 +325,7 @@ for i in range(TESTING_LINES):
 
 from __future__ import division
 
+
 def accuracy_query(keyword):
     correct_guess = 0
     total_key = 0
@@ -330,27 +333,21 @@ def accuracy_query(keyword):
     for i in range(TESTING_LINES):
         for guess in prediction_table[i]:
             if guess == keyword:
-                total_guess +=1
+                total_guess += 1
                 if guess in keyword_list[i]:
-                    correct_guess +=1
+                    correct_guess += 1
         for key in keyword_list[i].split(" "):
             if key == keyword:
-                total_key +=1
+                total_key += 1
     print "Total key is:", total_key
     print "Total guess is:", total_guess
     print "Correct guess is:", correct_guess
-    print "Recall is:", correct_guess/total_key
-    print "Accuracy is:", correct_guess/total_guess
-    print "Recall is:", 2*(correct_guess/total_key)*(correct_guess/total_guess)/(correct_guess/total_key+correct_guess/total_guess)
-    
+    print "Recall is:", correct_guess / total_key
+    print "Accuracy is:", correct_guess / total_guess
+    print "Recall is:", 2 * (correct_guess / total_key) * (correct_guess / total_guess) / (correct_guess / total_key + correct_guess / total_guess)
 
-    
 
 # <rawcell>
-
 # *** 9. Test specific keyword accuracy ***
-
 # <codecell>
-
 accuracy_query("r")
-
