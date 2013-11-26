@@ -1,0 +1,2136 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"test_n",
+				"test_num_of_questions	statement"
+			],
+			[
+				"test_t",
+				"test_title_list"
+			],
+			[
+				"titl",
+				"title_list"
+			],
+			[
+				"ta",
+				"target_words"
+			],
+			[
+				"da",
+				"data_train"
+			],
+			[
+				"tar",
+				"target_names"
+			],
+			[
+				"mea",
+				"mean_animals"
+			],
+			[
+				"file",
+				"file_name"
+			],
+			[
+				"speci",
+				"species_name"
+			],
+			[
+				"a",
+				"argv	statement"
+			],
+			[
+				"filt",
+				"filter_animals"
+			],
+			[
+				"spec",
+				"species_name"
+			],
+			[
+				"count",
+				"counts"
+			],
+			[
+				"time",
+				"time_new"
+			],
+			[
+				"date",
+				"date_new"
+			],
+			[
+				"coun",
+				"counts"
+			],
+			[
+				"read",
+				"read_animals	function"
+			],
+			[
+				"keyw",
+				"keyword_list"
+			],
+			[
+				"top",
+				"topTags"
+			],
+			[
+				"all",
+				"allTags"
+			],
+			[
+				"pas",
+				"parseDate"
+			],
+			[
+				"parse",
+				"parseDate"
+			],
+			[
+				"tree",
+				"treebank	statement"
+			],
+			[
+				"w",
+				"w"
+			],
+			[
+				"foo",
+				"foos	statement"
+			],
+			[
+				"re",
+				"reverse"
+			],
+			[
+				"MyS",
+				"MySecondList	statement"
+			],
+			[
+				"ran",
+				"random	statement"
+			],
+			[
+				"__",
+				"__getattribute__	(builtin, function)"
+			],
+			[
+				"POS",
+				"POS_Features	function"
+			],
+			[
+				"path_",
+				"path_test	(global, instance)"
+			],
+			[
+				"class",
+				"ClassifierI	(imported, class)"
+			],
+			[
+				"r",
+				"read	function"
+			],
+			[
+				"rs",
+				"rstrip	function"
+			],
+			[
+				"pos",
+				"positive_words	statement"
+			],
+			[
+				"Fal",
+				"False	statement"
+			],
+			[
+				"stop",
+				"stopwords_vocab	(global, instance)"
+			],
+			[
+				"con",
+				"__contains__	magic"
+			],
+			[
+				"t",
+				"train	function"
+			],
+			[
+				"Ma",
+				"MaxentClassifier	(imported, class)"
+			],
+			[
+				"prtin",
+				"print	print"
+			],
+			[
+				"path_t",
+				"path_train	statement"
+			],
+			[
+				"stat",
+				"statvfs"
+			],
+			[
+				"forma",
+				"formatted_sents	statement"
+			],
+			[
+				"random",
+				"random	import"
+			],
+			[
+				"train",
+				"train_set	(global, instance)"
+			],
+			[
+				"form",
+				"formatted_sents	(global, instance)"
+			],
+			[
+				"bigram",
+				"bigram_word_feats	function"
+			],
+			[
+				"fr",
+				"from_words	function"
+			],
+			[
+				"Bigr",
+				"BigramCollocationFinder	import"
+			],
+			[
+				"BiGra",
+				"BigramAssocMeasures	(imported, class)"
+			],
+			[
+				"lat",
+				"latitude"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"add",
+				"address	Tag"
+			],
+			[
+				"__future",
+				"__future__	magic"
+			],
+			[
+				"min",
+				"min	min"
+			],
+			[
+				"target",
+				"target_word	(local, instance)"
+			],
+			[
+				"brown",
+				"brown_tagged_sents	(global, instance)"
+			],
+			[
+				"p",
+				"pp(show_percents, values_in_chart, truncate, sort_by_count)	(attribute, function)"
+			],
+			[
+				"brow",
+				"brown_tagged_sents	(global, instance)"
+			],
+			[
+				"tra",
+				"train	None"
+			],
+			[
+				"Tr",
+				"TrigramTagger	import"
+			],
+			[
+				"base",
+				"baseline_tagger	statement"
+			],
+			[
+				"tu",
+				"True	(builtin, instance)"
+			],
+			[
+				"tagset",
+				"tagset"
+			],
+			[
+				"tre",
+				"treebank_tagged_simplified	(global, instance)"
+			],
+			[
+				"br",
+				"brown_news_tagged	(global, instance)"
+			],
+			[
+				"raw",
+				"raw(fileids, sourced)	(attribute, function)"
+			],
+			[
+				"corp",
+				"corpusname"
+			],
+			[
+				"Lanca",
+				"lancaster	(local, instance)"
+			],
+			[
+				"wordne",
+				"wordnet"
+			],
+			[
+				"pr",
+				"print	keyword"
+			],
+			[
+				"fdist",
+				"fdist_normal	(local, instance)"
+			],
+			[
+				"wn",
+				"wnl_stem	(local, instance)"
+			],
+			[
+				"lanca",
+				"lancaster	(local, instance)"
+			],
+			[
+				"port",
+				"porter	(local, instance)"
+			],
+			[
+				"FILE",
+				"filelist	(local, instance)"
+			],
+			[
+				"pa",
+				"path	statement"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"item",
+				"item"
+			],
+			[
+				"marin",
+				"margin"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"tex",
+				"text1"
+			],
+			[
+				"fd",
+				"fdist1"
+			],
+			[
+				"it",
+				"items"
+			],
+			[
+				"bown",
+				"brown_vocab"
+			],
+			[
+				"fil",
+				"fileid"
+			],
+			[
+				"Comp",
+				"CompareLastLetter"
+			],
+			[
+				"Com",
+				"CompareFirstLetter"
+			],
+			[
+				"fi",
+				"file_name"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"po",
+				"background-position"
+			],
+			[
+				"spa",
+				"border-spacing"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"ali",
+				"text-align"
+			],
+			[
+				"background",
+				"background-image"
+			],
+			[
+				"voc",
+				"vocabulary1"
+			],
+			[
+				"vocabu",
+				"vocabulary1"
+			],
+			[
+				"is",
+				"istitle"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/Derek/Prediction_Main_new.py",
+			"settings":
+			{
+				"buffer_size": 8830,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "classifier.py",
+			"settings":
+			{
+				"buffer_size": 4838,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assoc.py",
+			"settings":
+			{
+				"buffer_size": 7823,
+				"line_ending": "Windows",
+				"name": "import itertools"
+			}
+		},
+		{
+			"file": "Assoc_Input.txt",
+			"settings":
+			{
+				"buffer_size": 26478,
+				"line_ending": "Windows",
+				"name": "Tags"
+			}
+		},
+		{
+			"file": "keywords_assoc.py",
+			"settings":
+			{
+				"buffer_size": 1302,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Python 2.7.5 |Anaconda 1.7.0 (64-bit)| (default, Jul  1 2013, 12:37:52) [MSC v.1500 64 bit (AMD64)] on win32\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> >>> from sklearn.metrics.pairwise import euclidean_distances\n>>> X = [[0, 1], [1, 1]]\n>>> # distance between rows of X\n>>> euclidean_distances(X, X)\narray([[ 0.,  1.],\n       [ 1.,  0.]])\n>>> # get distance to origin\n>>> euclidean_distances(X, [[0, 0]])\narray([[ 1.        ],\n       [ 1.41421356]])\n  File \"<stdin>\", line 1\n    >>> from sklearn.metrics.pairwise import euclidean_distances\n     ^\nSyntaxError: invalid syntax\n>>>   File \"<stdin>\", line 1\n    >>> X = [[0, 1], [1, 1]]\n     ^\nSyntaxError: invalid syntax\n>>>   File \"<stdin>\", line 1\n    >>> # distance between rows of X\n     ^\nSyntaxError: invalid syntax\n>>>   File \"<stdin>\", line 1\n    >>> euclidean_distances(X, X)\n     ^\nSyntaxError: invalid syntax\n>>> ... Traceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nNameError: name 'array' is not defined\n>>>   File \"<stdin>\", line 1\n    >>> # get distance to origin\n     ^\nSyntaxError: invalid syntax\n>>>   File \"<stdin>\", line 1\n    >>> euclidean_distances(X, [[0, 0]])\n     ^\nSyntaxError: invalid syntax\n>>> ... Traceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nNameError: name 'array' is not defined\n>>> from sklearn.metrics.pairwise import euclidean_distances\n>>> X = [[0, 1], [1, 1]]\n>>> euclidean_distances(X, X)\narray([[ 0.,  1.],\n       [ 1.,  0.]])\n>>> euclidean_distances(X, [[0, 0]])\narray([[ 1.        ],\n       [ 1.41421356]])\n>>> ",
+			"settings":
+			{
+				"buffer_size": 1583,
+				"line_ending": "Windows",
+				"name": "*REPL* [python]",
+				"scratch": true
+			}
+		},
+		{
+			"file": "learn.py",
+			"settings":
+			{
+				"buffer_size": 8373,
+				"line_ending": "Windows",
+				"name": "\"\"\""
+			}
+		},
+		{
+			"file": "plot_forest_multioutput.py",
+			"settings":
+			{
+				"buffer_size": 1272,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "keywords_query.py",
+			"settings":
+			{
+				"buffer_size": 1385,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"command_palette":
+	{
+		"height": 311.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				":ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"Package Control: dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"pa ",
+				"Package Control: Disable Package"
+			],
+			[
+				"pa in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"paca",
+				"Package Control: Install Package"
+			],
+			[
+				"snippp",
+				"Snippet: For Loop"
+			],
+			[
+				"snipper",
+				"Snippet: New Property"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: If Condition"
+			]
+		],
+		"width": 504.0
+	},
+	"console":
+	{
+		"height": 51.0,
+		"history":
+		[
+			"print('h')",
+			"print \"h\""
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/Divi/classifier.py",
+		"/C/Users/Divyakumar/Desktop/Part2_Sample/Part2_Sample/templates/index.html",
+		"/C/Users/Divyakumar/AppData/Local/Temp/Temp1_Part2_Sample.zip/Part2_Sample/app.py",
+		"/C/Users/Divyakumar/Documents/GitHub/kaggle_insults/models.py",
+		"/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/Divi/plot_forest_multioutput.py",
+		"/C/Users/Divyakumar/Documents/GitHub/kaggle_insults/features_old.py",
+		"/C/Users/Divyakumar/Documents/GitHub/kaggle_insults/features.py",
+		"/C/Users/Divyakumar/Documents/GitHub/kaggle_insults/util.py",
+		"/C/Users/Divyakumar/Documents/GitHub/kaggle_insults/train.py",
+		"/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/keywords_assoc_divi.py",
+		"/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/keywords_query_divi.py",
+		"/C/Users/Divyakumar/Documents/GitHub/2013-11-23-dlab_divi/python/sw_engineering/animals.py",
+		"/C/Users/Divyakumar/Documents/GitHub/2013-11-23-dlab/python/sw_engineering/test_animals.py",
+		"/C/Users/Divyakumar/Documents/GitHub/2013-11-23-dlab/python/sw_engineering/animals.py",
+		"/C/Users/Divyakumar/Documents/GitHub/2013-11-23-dlab/python/sw_engineering/mean_animals.py",
+		"/C/Users/Divyakumar/Documents/GitHub/2013-11-23-dlab/python/sw_engineering/animals.txt",
+		"/C/Users/Divyakumar/Documents/GitHub/2013-11-23-dlab/python/sw_engineering/animals.pyc",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Homeworks/HW4/root/templates/add.html",
+		"/C/Users/Divyakumar/Documents/GitHub/flask/examples/flaskr/flaskr_tests.py",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Homeworks/HW4/root/error.txt",
+		"/C/Users/Divyakumar/Documents/GitHub/flask/examples/flaskr/schema.sql",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Homeworks/HW4/root/error.log",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Homeworks/HW4/root/schema.sql",
+		"/C/Users/Divyakumar/Documents/GitHub/2013-11-23-dlab/python/ipythonblocks/animation/frame01.txt",
+		"/C/Users/Divyakumar/Documents/GitHub/2013-11-23-dlab/python/ipythonblocks/ipythonblocks.py",
+		"/C/Users/Divyakumar/Documents/GitHub/2013-11-23-dlab/python/ipythonblocks/grid2.txt",
+		"/C/Users/Divyakumar/Documents/GitHub/2013-11-23-dlab/python/ipythonblocks/grid1.txt",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Projects/Project4/export.gpx",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Projects/Project4/gpslogger.gpx",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Projects/Project4/20131118-140453.gpx",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Projects/Project4/Merged_11222013.txt",
+		"/C/Users/Divyakumar/Documents/GitHub/2013-11-23-dlab/shell/data/alldata/rename.sh",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Projects/Project4/TableDefn.txt",
+		"/C/Users/Divyakumar/Documents/GitHub/2013-11-23-dlab/shell/data/alldata/rename.txt",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Projects/Project4/TableDefn",
+		"/C/Users/Divyakumar/Documents/GitHub/2013-11-23-dlab/test.txt",
+		"/C/Users/Divyakumar/Documents/GitHub/2013-11-23-dlab/shell/exercises/haiku.txt",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Projects/Project4/Merged_11222013.CSV",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Projects/Project4/Merged_11222013",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Homeworks/HW4/root/app-harder.py",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Homeworks/HW4/root/templates/index.html",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Homeworks/HW4/root/static/script.js",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Homeworks/HW4/root/app.py",
+		"/C/Users/Divyakumar/AppData/Local/Temp/Temp1_gpslogger.zip/gpslogger.txt",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Homeworks/HW4/root/app-easier.py",
+		"/C/Users/Divyakumar/AppData/Roaming/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+		"/C/Dropbox/Fall 2013/INFO 256/Final Project/Untitled0.py",
+		"/C/Dropbox/Fall 2013/INFO 256/Final Project/Prediction_Main_new.py",
+		"/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/100KContent_Top50Key_Top300Word",
+		"/C/Dropbox/Fall 2013/INFO 256/G7/complete.py",
+		"/C/Users/Divyakumar/Documents/GitHub/ctci/python/Chapter 1/Question1_1/ChapQ1.1.py",
+		"/C/Dropbox/Fall 2013/STAT 375/Class Discussion.txt",
+		"/C/Dropbox/Fall 2013/STAT 375/Good_Bad GSI.txt",
+		"/C/Users/Divyakumar/Google Drive/GPSLogger For Android/gpslogger_test.xml",
+		"/C/Dropbox/Fall 2013/STAT 375/STAT 375 - Assignment 1.txt",
+		"/C/Dropbox/Fall 2013/INFO 256/Bot/Mathbot/Mathbot/LifeOfPi.py",
+		"/C/Dropbox/Fall 2013/INFO 256/Bot/Mathbot/Mathbot/LifeOfPi_Description_Transcripts.txt",
+		"/C/Dropbox/Fall 2013/INFO 256/Bot/Mathbot/Mathbot/chatbotUtils.py",
+		"/C/Dropbox/Fall 2013/INFO 256/Bot/Mathbot/Mathbot/LifeOfPiDescription.txt",
+		"/C/Dropbox/Fall 2013/INFO 256/Assignments/Assignments/Assignment8_Divyakumar_Menghani.py",
+		"/C/Users/Divyakumar/Desktop/Divya/Python/learningpython-master/learningpython-master/001.Print.py",
+		"/C/Users/Divyakumar/Documents/GitHub/iolab-flickrInterestingness/js/script_divi.js",
+		"/C/Users/Divyakumar/Documents/GitHub/iolab-flickrInterestingness/demo_d3.html",
+		"/C/Dropbox/Fall 2013/INFO 256/Bot/Kelley/LifeOfPi.py",
+		"/C/Dropbox/Fall 2013/INFO 256/Bot/Kelley/chatbotUtils.py",
+		"/C/Dropbox/Fall 2013/INFO 256/Bot/LifeOfPi.py",
+		"/C/Users/Divyakumar/Documents/GitHub/mathbot/transcript-stats_reverseQnA.txt",
+		"/C/Dropbox/Fall 2013/INFO 256/Assignments/Assignments/import pip.py",
+		"/C/Anaconda/Lib/site-packages/biopython-1.62-py2.7-win-amd64.egg/Bio/Restriction/_Update/Update.py",
+		"/C/Users/Divyakumar/Desktop/Divya/Python/learningpython-master/learningpython-master/002.MultiPrint.py",
+		"/C/Users/Divyakumar/Desktop/Divya/Python/learningpython-master/learningpython-master/000.StyleExample.py",
+		"/C/Users/Divyakumar/Documents/GitHub/iolab-lecture15/index.html",
+		"/C/Users/Divyakumar/Documents/GitHub/iolab-lecture14/_js/solution.js",
+		"/C/Users/Divyakumar/Documents/GitHub/iolab-flickrInterestingness/js/script.js",
+		"/C/Users/Divyakumar/Documents/GitHub/iolab-lecture12/_js/solution.js",
+		"/C/Users/Divyakumar/Documents/GitHub/iolab-lecture14/_js/script-beginner.js",
+		"/C/Users/Divyakumar/Documents/GitHub/iolab-flickrInterestingness/json/2013-10tags.json",
+		"/C/Users/Divyakumar/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/C/Users/Divyakumar/AppData/Roaming/Sublime Text 3/Packages/User/JavaScript.sublime-settings",
+		"/C/Users/Divyakumar/AppData/Roaming/Sublime Text 3/Packages/Jedi - Python autocompletion/sublime_jedi.sublime-settings",
+		"/C/Users/Divyakumar/AppData/Roaming/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
+		"/C/Users/Divyakumar/AppData/Roaming/Sublime Text 3/Packages/Alignment/Base File.sublime-settings",
+		"/C/Users/Divyakumar/AppData/Roaming/Sublime Text 3/Packages/User/JsFormat.sublime-settings",
+		"/C/Users/Divyakumar/AppData/Roaming/Sublime Text 3/Packages/JsFormat/JsFormat.sublime-settings",
+		"/C/Users/Divyakumar/Documents/GitHub/iolab-flickrInterestingness/demo.html",
+		"/C/Users/Divyakumar/Documents/GitHub/iolab-lecture15/_js/script-beginner.js",
+		"/C/Users/Divyakumar/Documents/GitHub/iolab-lecture15/_js/script-advanced.js",
+		"/C/Users/Divyakumar/Documents/GitHub/iolab-flickrInterestingness/js/json-minified.js",
+		"/C/Users/Divyakumar/Documents/GitHub/iolab-flickrInterestingness/index.html",
+		"/C/Users/Divyakumar/Documents/GitHub/iolab-flickrInterestingness/js/json_sans_eval.js",
+		"/C/Users/Divyakumar/Documents/GitHub/iolab-flickrInterestingness/json/2013-10photos.json",
+		"/C/Users/Divyakumar/Documents/GitHub/iolab-flickrInterestingness/js/jquery.mtz.monthpicker.js",
+		"/C/Dropbox/Fall 2013/INFO 256/Bot/chatbotUtils.py",
+		"/C/Dropbox/Fall 2013/INFO 256/Bot/mathbot.py",
+		"/C/Anaconda/Lib/site-packages/nltk/chat/zen.py",
+		"/C/Anaconda/Lib/site-packages/nltk/chat/__init__.py",
+		"/C/Dropbox/Fall 2013/INFO 256/Bot/chatbot-idea.txt",
+		"/C/Dropbox/Fall 2013/INFO 256/Bot/mathbot-examples.txt",
+		"/C/Users/Divyakumar/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/SublimeREPL.sublime-settings",
+		"/C/Users/Divyakumar/AppData/Roaming/Sublime Text 3/Packages/User/SublimeREPL.sublime-settings",
+		"/C/Users/Divyakumar/Desktop/Divya/Python/Divi_Python_Code.py",
+		"/C/Users/Divyakumar/Documents/GitHub/mathbot/transcript-charles-11.5.txt",
+		"/C/Users/Divyakumar/AppData/Local/Temp/Temp1_wordplay.zip/wordplay.aiml",
+		"/C/Users/Divyakumar/AppData/Local/Temp/Temp1_Python_Binding_1_1.zip/Python_Binding_1_1/wap.py",
+		"/C/Users/Divyakumar/Documents/GitHub/mathbot/mathbot.py",
+		"/C/Users/Divyakumar/Documents/GitHub/mathbot/mathbot-examples.txt",
+		"/C/Users/Divyakumar/Documents/GitHub/mathbot/chatbotUtils.py",
+		"/C/Users/Divyakumar/AppData/Local/Temp/Temp1_Python_Binding_1_1.zip/Python_Binding_1_1/simplejson/encoder.py",
+		"/C/Users/Divyakumar/AppData/Local/Temp/Temp1_Python_Binding_1_1.zip/Python_Binding_1_1/simplejson/__init__.py",
+		"/C/Users/Divyakumar/AppData/Local/Temp/Temp1_Python_Binding_1_1.zip/Python_Binding_1_1/wapex3.py",
+		"/C/Users/Divyakumar/AppData/Local/Temp/Temp1_Python_Binding_1_1.zip/Python_Binding_1_1/wapex2.py",
+		"/C/Users/Divyakumar/AppData/Local/Temp/Temp1_Python_Binding_1_1.zip/Python_Binding_1_1/wapex.py",
+		"/C/Users/Divyakumar/Desktop/Divya/Python/Python_course_code/code_data/t1.py",
+		"/C/Users/Divyakumar/AppData/Local/Temp/Temp1_jonathan_kummerfeld_parser.zip/jonathan_kummerfeld_parser/grammars.py",
+		"/C/Users/Divyakumar/AppData/Local/Temp/Temp1_jonathan_kummerfeld_parser.zip/jonathan_kummerfeld_parser/parser.py",
+		"/C/Users/Divyakumar/AppData/Local/Temp/Temp1_jonathan_kummerfeld_parser.zip/jonathan_kummerfeld_parser/util.py",
+		"/C/nltk_data/corpora/framenet_v15/README.txt",
+		"/C/nltk_data/corpora/framenet_v15/fulltext/LUCorpus-v0.3__20000410_nyt-NEW.xml",
+		"/C/nltk_data/corpora/framenet_v15/frame/Activity_done_state.xml",
+		"/C/Users/Divyakumar/Documents/GitHub/chatbot/ask.py",
+		"/C/Users/Divyakumar/Documents/GitHub/chatbot/chat.py",
+		"/C/Users/Divyakumar/Documents/GitHub/mathbot/dog_chat.py",
+		"/C/Users/Divyakumar/Documents/GitHub/mathbot/chatbot-idea.txt",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Homeworks/HW3/INFO290TA-hw-03/INFO290TA-hw-03-B/_js/script.js",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Homeworks/HW3/INFO290TA-hw-03/INFO290TA-hw-03-A/index.html",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Homeworks/HW3/INFO290TA-hw-03/INFO290TA-hw-03-A/_js/script.js",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Homeworks/HW3/INFO290TA-hw-03/INFO290TA-hw-03-A/_css/style.css",
+		"/C/Users/Divyakumar/Desktop/RR/INFO290TA-hw-03-A/_css/style.css"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"conf = 1.00",
+			"tokenize",
+			"\n\n",
+			"vectorizer",
+			"get_feature_names",
+			"freqdist",
+			"add_new",
+			"after",
+			"before",
+			"connect",
+			"before",
+			"d3",
+			".camera",
+			"-2",
+			"addPhotoTag",
+			">",
+			"console.log",
+			"allTags",
+			"console.log",
+			"jsonParse",
+			"allTags",
+			"not a valid",
+			"allTagsResult",
+			"random",
+			"15",
+			">15",
+			"more than",
+			">5",
+			">3",
+			">5",
+			"\"arithmetic\",",
+			"definition_pairs",
+			"pairs",
+			"+",
+			"extra",
+			"arithme",
+			"arithem",
+			"arithi",
+			"ariti",
+			"definition",
+			"intro",
+			"compat",
+			"-12\"",
+			"-11\"",
+			"-10\"",
+			"-09",
+			"-08",
+			"-07",
+			"-06",
+			"-05",
+			"-04",
+			"Dec",
+			"Nov",
+			"Oct",
+			"Sep",
+			"Aug",
+			"Jul",
+			"Jun",
+			"May",
+			"Apr",
+			"Mar",
+			"Feb",
+			"Jan",
+			"]",
+			"\"1",
+			",\"",
+			",",
+			"4\"",
+			"3\"",
+			".2",
+			".1",
+			",",
+			"1-",
+			"    ",
+			"version",
+			"	",
+			"viewport",
+			"g",
+			"q",
+			"m",
+			"shaun",
+			"loved data",
+			"shaun",
+			"<!",
+			"testPr",
+			"testProds",
+			"test_files",
+			"files",
+			"formatted_sents_training_heldout",
+			"formatted_sents",
+			"formatted_sents_t",
+			"formatted_sents",
+			"path_tes",
+			"brown",
+			"neg_lemmas",
+			"like",
+			"\n",
+			"_ENGLISH_STOP_WORDS",
+			"_EXCLUSIONS",
+			"friend",
+			"not",
+			"brown_vocab_lower",
+			"stopwo",
+			"stopw",
+			"only_important",
+			"stopwo",
+			"filter_stopwords",
+			"stopset",
+			"reader",
+			">>> ",
+			"review",
+			"import",
+			"does your",
+			"stopList",
+			"filterStopWords",
+			"classif",
+			"meta",
+			"M12V",
+			"camera",
+			"[cc]",
+			"...",
+			">>> ",
+			"print",
+			"generateBookmarkListItem",
+			"get",
+			"ters",
+			"reu",
+			"stopword"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"\"math\",",
+			"-2012\"",
+			"-2011\"",
+			"-2010\"",
+			"-2009",
+			"-2008",
+			"-2007",
+			"-2006",
+			"-2005",
+			"-2004",
+			"12",
+			"11",
+			"10",
+			"9",
+			"8",
+			"7",
+			"6",
+			"5",
+			"4",
+			"3",
+			"2",
+			"1",
+			"],",
+			"[\"1",
+			",",
+			"\",\"",
+			".4\"",
+			".3\"",
+			".2\"",
+			".1\"",
+			"\",\"",
+			"\"1-",
+			",",
+			"e",
+			"o",
+			"k",
+			"formatted_sents_heldout",
+			"formatted_sents_training",
+			"formatted_sents_heldout",
+			"",
+			"todo-list",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/Derek/Prediction_Main_new.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8830,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2256,
+								2256
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "panel",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1459.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "classifier.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4838,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								707,
+								707
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "panel",
+							"history_list_is_closing": true,
+							"sublime_auto_complete": true,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "assoc.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7823,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								561,
+								561
+							]
+						],
+						"settings":
+						{
+							"auto_name": "import itertools",
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "panel",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 185.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Assoc_Input.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 26478,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								26478,
+								26478
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Tags",
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "panel",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 14531.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "keywords_assoc.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1302,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								24,
+								24
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "panel",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1583,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1583,
+								1583
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_indent": false,
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "panel",
+							"detect_indentation": false,
+							"gutter": false,
+							"history_arrows": true,
+							"indent_subsequent_lines": false,
+							"line_numbers": false,
+							"repl": true,
+							"repl_external_id": "python",
+							"repl_id": "475fa0697e8346fea517ac46f85142b9",
+							"repl_restart_args":
+							{
+								"cmd":
+								[
+									"python",
+									"-i",
+									"-u"
+								],
+								"cwd": "$file_path",
+								"encoding": "utf8",
+								"extend_env":
+								{
+									"PYTHONIOENCODING": "utf-8"
+								},
+								"external_id": "python",
+								"syntax": "Packages/Python/Python.tmLanguage",
+								"type": "subprocess"
+							},
+							"repl_sublime2": false,
+							"smart_indent": false,
+							"spell_check": false,
+							"sublime_auto_complete": true,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 341.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "learn.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8373,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5645,
+								5645
+							]
+						],
+						"settings":
+						{
+							"auto_name": "\"\"\"",
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "panel",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2477.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "plot_forest_multioutput.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1272,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								752,
+								752
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "panel",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 15.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "keywords_query.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1385,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								248,
+								248
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 150.0
+	},
+	"output.rope_python_documentation":
+	{
+		"height": 100.0
+	},
+	"output.tooltips":
+	{
+		"height": 100.0
+	},
+	"project": "Python_NLP.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 81.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 3
+	}
+}
