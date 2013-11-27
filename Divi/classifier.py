@@ -1,3 +1,5 @@
+
+
 import csv
 import nltk
 import logging
@@ -19,7 +21,7 @@ from sklearn.neighbors import NearestCentroid
 from sklearn.utils.extmath import density
 from sklearn import metrics
 
-num_of_questions = 20
+num_of_questions = 30
 test_num_of_questions = 60
 
 
@@ -79,6 +81,7 @@ with open('C:\NLP_Data\Train\Train.csv', 'rb') as test_f:
 
 vectorizer = TfidfVectorizer(sublinear_tf=True, max_df=0.5,
                              stop_words='english')
+print vectorizer
 X_train = vectorizer.fit_transform(title_list)
 X_test = vectorizer.transform(test_title_list)
 y_train, y_test = keyword_list, test_keyword_list

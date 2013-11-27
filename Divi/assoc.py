@@ -15,7 +15,7 @@ def tokenize(file_name):
 
 def frequent_itemsets(sentences):
     # Counts sets with Apriori algorithm.
-    SUPP_THRESHOLD = 3
+    SUPP_THRESHOLD = 2
     supps = []
 
     supp = {}
@@ -74,7 +74,7 @@ def measures(supp_ab, supp_a, supp_b, transaction_count):
 
 def generate_rules(measure, supps, transaction_count):
     rules = []
-    CONF_THRESHOLD = 0.85
+    CONF_THRESHOLD = 0.50
     LIFT_THRESHOLD = 20.0
     CONV_THRESHOLD = 5.0
     if measure == 'conf':
