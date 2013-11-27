@@ -1,5 +1,3 @@
-
-
 import csv
 import nltk
 import logging
