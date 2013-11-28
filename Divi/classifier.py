@@ -19,8 +19,8 @@ from sklearn.neighbors import NearestCentroid
 from sklearn.utils.extmath import density
 from sklearn import metrics
 
-num_of_questions = 30
-test_num_of_questions = 60
+num_of_questions = 10
+test_num_of_questions = 10
 
 
 def benchmark(clf):
@@ -79,20 +79,20 @@ with open('C:\NLP_Data\Train\Train.csv', 'rb') as test_f:
 
 vectorizer = TfidfVectorizer(sublinear_tf=True, max_df=0.5,
                              stop_words='english')
-print vectorizer
+# print vectorizer
 X_train = vectorizer.fit_transform(title_list)
 X_test = vectorizer.transform(test_title_list)
-y_train, y_test = keyword_list, test_keyword_list
+y_train, y_test = str(keyword_list).split(), str(test_keyword_list).split()
 
-print "X_train\n", X_train
-print "X_test\n", X_test
+# print "X_train\n", X_train
+# print "X_test\n", X_test
 print "y_train\n", y_train
-print "y_test\n", y_test
+# print "y_test\n", y_test[1]
 
 results = []
-print "Naive Bayes"
-results.append(benchmark(MultinomialNB(alpha=.01)))
-results.append(benchmark(BernoulliNB(alpha=.01)))
+# print "Naive Bayes"
+# results.append(benchmark(MultinomialNB(alpha=.01)))
+# results.append(benchmark(BernoulliNB(alpha=.01)))
 
 # for penalty in ["l2", "l1"]:
 #     print 80 * '='

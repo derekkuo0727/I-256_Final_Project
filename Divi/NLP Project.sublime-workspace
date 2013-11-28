@@ -1,0 +1,1286 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cla",
+				"classifier"
+			],
+			[
+				"cl",
+				"classifier"
+			],
+			[
+				"y_",
+				"y_train"
+			],
+			[
+				"Y_",
+				"y_train	statement"
+			],
+			[
+				"X",
+				"X_train"
+			],
+			[
+				"y",
+				"y_train"
+			],
+			[
+				"get",
+				"get_feature_names	function"
+			],
+			[
+				"item",
+				"itemId"
+			],
+			[
+				"test_n",
+				"test_num_of_questions	statement"
+			],
+			[
+				"test_t",
+				"test_title_list"
+			],
+			[
+				"titl",
+				"title_list"
+			],
+			[
+				"ta",
+				"target_words"
+			],
+			[
+				"da",
+				"data_train"
+			],
+			[
+				"tar",
+				"target_names"
+			],
+			[
+				"mea",
+				"mean_animals"
+			],
+			[
+				"file",
+				"file_name"
+			],
+			[
+				"speci",
+				"species_name"
+			],
+			[
+				"a",
+				"argv	statement"
+			],
+			[
+				"filt",
+				"filter_animals"
+			],
+			[
+				"spec",
+				"species_name"
+			],
+			[
+				"count",
+				"counts"
+			],
+			[
+				"time",
+				"time_new"
+			],
+			[
+				"date",
+				"date_new"
+			],
+			[
+				"coun",
+				"counts"
+			],
+			[
+				"read",
+				"read_animals	function"
+			],
+			[
+				"keyw",
+				"keyword_list"
+			],
+			[
+				"top",
+				"topTags"
+			],
+			[
+				"all",
+				"allTags"
+			],
+			[
+				"pas",
+				"parseDate"
+			],
+			[
+				"parse",
+				"parseDate"
+			],
+			[
+				"tree",
+				"treebank	statement"
+			],
+			[
+				"w",
+				"w"
+			],
+			[
+				"foo",
+				"foos	statement"
+			],
+			[
+				"re",
+				"reverse"
+			],
+			[
+				"MyS",
+				"MySecondList	statement"
+			],
+			[
+				"ran",
+				"random	statement"
+			],
+			[
+				"__",
+				"__getattribute__	(builtin, function)"
+			],
+			[
+				"POS",
+				"POS_Features	function"
+			],
+			[
+				"path_",
+				"path_test	(global, instance)"
+			],
+			[
+				"class",
+				"ClassifierI	(imported, class)"
+			],
+			[
+				"r",
+				"read	function"
+			],
+			[
+				"rs",
+				"rstrip	function"
+			],
+			[
+				"pos",
+				"positive_words	statement"
+			],
+			[
+				"Fal",
+				"False	statement"
+			],
+			[
+				"stop",
+				"stopwords_vocab	(global, instance)"
+			],
+			[
+				"con",
+				"__contains__	magic"
+			],
+			[
+				"t",
+				"train	function"
+			],
+			[
+				"Ma",
+				"MaxentClassifier	(imported, class)"
+			],
+			[
+				"prtin",
+				"print	print"
+			],
+			[
+				"path_t",
+				"path_train	statement"
+			],
+			[
+				"stat",
+				"statvfs"
+			],
+			[
+				"forma",
+				"formatted_sents	statement"
+			],
+			[
+				"random",
+				"random	import"
+			],
+			[
+				"train",
+				"train_set	(global, instance)"
+			],
+			[
+				"form",
+				"formatted_sents	(global, instance)"
+			],
+			[
+				"bigram",
+				"bigram_word_feats	function"
+			],
+			[
+				"fr",
+				"from_words	function"
+			],
+			[
+				"Bigr",
+				"BigramCollocationFinder	import"
+			],
+			[
+				"BiGra",
+				"BigramAssocMeasures	(imported, class)"
+			],
+			[
+				"lat",
+				"latitude"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"add",
+				"address	Tag"
+			],
+			[
+				"__future",
+				"__future__	magic"
+			],
+			[
+				"min",
+				"min	min"
+			],
+			[
+				"target",
+				"target_word	(local, instance)"
+			],
+			[
+				"brown",
+				"brown_tagged_sents	(global, instance)"
+			],
+			[
+				"p",
+				"pp(show_percents, values_in_chart, truncate, sort_by_count)	(attribute, function)"
+			],
+			[
+				"brow",
+				"brown_tagged_sents	(global, instance)"
+			],
+			[
+				"tra",
+				"train	None"
+			],
+			[
+				"Tr",
+				"TrigramTagger	import"
+			],
+			[
+				"base",
+				"baseline_tagger	statement"
+			],
+			[
+				"tu",
+				"True	(builtin, instance)"
+			],
+			[
+				"tagset",
+				"tagset"
+			],
+			[
+				"tre",
+				"treebank_tagged_simplified	(global, instance)"
+			],
+			[
+				"br",
+				"brown_news_tagged	(global, instance)"
+			],
+			[
+				"raw",
+				"raw(fileids, sourced)	(attribute, function)"
+			],
+			[
+				"corp",
+				"corpusname"
+			],
+			[
+				"Lanca",
+				"lancaster	(local, instance)"
+			],
+			[
+				"wordne",
+				"wordnet"
+			],
+			[
+				"pr",
+				"print	keyword"
+			],
+			[
+				"fdist",
+				"fdist_normal	(local, instance)"
+			],
+			[
+				"wn",
+				"wnl_stem	(local, instance)"
+			],
+			[
+				"lanca",
+				"lancaster	(local, instance)"
+			],
+			[
+				"port",
+				"porter	(local, instance)"
+			],
+			[
+				"FILE",
+				"filelist	(local, instance)"
+			],
+			[
+				"pa",
+				"path	statement"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"marin",
+				"margin"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"tex",
+				"text1"
+			],
+			[
+				"fd",
+				"fdist1"
+			],
+			[
+				"it",
+				"items"
+			],
+			[
+				"bown",
+				"brown_vocab"
+			],
+			[
+				"fil",
+				"fileid"
+			],
+			[
+				"Comp",
+				"CompareLastLetter"
+			],
+			[
+				"Com",
+				"CompareFirstLetter"
+			],
+			[
+				"fi",
+				"file_name"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"po",
+				"background-position"
+			],
+			[
+				"spa",
+				"border-spacing"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"ali",
+				"text-align"
+			],
+			[
+				"background",
+				"background-image"
+			],
+			[
+				"voc",
+				"vocabulary1"
+			],
+			[
+				"vocabu",
+				"vocabulary1"
+			],
+			[
+				"is",
+				"istitle"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "classifier.py",
+			"settings":
+			{
+				"buffer_size": 4898,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "new_modified.py",
+			"settings":
+			{
+				"buffer_size": 2061,
+				"line_ending": "Windows",
+				"name": "import numpy as np"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"git ",
+				"Git: Status"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Discover Packages"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"git s",
+				"Git: Status"
+			],
+			[
+				"git",
+				"Git: Status"
+			],
+			[
+				"git st",
+				"Git: Status"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				":ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"Package Control: dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"pa ",
+				"Package Control: Disable Package"
+			],
+			[
+				"pa in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"paca",
+				"Package Control: Install Package"
+			],
+			[
+				"snippp",
+				"Snippet: For Loop"
+			],
+			[
+				"snipper",
+				"Snippet: New Property"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: If Condition"
+			]
+		],
+		"width": 560.0
+	},
+	"console":
+	{
+		"height": 51.0,
+		"history":
+		[
+			"print('h')",
+			"print \"h\""
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Anaconda/lib/site-packages/scikit_learn-0.14.1-py2.7-win-amd64.egg/sklearn/utils/validation.py",
+		"/C/Anaconda/lib/site-packages/scikit_learn-0.14.1-py2.7-win-amd64.egg/sklearn/naive_bayes.py",
+		"/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/Divi/new.py",
+		"/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/Charles/keywords_assoc.py",
+		"/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/Divi/learn.py",
+		"/C/Users/Divyakumar/AppData/Roaming/Sublime Text 3/Packages/SideBarGit/SideBarGit.sublime-settings",
+		"/C/Users/Divyakumar/AppData/Roaming/Sublime Text 3/Packages/User/SideBarGit.sublime-settings",
+		"/C/Users/Divyakumar/Documents/GitHub/holiday-viz/index.html",
+		"/C/Users/Divyakumar/Documents/GitHub/holiday-viz/_css/main.css",
+		"/C/Users/Divyakumar/Documents/GitHub/holiday-viz/sftp-config.json",
+		"/C/Users/Divyakumar/AppData/Roaming/Sublime Text 3/Packages/User/SFTP.sublime-settings",
+		"/C/Users/Divyakumar/AppData/Roaming/Sublime Text 3/Packages/SFTP/SFTP.sublime-settings",
+		"/C/Users/Divyakumar/Documents/GitHub/holiday-viz/_js/user-operations.js",
+		"/C/Users/Divyakumar/Documents/GitHub/holiday-viz/_js/db-operations.js",
+		"/C/Users/Divyakumar/Documents/GitHub/holiday-viz/db-operations.php",
+		"/C/Users/Divyakumar/Documents/GitHub/holiday-viz/_js/objects.js",
+		"/C/Users/Divyakumar/Documents/GitHub/holiday-viz/_js/map.js",
+		"/C/Users/Divyakumar/Documents/GitHub/holiday-viz/_js/import.js",
+		"/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/Divi/keywords_assoc.py",
+		"/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/Divi/multi.py",
+		"/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/Divi/Assoc_Input.txt",
+		"/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/Divi/plot_forest_multioutput.py",
+		"/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/Divi/assoc.py",
+		"/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/Divi/classifier.py",
+		"/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/Divi/keywords_query.py",
+		"/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/Divi/ada.py",
+		"/C/Dropbox/Apps/GPSLogger for Android/gpslogger/gpslogger.gpx",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Homeworks/HW4/root/app.py",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Homeworks/HW4/root/templates/index.html",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Homeworks/HW4/root/static/script.js",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Homeworks/HW4/root/schema.sql",
+		"/C/Users/Divyakumar/AppData/Local/Temp/Temp1_hw4_partA_Menghani_Divyakumar.zip/root/schema.sql",
+		"/C/Users/Divyakumar/Desktop/Part2_Sample/Part2_Sample/templates/index.html",
+		"/C/Dropbox/Fall 2013/INFO 256/Bot/Mathbot/Mathbot/LifeOfPi_Description_Transcripts.txt",
+		"/C/Dropbox/Fall 2013/INFO 256/Bot/Mathbot/Mathbot/LifeOfPi.py",
+		"/C/Dropbox/Fall 2013/INFO 256/Bot/Mathbot/Mathbot/chatbotUtils.py",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Homeworks/HW4/root/script.sql",
+		"/C/Users/Divyakumar/Desktop/Part2_Sample/Part2_Sample/static/_js/script.js",
+		"/C/Users/Divyakumar/AppData/Local/Temp/Temp1_Archive.zip/static/script.js",
+		"/C/Users/Divyakumar/AppData/Local/Temp/Temp1_Archive.zip/app-easier.py",
+		"/C/Users/Divyakumar/Desktop/Part2_Sample/Part2_Sample/app.py",
+		"/C/Users/Divyakumar/Desktop/app_code.py",
+		"/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/Derek/Prediction_Main_new.py",
+		"/C/Users/Divyakumar/AppData/Local/Temp/Temp1_Part2_Sample.zip/Part2_Sample/app.py",
+		"/C/Users/Divyakumar/Documents/GitHub/kaggle_insults/models.py",
+		"/C/Users/Divyakumar/Documents/GitHub/kaggle_insults/features_old.py",
+		"/C/Users/Divyakumar/Documents/GitHub/kaggle_insults/features.py",
+		"/C/Users/Divyakumar/Documents/GitHub/kaggle_insults/util.py",
+		"/C/Users/Divyakumar/Documents/GitHub/kaggle_insults/train.py",
+		"/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/keywords_assoc_divi.py",
+		"/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/keywords_query_divi.py",
+		"/C/Users/Divyakumar/Documents/GitHub/2013-11-23-dlab_divi/python/sw_engineering/animals.py",
+		"/C/Users/Divyakumar/Documents/GitHub/2013-11-23-dlab/python/sw_engineering/test_animals.py",
+		"/C/Users/Divyakumar/Documents/GitHub/2013-11-23-dlab/python/sw_engineering/animals.py",
+		"/C/Users/Divyakumar/Documents/GitHub/2013-11-23-dlab/python/sw_engineering/mean_animals.py",
+		"/C/Users/Divyakumar/Documents/GitHub/2013-11-23-dlab/python/sw_engineering/animals.txt",
+		"/C/Users/Divyakumar/Documents/GitHub/2013-11-23-dlab/python/sw_engineering/animals.pyc",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Homeworks/HW4/root/templates/add.html",
+		"/C/Users/Divyakumar/Documents/GitHub/flask/examples/flaskr/flaskr_tests.py",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Homeworks/HW4/root/error.txt",
+		"/C/Users/Divyakumar/Documents/GitHub/flask/examples/flaskr/schema.sql",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Homeworks/HW4/root/error.log",
+		"/C/Users/Divyakumar/Documents/GitHub/2013-11-23-dlab/python/ipythonblocks/animation/frame01.txt",
+		"/C/Users/Divyakumar/Documents/GitHub/2013-11-23-dlab/python/ipythonblocks/ipythonblocks.py",
+		"/C/Users/Divyakumar/Documents/GitHub/2013-11-23-dlab/python/ipythonblocks/grid2.txt",
+		"/C/Users/Divyakumar/Documents/GitHub/2013-11-23-dlab/python/ipythonblocks/grid1.txt",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Projects/Project4/export.gpx",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Projects/Project4/gpslogger.gpx",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Projects/Project4/20131118-140453.gpx",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Projects/Project4/Merged_11222013.txt",
+		"/C/Users/Divyakumar/Documents/GitHub/2013-11-23-dlab/shell/data/alldata/rename.sh",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Projects/Project4/TableDefn.txt",
+		"/C/Users/Divyakumar/Documents/GitHub/2013-11-23-dlab/shell/data/alldata/rename.txt",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Projects/Project4/TableDefn",
+		"/C/Users/Divyakumar/Documents/GitHub/2013-11-23-dlab/test.txt",
+		"/C/Users/Divyakumar/Documents/GitHub/2013-11-23-dlab/shell/exercises/haiku.txt",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Projects/Project4/Merged_11222013.CSV",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Projects/Project4/Merged_11222013",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Homeworks/HW4/root/app-harder.py",
+		"/C/Users/Divyakumar/AppData/Local/Temp/Temp1_gpslogger.zip/gpslogger.txt",
+		"/C/Dropbox/Fall 2013/INFO 290TA/Homeworks/HW4/root/app-easier.py",
+		"/C/Users/Divyakumar/AppData/Roaming/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+		"/C/Dropbox/Fall 2013/INFO 256/Final Project/Untitled0.py",
+		"/C/Dropbox/Fall 2013/INFO 256/Final Project/Prediction_Main_new.py",
+		"/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/100KContent_Top50Key_Top300Word",
+		"/C/Dropbox/Fall 2013/INFO 256/G7/complete.py",
+		"/C/Users/Divyakumar/Documents/GitHub/ctci/python/Chapter 1/Question1_1/ChapQ1.1.py",
+		"/C/Dropbox/Fall 2013/STAT 375/Class Discussion.txt",
+		"/C/Dropbox/Fall 2013/STAT 375/Good_Bad GSI.txt",
+		"/C/Users/Divyakumar/Google Drive/GPSLogger For Android/gpslogger_test.xml",
+		"/C/Dropbox/Fall 2013/STAT 375/STAT 375 - Assignment 1.txt",
+		"/C/Dropbox/Fall 2013/INFO 256/Bot/Mathbot/Mathbot/LifeOfPiDescription.txt",
+		"/C/Dropbox/Fall 2013/INFO 256/Assignments/Assignments/Assignment8_Divyakumar_Menghani.py",
+		"/C/Users/Divyakumar/Desktop/Divya/Python/learningpython-master/learningpython-master/001.Print.py",
+		"/C/Users/Divyakumar/Documents/GitHub/iolab-flickrInterestingness/js/script_divi.js",
+		"/C/Users/Divyakumar/Documents/GitHub/iolab-flickrInterestingness/demo_d3.html",
+		"/C/Dropbox/Fall 2013/INFO 256/Bot/Kelley/LifeOfPi.py",
+		"/C/Dropbox/Fall 2013/INFO 256/Bot/Kelley/chatbotUtils.py",
+		"/C/Dropbox/Fall 2013/INFO 256/Bot/LifeOfPi.py",
+		"/C/Users/Divyakumar/Documents/GitHub/mathbot/transcript-stats_reverseQnA.txt",
+		"/C/Dropbox/Fall 2013/INFO 256/Assignments/Assignments/import pip.py",
+		"/C/Anaconda/Lib/site-packages/biopython-1.62-py2.7-win-amd64.egg/Bio/Restriction/_Update/Update.py",
+		"/C/Users/Divyakumar/Desktop/Divya/Python/learningpython-master/learningpython-master/002.MultiPrint.py",
+		"/C/Users/Divyakumar/Desktop/Divya/Python/learningpython-master/learningpython-master/000.StyleExample.py",
+		"/C/Users/Divyakumar/Documents/GitHub/iolab-lecture15/index.html",
+		"/C/Users/Divyakumar/Documents/GitHub/iolab-lecture14/_js/solution.js",
+		"/C/Users/Divyakumar/Documents/GitHub/iolab-flickrInterestingness/js/script.js",
+		"/C/Users/Divyakumar/Documents/GitHub/iolab-lecture12/_js/solution.js",
+		"/C/Users/Divyakumar/Documents/GitHub/iolab-lecture14/_js/script-beginner.js",
+		"/C/Users/Divyakumar/Documents/GitHub/iolab-flickrInterestingness/json/2013-10tags.json",
+		"/C/Users/Divyakumar/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/C/Users/Divyakumar/AppData/Roaming/Sublime Text 3/Packages/User/JavaScript.sublime-settings",
+		"/C/Users/Divyakumar/AppData/Roaming/Sublime Text 3/Packages/Jedi - Python autocompletion/sublime_jedi.sublime-settings",
+		"/C/Users/Divyakumar/AppData/Roaming/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
+		"/C/Users/Divyakumar/AppData/Roaming/Sublime Text 3/Packages/Alignment/Base File.sublime-settings",
+		"/C/Users/Divyakumar/AppData/Roaming/Sublime Text 3/Packages/User/JsFormat.sublime-settings",
+		"/C/Users/Divyakumar/AppData/Roaming/Sublime Text 3/Packages/JsFormat/JsFormat.sublime-settings",
+		"/C/Users/Divyakumar/Documents/GitHub/iolab-flickrInterestingness/demo.html",
+		"/C/Users/Divyakumar/Documents/GitHub/iolab-lecture15/_js/script-beginner.js",
+		"/C/Users/Divyakumar/Documents/GitHub/iolab-lecture15/_js/script-advanced.js",
+		"/C/Users/Divyakumar/Documents/GitHub/iolab-flickrInterestingness/js/json-minified.js",
+		"/C/Users/Divyakumar/Documents/GitHub/iolab-flickrInterestingness/index.html",
+		"/C/Users/Divyakumar/Documents/GitHub/iolab-flickrInterestingness/js/json_sans_eval.js",
+		"/C/Users/Divyakumar/Documents/GitHub/iolab-flickrInterestingness/json/2013-10photos.json",
+		"/C/Users/Divyakumar/Documents/GitHub/iolab-flickrInterestingness/js/jquery.mtz.monthpicker.js",
+		"/C/Dropbox/Fall 2013/INFO 256/Bot/chatbotUtils.py",
+		"/C/Dropbox/Fall 2013/INFO 256/Bot/mathbot.py",
+		"/C/Anaconda/Lib/site-packages/nltk/chat/zen.py"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"allow_lists",
+			"itemId",
+			"conf = 1.00",
+			"tokenize",
+			"\n\n",
+			"vectorizer",
+			"get_feature_names",
+			"freqdist",
+			"add_new",
+			"after",
+			"before",
+			"connect",
+			"before",
+			"d3",
+			".camera",
+			"-2",
+			"addPhotoTag",
+			">",
+			"console.log",
+			"allTags",
+			"console.log",
+			"jsonParse",
+			"allTags",
+			"not a valid",
+			"allTagsResult",
+			"random",
+			"15",
+			">15",
+			"more than",
+			">5",
+			">3",
+			">5",
+			"\"arithmetic\",",
+			"definition_pairs",
+			"pairs",
+			"+",
+			"extra",
+			"arithme",
+			"arithem",
+			"arithi",
+			"ariti",
+			"definition",
+			"intro",
+			"compat",
+			"-12\"",
+			"-11\"",
+			"-10\"",
+			"-09",
+			"-08",
+			"-07",
+			"-06",
+			"-05",
+			"-04",
+			"Dec",
+			"Nov",
+			"Oct",
+			"Sep",
+			"Aug",
+			"Jul",
+			"Jun",
+			"May",
+			"Apr",
+			"Mar",
+			"Feb",
+			"Jan",
+			"]",
+			"\"1",
+			",\"",
+			",",
+			"4\"",
+			"3\"",
+			".2",
+			".1",
+			",",
+			"1-",
+			"    ",
+			"version",
+			"	",
+			"viewport",
+			"g",
+			"q",
+			"m",
+			"shaun",
+			"loved data",
+			"shaun",
+			"<!",
+			"testPr",
+			"testProds",
+			"test_files",
+			"files",
+			"formatted_sents_training_heldout",
+			"formatted_sents",
+			"formatted_sents_t",
+			"formatted_sents",
+			"path_tes",
+			"brown",
+			"neg_lemmas",
+			"like",
+			"\n",
+			"_ENGLISH_STOP_WORDS",
+			"_EXCLUSIONS",
+			"friend",
+			"not",
+			"brown_vocab_lower",
+			"stopwo",
+			"stopw",
+			"only_important",
+			"stopwo",
+			"filter_stopwords",
+			"stopset",
+			"reader",
+			">>> ",
+			"review",
+			"import",
+			"does your",
+			"stopList",
+			"filterStopWords",
+			"classif",
+			"meta",
+			"M12V",
+			"camera",
+			"[cc]",
+			"...",
+			">>> ",
+			"print",
+			"generateBookmarkListItem",
+			"get",
+			"ters"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"\"math\",",
+			"-2012\"",
+			"-2011\"",
+			"-2010\"",
+			"-2009",
+			"-2008",
+			"-2007",
+			"-2006",
+			"-2005",
+			"-2004",
+			"12",
+			"11",
+			"10",
+			"9",
+			"8",
+			"7",
+			"6",
+			"5",
+			"4",
+			"3",
+			"2",
+			"1",
+			"],",
+			"[\"1",
+			",",
+			"\",\"",
+			".4\"",
+			".3\"",
+			".2\"",
+			".1\"",
+			"\",\"",
+			"\"1-",
+			",",
+			"e",
+			"o",
+			"k",
+			"formatted_sents_heldout",
+			"formatted_sents_training",
+			"formatted_sents_heldout",
+			"",
+			"todo-list",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "classifier.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4898,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1558,
+								1585
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "panel",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"sublime_auto_complete": true,
+							"synced": false,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 750.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "new_modified.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2061,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								643,
+								643
+							]
+						],
+						"settings":
+						{
+							"auto_name": "import numpy as np",
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "panel",
+							"incomplete_sync": null,
+							"sublime_auto_complete": true,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"wrap_width": 0
+						},
+						"translation.x": 0.0,
+						"translation.y": 123.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 276.0
+	},
+	"output.rope_python_documentation":
+	{
+		"height": 100.0
+	},
+	"output.sftp":
+	{
+		"height": 207.0
+	},
+	"output.tooltips":
+	{
+		"height": 100.0
+	},
+	"project": "NLP Project.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 148.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 3
+	}
+}
