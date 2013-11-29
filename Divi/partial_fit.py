@@ -59,18 +59,22 @@ test_file_path = 'C:\\NLP_Data\\Train\\Train.csv'
 #     m = re.findall('<pre><code>(.+?)</code></pre>', raw_text, re.S)
 #     return str(m)
 
-num_of_questions = 10000
+num_of_questions = 10
 
 # classifier = Pipeline([
 #     ('vectorizer', CountVectorizer(min_df=1)),
 #     ('tfidf', TfidfTransformer()),
 #     ('clf', OneVsRestClassifier(LinearSVC()))])
 
-classifier = Pipeline([
-    ('vectorizer', CountVectorizer(min_df=1, max_df=0.8)),
-    ('tfidf', TfidfTransformer(use_idf=True)),
-    ('clf', OneVsRestClassifier(PassiveAggressiveClassifier(C=1, n_iter=1, n_jobs=2)))])
+# classifier = Pipeline([
+#     ('vectorizer', CountVectorizer(min_df=1, max_df=0.8)),
+#     ('tfidf', TfidfTransformer(use_idf=True)),
+#     ('clf', OneVsRestClassifier(PassiveAggressiveClassifier(C=1, n_iter=1, n_jobs=2)))])
 
+vectorizer = TfidfVectorizer(sublinear_tf=True, max_df=0.8, min_df=1,
+                             stop_words='english')
+
+classifier = PassiveAggressiveClassifier(C=1, n_iter=1, n_jobs=1)
 
 print "File reading started"
 with open(train_file_path, 'r') as f:
@@ -110,7 +114,10 @@ Y = lb.fit_transform(y_train)
 print "Fitting completed!"
 
 print "Building classifier!"
-classifier.fit(X_train, Y)
+# classifier.fit(X_train, Y)
+classifier.partial_fit(X_train[:5], Y[:5])
+classifier.partial_fit(X_train[5:], Y[5:])
+
 
 print "Predicting!"
 predicted = classifier.predict(X_test)
@@ -120,7 +127,7 @@ all_labels = lb.inverse_transform(predicted)
 print "Lengths", len(X_train), len(y_train), len(X_test), len(target_names)
 print ""
 print "Length = ", len(set(all_labels)) - 1
-print "Percentage output = ", (len(set(all_labels)) - 1) / len(target_names) * 100
+print "Percentage Predicted = ", (len(set(all_labels)) - 1) / len(target_names) * 100
 
 # print "Printing stuff!"
 # for item, labels in zip(X_test, all_labels):
