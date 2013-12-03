@@ -59,7 +59,7 @@ test_file_path = 'C:\\NLP_Data\\Train\\Train.csv'
 #     m = re.findall('<pre><code>(.+?)</code></pre>', raw_text, re.S)
 #     return str(m)
 
-num_of_questions = 10000
+num_of_questions = 10
 
 # classifier = Pipeline([
 #     ('vectorizer', CountVectorizer(min_df=1)),
@@ -70,7 +70,6 @@ classifier = Pipeline([
     ('vectorizer', CountVectorizer(min_df=1, max_df=0.8)),
     ('tfidf', TfidfTransformer(use_idf=True)),
     ('clf', OneVsRestClassifier(PassiveAggressiveClassifier(C=1, n_iter=1, n_jobs=2)))])
-
 
 print "File reading started"
 with open(train_file_path, 'r') as f:

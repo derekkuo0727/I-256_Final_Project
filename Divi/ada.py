@@ -1,3 +1,5 @@
+# import scrapy
+
 print(__doc__)
 
 import numpy as np
@@ -12,10 +14,10 @@ from sklearn.cross_decomposition import CCA
 
 
 def plot_hyperplane(clf, min_x, max_x, linestyle, label):
-    # get the separating hyperplane
+get the separating hyperplane
     w = clf.coef_[0]
     a = -w[0] / w[1]
-    xx = np.linspace(min_x - 5, max_x + 5)  # make sure the line is long enough
+xx = np.linspace(min_x - 5, max_x + 5)  # make sure the line is long enough
     yy = a * xx - (clf.intercept_[0]) / w[1]
     pl.plot(xx, yy, linestyle, label=label)
 
@@ -24,7 +26,7 @@ def plot_subfigure(X, Y, subplot, title, transform):
     if transform == "pca":
         X = PCA(n_components=2).fit_transform(X)
     elif transform == "cca":
-        # Convert list of tuples to a class indicator matrix first
+Convert list of tuples to a class indicator matrix first
         Y_indicator = LabelBinarizer().fit(Y).transform(Y)
         X = CCA(n_components=2).fit(X, Y_indicator).transform(X)
     else:

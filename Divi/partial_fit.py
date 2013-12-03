@@ -19,7 +19,7 @@ from sklearn.linear_model import (LinearRegression, Lasso, ElasticNet, Ridge,
                                   Perceptron)
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.pipeline import Pipeline
-from sklearn.linear_model import PassiveAggressiveClassifier
+from sklearn.linear_model import PassiveAggressiveClassifier, SGDClassifier
 from sklearn import svm
 from sklearn import *
 from sklearn.multiclass import OneVsRestClassifier
@@ -59,22 +59,39 @@ test_file_path = 'C:\\NLP_Data\\Train\\Train.csv'
 #     m = re.findall('<pre><code>(.+?)</code></pre>', raw_text, re.S)
 #     return str(m)
 
-num_of_questions = 10
+num_of_questions = 100
 
 # classifier = Pipeline([
 #     ('vectorizer', CountVectorizer(min_df=1)),
 #     ('tfidf', TfidfTransformer()),
 #     ('clf', OneVsRestClassifier(LinearSVC()))])
 
+
 # classifier = Pipeline([
 #     ('vectorizer', CountVectorizer(min_df=1, max_df=0.8)),
 #     ('tfidf', TfidfTransformer(use_idf=True)),
 #     ('clf', OneVsRestClassifier(PassiveAggressiveClassifier(C=1, n_iter=1, n_jobs=2)))])
 
-vectorizer = TfidfVectorizer(sublinear_tf=True, max_df=0.8, min_df=1,
-                             stop_words='english')
+classifier = Pipeline([
+    ('vectorizer', CountVectorizer(min_df=1, max_df=0.8)),
+    ('tfidf', TfidfTransformer(use_idf=True)),
+    ('clf', OneVsRestClassifier(SGDClassifier(alpha=0.001, class_weight=None, epsilon=0.1, eta0=0.0,
+                                              fit_intercept=True, l1_ratio=0.15, learning_rate='optimal',
+                                              loss='hinge', n_iter=5, n_jobs=1, penalty='l2', power_t=0.5,
+                                              random_state=None, rho=None, shuffle=False,
+                                              verbose=0, warm_start=False), n_jobs=-1))])
 
-classifier = PassiveAggressiveClassifier(C=1, n_iter=1, n_jobs=1)
+
+# vectorizer = TfidfVectorizer(sublinear_tf=True, max_df=0.8, min_df=1,
+#                              stop_words='english')
+
+# classifier = Pipeline([
+#     ('vectorizer', CountVectorizer(min_df=1, max_df=0.8)),
+#     ('tfidf', TfidfTransformer(use_idf=True)),
+#     ('clf', PassiveAggressiveClassifier(C=1, n_iter=1, n_jobs=2))])
+
+# classifier = PassiveAggressiveClassifier(C=1, n_iter=1, n_jobs=2)
+# multi_clf = OneVsRestClassifier(classifier)
 
 print "File reading started"
 with open(train_file_path, 'r') as f:
@@ -114,9 +131,9 @@ Y = lb.fit_transform(y_train)
 print "Fitting completed!"
 
 print "Building classifier!"
-# classifier.fit(X_train, Y)
-classifier.partial_fit(X_train[:5], Y[:5])
-classifier.partial_fit(X_train[5:], Y[5:])
+classifier.fit(X_train, Y)
+# classifier.partial_fit(X_train, Y)
+# classifier.partial_fit(X_train[5:], Y[5:])
 
 
 print "Predicting!"
@@ -132,7 +149,7 @@ print "Percentage Predicted = ", (len(set(all_labels)) - 1) / len(target_names) 
 # print "Printing stuff!"
 # for item, labels in zip(X_test, all_labels):
 #     if labels != ():
-# print '%s => %s' % (item, ', '.join(labels))
+#         print '%s => %s' % (item, ', '.join(labels))
 # print '%s' % (', '.join(labels))
 #         pass
 # print classifier.get_params(deep=True)
