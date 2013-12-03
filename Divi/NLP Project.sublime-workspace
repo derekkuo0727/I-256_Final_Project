@@ -463,14 +463,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "ada.py",
-			"settings":
-			{
-				"buffer_size": 2911,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "Packages/Python/Python.sublime-build",
 	"command_palette":
@@ -593,6 +585,9 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/Divi/ada.py",
+		"/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/Divi/Assoc_Input.txt",
+		"/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/Divi/assoc.py",
 		"/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/Divi/NLP Project.sublime-project",
 		"/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/Divi/new_modified.py",
 		"/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/Divi/new.py",
@@ -626,10 +621,7 @@
 		"/C/Users/Divyakumar/Documents/GitHub/holiday-viz/_js/import.js",
 		"/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/Divi/keywords_assoc.py",
 		"/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/Divi/multi.py",
-		"/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/Divi/Assoc_Input.txt",
-		"/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/Divi/assoc.py",
 		"/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/Divi/keywords_query.py",
-		"/C/Users/Divyakumar/Documents/GitHub/I-256_Final_Project/Divi/ada.py",
 		"/C/Dropbox/Apps/GPSLogger for Android/gpslogger/gpslogger.gpx",
 		"/C/Dropbox/Fall 2013/INFO 290TA/Homeworks/HW4/root/app.py",
 		"/C/Dropbox/Fall 2013/INFO 290TA/Homeworks/HW4/root/templates/index.html",
@@ -926,145 +918,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "ada.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2911,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2,
-								2
-							]
-						],
-						"settings":
-						{
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "panel",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"sublime_auto_complete": true,
-							"synced": false,
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1101,7 +956,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 157.0
+		"height": 280.0
 	},
 	"output.rope_python_documentation":
 	{
