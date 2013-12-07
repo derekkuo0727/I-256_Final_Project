@@ -1,3 +1,5 @@
+from __future__ import division
+
 # -*- coding: utf-8 -*-
 # <nbformat>3.0</nbformat>
 
@@ -8,6 +10,8 @@
 # Output: a list of line numbers that each of the line contains the keyword.
 
 # <codecell>
+
+import numpy
 
 
 def get_line_num_by_key(key):
@@ -62,8 +66,8 @@ def code_extractor(raw_text):
 
 import csv
 
-input_file = open("train.csv", 'r')
-output_file = open("small_train.csv", "w")
+input_file = open("C:\\NLP_Data\\Train\\Train.csv", 'r')
+output_file = open("C:\\NLP_Data\\Train\\output_small_train.csv", "w")
 reader = csv.reader(input_file)
 
 i = 0
@@ -235,8 +239,6 @@ for keyword in fq.keys()[:10]:
 
 # <codecell>
 
-import numpy
-from __future__ import division
 f = open("tfidf", "w")
 
 for keyword in fq.keys()[:TOP_KEYWORDS]:
@@ -322,8 +324,6 @@ for i in range(TESTING_LINES):
 # return: print the precision information about the keyword
 
 # <codecell>
-
-from __future__ import division
 
 
 def accuracy_query(keyword):
